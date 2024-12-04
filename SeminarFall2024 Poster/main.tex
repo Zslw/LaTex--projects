@@ -1,0 +1,277 @@
+\documentclass[final]{article}
+\usepackage{multicol}    % For multiple columns
+\usepackage{graphicx}     % For images
+\usepackage{amsmath, amssymb} %for math
+\usepackage{mathptmx} % Times fonts with scalable math
+\usepackage{lmodern}    %font type
+\usepackage[T1]{fontenc} % For better encoding
+\usepackage{color}        % Color support
+\usepackage[utf8]{inputenc} % UTF-8 encoding
+\usepackage{enumitem}     % Custom list formatting
+\usepackage[paperwidth=48in,paperheight=36in,margin=1in]{geometry} % Custom size
+\usepackage{tikz}         % For positioning elements
+
+\usepackage{cite}         % For citation management
+\usepackage{float}
+\usepackage{array}
+\usepackage{natbib}
+
+
+% Custom Colors (Adjust based on poster needs)
+\definecolor{DarkBlue}{rgb}{0.1,0.2,0.6}
+
+% Title Formatting (Use large manual font sizes)
+\newcommand{\posterTitle}[1]{
+    \noindent{
+        \color{DarkBlue}
+        \fontsize{72}{80}\bfseries #1
+    }
+}
+
+% Author and Institution Formatting
+\newcommand{\posterAuthors}[1]{
+    \noindent{
+        \color{black}
+        \fontsize{40}{48}\bfseries #1
+    }
+}
+
+% Section Heading
+\newcommand{\posterSection}[1]{
+    \noindent{
+        \color{DarkBlue}
+        \fontsize{50}{60}\bfseries #1
+    }
+    \vspace{0.5em}
+    \hrule
+    \vspace{1em}
+}
+
+% Regular Body Text
+\renewcommand{\normalsize}{\fontsize{28}{34}\selectfont}
+
+%Bold text
+\newcommand{\boldtext}[1]{{\fontseries{b}\selectfont #1}}
+
+% Begin Document
+\begin{document}
+
+% Navy Blue Bar with Title, Authors, and Logo
+\begin{tikzpicture}[remember picture, overlay]
+    % Draw the navy-blue rectangle bar
+    \fill[DarkBlue] (current page.north west) rectangle ++(48in, -3.5in); % Adjust width and height as needed
+
+    % Add Title in the bar
+    \node[anchor=north, yshift=-0.5in, xshift=1cm] at (current page.north) {
+    \color{white}
+    \fontsize{72}{80}\bfseries
+    MRI SAFETY AND RETAINED EPICARDIAL LEADS
+};
+
+    % Add Author Name below the Title
+    \node[anchor=north, yshift=-1.8in] at (current page.north) {
+    \color{white}
+    \fontsize{50}{58}\bfseries
+    \parbox{\textwidth}{ % Adjust the width as needed
+        \centering % To center the text
+        \textbf{Daniel Juarez} \\ %, Author2 Bold name with a line break
+        Department of Physics, Creighton University, Omaha, NE
+    }
+};
+
+    % Add University Logo in the bar
+    %\node[anchor=north east, xshift=-1cm, yshift=-1cm] at (current page.north east) {
+  %  \includegraphics[width=3in]{university-logo.png}
+%};
+
+\end{tikzpicture}
+
+% Add vertical dividers between columns
+\begin{tikzpicture}[remember picture, overlay]
+    % Divider 1
+    \draw[DarkBlue, thick] (15.2in, 0) -- (15.2in, -34in); % Adjusted to align within the text
+    % Divider 2
+    \draw[DarkBlue, thick] (30.5in, 0) -- (30.5in, -34in); % Divider for the second column
+\end{tikzpicture}
+
+
+\vspace{1.8in} % Add appropriate spacing to move the content down
+
+% Begin Multicolumn Layout
+\begin{multicols}{3}
+
+% Introduction Section
+\posterSection{Introduction}
+%What’s the problem?
+There is a concern on whether a patient with retained post-surgical epicardial leads can safely be scanned in an MRI device because the interaction of the magnetic field, RF and gradients with these leads are still not well defined. They may rise problems such as RF-induced heating, translational forces, and torques and induced currents. In previous graduate student thesis and research, these risks and issues were highlighted.  \cite{haddix2022, aboyewa2021}. The thesis pointed out that over 50\% of patients with cardiac implantable electronic devices (CIEDs) will require MRI in their lifetime \cite{aboyewa2021}. Moreover, there is a lack of consensus across clinical guidelines that leaves physicians with the task to assess risks on a case-by-case basis.
+
+\boldtext{Objective:} To synthesize findings on MRI safety with epicardial leads, focusing on RF heating, magnetic forces, and torques, while identifying research gaps and proposing strategies for safer imaging.
+
+\vspace{1cm}
+
+% Risks Section
+\posterSection{Risks of MRI with Epicardial Leads}
+%Why does it matter?
+\begin{itemize}
+    \item \textbf{RF-Induced Heating:} Leads can act as antennas, they absorb RF energy and cause localized tissue heating, particularly at the lead tips \cite{aboyewa2021}.
+    \item \textbf{Translational Forces:} The strong magnetic field can induce translational forces, pulling ferromagnetic materials toward the scanner's isocenter. These forces depend on lead material and length. \cite{haddix2022}.
+    \item \textbf{Torque:} Leads experience twisting forces that align them with the magnetic field, this can cause discomfort or tissue damage if the lead length is significant \cite{haddix2022}.
+    \item \textbf{Electrical Stimulation:} RF fields can induce currents in leads and stimulate cardiac tissue. This remains an underexplored area requiring further research \cite{aboyewa2021}.
+    \item \textbf{Device Malfunction:} MRI fields may interfere with pacemaker settings, causing unintended pacing or disabling the device altogether \cite{aboyewa2021}.
+\end{itemize}
+
+% Backgorund Section
+\posterSection{Background}
+%How was it studied?
+To answer whether safety concerns signify the outlined risk tissue-equivalent phantoms were designed, created and tested in previous research. Figure \ref{fig:phantom_design} shows the the phantom design and experimental setup used and table \ref{tab:phantom_characterization} compares the properties of the phantom materials to ASTM standards, confirming their clinical relevance.
+
+\begin{figure}[H]
+    \centering
+    \input{figure_3_1.tex}
+    \caption{Phantom design with dimensions and setup components for RF-induced heating experiments. Adapted from Aboyewa, 2021.\cite{aboyewa2021}}
+    \label{fig:phantom_design}
+\end{figure}
+
+% Phantom Characterization Table (Condensed)
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.1} % Slightly reduced row spacing
+    \setlength{\tabcolsep}{5pt} % Reduced column spacing
+    \begin{tabular}{|l|c|c|}
+        \hline
+        \textbf{Phantom Properties} & \textbf{ASTM F2182-11a} & \textbf{Aboyewa (2021)} \\
+        \hline
+        Dielectric Constant & $80 \pm 20$ & $82.1 \pm 1.4$ \\
+        Electrical Conductivity (S/m) & $0.47 \pm 10\%$ & $0.47 \pm 0.04$ \\
+        Thermal Conductivity (W/mK) & 0.54 & $0.850 \pm 0.007$ \\
+        Density (kg/m\textsuperscript{3}) & 1000 & $1027 \pm 1\%$ \\
+        \hline
+        \textbf{Specific Heat Capacity (J/kg$^\circ$C)} & & \\
+        New Gel (21$^\circ$C / 37$^\circ$C) & $4150 / 4190$ & $4129 \pm 47$ / $4118 \pm 48$ \\
+        Old Gel (21$^\circ$C / 37$^\circ$C) & & $4207 \pm 54$ / $4166 \pm 52$ \\
+        Water (21$^\circ$C / 37$^\circ$C) &  & $4168 \pm 42$ / $4151 \pm 42$ \\
+        \hline
+    \end{tabular}
+    \caption{Results of phantom characterization as compared to ASTM standards \cite{aboyewa2021}.}
+    \label{tab:phantom_characterization}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Phantom Design:} Tissue-equivalent phantoms developed by Aboyewa in 2021 simulate clinical conditions, measuring RF heating under SAR values of $\sim$2 W/kg and providing a well defined methodology for simulating patient conditions and measuring RF-induced heating \cite{aboyewa2021}.
+    \item \textbf{Preliminary Results:} Findings indicate leads shorter than 13 cm exhibit minimal heating under 3T MRI conditions. Orientation significantly impacts RF heating \cite{aboyewa2021}.
+    %\item \textbf{Force Measurement:} Translational forces and torques were calculated using theoretical models and validated experimentally \cite{haddix2022}.
+    \item \textbf{Heating Studies:} Temperature rise increases with lead length as showed on figure \ref{fig:lead_temp_rise}, this finding establishes the expected threshold for classification of leads on MRI Safety.
+\end{itemize}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{FigTab.pdf} % Adjust width as needed
+    \caption{Temperature rise as a function of lead length under MRI. Adapted from Aboyewa, 2021.}
+    \label{fig:lead_temp_rise}
+\end{figure}
+
+\begin{quote}
+Aboyewa further explored the effects of implant configuration on RF-induced heating. Figure \ref{fig:implant_orientation} illustrates the influence of implant orientation, shape, and length on maximum temperature rise.
+
+\boldtext{Implant Configuration and RF-Induced Heating:} 
+The straight configuration showed the highest temperature rise due to the antenna effect. Rotating the lead by 45$^\circ$ toward the right-side wall (TRS) or center (TC), as shown in Figure \ref{fig:implant_orientation}(b), reduced heating by more than half. An 8-fold reduction in heating was observed when the lead was bent into an arc, as shown in Figure \ref{fig:implant_orientation}(c). Although temperature rise increases with lead length \cite{aboyewa2021}, lead orientation and shape must also be considered to predict behavior in the MRI environment.  
+\end{quote}
+
+\input{implant_illustrations.tex}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Figure_4_9_Implant_Configuration_Adjusted_Y.pdf}
+    \caption{Effect of implant orientation on maximum temperature rise during MRI. (a) 12.7 cm Ti-rod, (b) 19 cm Bipolar Lead, (c) 19 cm Bipolar Lead. Adapted from Aboyewa, 2021.}
+    \label{fig:implant_orientation}
+\end{figure}
+
+\posterSection{Recent Advancements}
+%What was learned?
+\begin{itemize}
+    \item \textbf{Force and Torque Studies:} The Haddix proposal outlines experiments to measure translational forces and torques, with findings suggesting that forces are typically less than 10\% of the lead's weight at the bore entrance \cite{haddix2022}.
+    \item \textbf{Research Gaps:} Limited studies exist on the effects of RF-induced electrical stimulation in leads, requiring further exploration.
+    \item \textbf{Safety Evidence:} Several recent studies have demonstrated the safety of MRI in patients with abandoned or epicardial leads when following specific protocols. Table \ref{tab:recent_findings} summarizes key findings from these studies.
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \setlength{\tabcolsep}{8pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{9.5cm}|
+                      >{\raggedright\arraybackslash}p{5cm}|
+                      >{\raggedright\arraybackslash}p{12.5cm}|
+                      >{\raggedright\arraybackslash}p{5cm}|}
+        \hline
+        \textbf{Study Name} & \textbf{Population} & \textbf{Key Takeaway} & \textbf{MRI Outcome} \\
+        \hline
+        JAMA Cardiol (2021) \cite{schaller2021} & 
+        139 patients (200 MRIs) & 
+        Abandoned leads no longer absolute contraindication for MRI. & 
+        Safe \\
+        \hline
+        European Heart Journal (2021) \cite{vuorinen2021} & 
+        16 patients (24 MRIs) & 
+        Functional epicardial leads pose minimal risk when leads are modern (post-2000). & 
+        Safe for modern devices \\
+        \hline
+        Magn Reson Med (2021) \cite{nguyen2021} & 
+        Simulation/Phantom & 
+        Abandoned leads demonstrate minimal RF heating at 1.5T/3T. & 
+        Safe \\
+        \hline
+        Europace Meta-analysis (2024) \cite{meier2024} & 
+        656 patients (21 studies) & 
+        Adverse events negligible under strict protocols, justifying cautious guideline revisions. & 
+        Safe \\
+        \hline
+    \end{tabular}
+    \caption{Key findings from recent studies on MRI safety for patients with abandoned or epicardial leads.}
+    \label{tab:recent_findings}
+\end{table}
+
+% Placeholder for a visual on comparative risks across devices
+% \begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.8\linewidth]{comparative_risks_graph.pdf}
+%    \caption{Placeholder: Graph comparing RF heating risks across lead types (modern vs. legacy).}
+%    \label{fig:comparative_risks}
+% \end{figure}
+
+% Safety Strategies Section
+\posterSection{Safety Strategies}
+%What can we do?
+\begin{itemize}
+    \item \textbf{Technological Advances:} Improvements in MRI-conditional devices and scanning protocols have minimized risks like RF heating and device malfunction.
+    \item Limiting lead lengths to reduce RF heating risks \cite{aboyewa2021} and developing MRI-specific lead configurations to minimize mechanical interactions \cite{haddix2022}.
+    \item \textbf{Clinical Impact:} Updated guidelines now cautiously include patients with abandoned and epicardial leads, reducing delays in critical diagnostics.
+    \item \textbf{MRI Workflow Recommendations:} In the College of cardiology an article outlines steps for preparation, monitoring, and post-scan follow-up, ensuring patient safety and device functionality for managing MRI safety protocols in patients with CIEDs depicted in Figure \ref{fig:safety_protocols}.
+\end{itemize}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{IMAG-EA-Zghaib_Fig1.png}
+    \caption{Comprehensive workflow for MRI safety protocols in patients with MRI-conditional and non–MRI-conditional CIEDs, covering pre-MRI preparation, during-MRI monitoring, and post-MRI follow-up.\cite{zghaib2024mri} }
+    \label{fig:safety_protocols}
+\end{figure}
+
+%Acknowledgements Section
+\posterSection{Acknowledgements}
+This work builds upon the foundational insights provided by Dr. Nichols's proposal and Oluyemi Aboyewa’s thesis, which will serve as a basis for my forthcoming thesis research.
+
+\vspace{-0.6in}
+% References Section
+%\posterSection{References}
+
+% Suppress the default small references heading
+\renewcommand{\refname}{}
+% Adjust font size and spacing for references
+{\fontsize{16}{23}\selectfont  % Font size: 24pt, Line spacing: 30pt
+\setlength{\bibsep}{6pt}  % Slightly larger spacing between references
+\bibliographystyle{unsrt}  % Choose the bibliography style
+\bibliography{references}  % Point to your references.bib file
+}
+\end{multicols}
+
+\end{document}
