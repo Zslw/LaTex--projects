@@ -1,0 +1,107 @@
+\begin{thebibliography}{10}
+
+\bibitem{decazes2021}
+Pierre Decazes, Pierre Hinault, Olivier Veresezan, Sophie Thureau, Philippe
+  Gouel, and Pierre Vera.
+\newblock Trimodality pet/ct/mri and radiotherapy: A mini-review.
+\newblock {\em Frontiers in Oncology}, 10:614008, 2021.
+
+\bibitem{yan2024}
+Qiang Yan, Xiaoming Yan, Xin Yang, Shanshan Li, and Jia Song.
+\newblock The use of pet/mri in radiotherapy.
+\newblock {\em Insights into Imaging}, 15(1):63, 2024.
+
+\bibitem{knesaurek2018}
+K.~Knesaurek, J.~Machac, M.~Muzinic, et~al.
+\newblock Yttrium-90 microsphere sirt: Quantitative imaging comparison using
+  pet/ct and pet/mri.
+\newblock {\em EJNMMI Physics}, 5(1):1--15, 2018.
+
+\bibitem{beaton2019}
+Laura Beaton, Surabhini Bandula, Mark~N. Gaze, and et~al.
+\newblock How rapid advances in imaging are defining the future of precision
+  radiation oncology.
+\newblock {\em British Journal of Cancer}, 120:779--790, 2019.
+
+\bibitem{floridi2022}
+Chiara Floridi, Marta Cellina, Gianluca Irmici, Andrea Bruno, Nicola Rossini,
+  Andrea Borgheresi, Andrea Agostini, Fabrizio Bruno, Fiorella Arrigoni, Andrea
+  Arrichiello, Roberto Candelari, Andrea Barile, Gianpaolo Carrafiello, and
+  Andrea Giovagnoni.
+\newblock Precision imaging guidance in the era of precision oncology: An
+  update of imaging tools for interventional procedures.
+\newblock {\em Journal of Clinical Medicine}, 11(14):4028, 2022.
+
+\bibitem{journal_of_hepatology2022}
+Katherine~A. McGlynn, Jessica~L. Petrick, and Hashem~B. El-Serag.
+\newblock Global burden of primary liver cancer in 2020 and predictions to
+  2040.
+\newblock {\em Journal of Hepatology}, 77(6):1598--1606, 2022.
+
+\bibitem{ozmen2020}
+E.~Ozmen and I.~Adaletli.
+\newblock Pediatric liver ultrasound: A pictorial essay.
+\newblock {\em Diagnostics (Basel)}, 10(9):659, 2020.
+
+\bibitem{cancer_stats2024}
+American~Cancer Society.
+\newblock Cancer facts \& figures 2024, 2024.
+\newblock Available at
+  \url{https://www.cancer.org/cancer/liver-cancer/about/key-statistics.html}.
+
+\bibitem{aacr_2030}
+Lola Rahib, Bryan~D. Smith, Rachel Aizenberg, and et~al.
+\newblock Projecting cancer incidence and deaths to 2030: The unexpected burden
+  of thyroid, liver, and pancreas cancers in the united states.
+\newblock {\em Cancer Research}, 74(11):2913--2921, 2014.
+
+\bibitem{quaglia2018}
+Alessandro Quaglia.
+\newblock Hepatocellular carcinoma: a review of diagnostic challenges for the
+  pathologist.
+\newblock {\em Journal of Hepatocellular Carcinoma}, 5:99--108, 2018.
+
+\bibitem{mcmahon2023}
+Brian McMahon, Chari Cohen, Robert~S. Brown~Jr, Hashem El-Serag, George~N.
+  Ioannou, Anna~S. Lok, Lewis~R. Roberts, Amit~G. Singal, and Timothy Block.
+\newblock Opportunities to address gaps in early detection and improve outcomes
+  of liver cancer.
+\newblock {\em JNCI Cancer Spectrum}, 7(3):pkad034, 2023.
+
+\bibitem{ferraioli2018}
+G.~Ferraioli, V.~W. Wong, L.~Castera, et~al.
+\newblock Liver ultrasound elastography: An update to the world federation for
+  ultrasound in medicine and biology guidelines and recommendations.
+\newblock {\em Ultrasound in Medicine \& Biology}, 44(12):2419--2440, 2018.
+
+\bibitem{TG174}
+I.~J. Das, W.~Thorstad, J.~Fowler, et~al.
+\newblock Task group 174 report: Utilization of [18f]fdg pet in radiation
+  therapy.
+\newblock {\em Medical Physics}, 46(12):e1024--e1076, 2019.
+
+\bibitem{TG284}
+S.~Mutic, J.~F. Dempsey, A.~Eisbruch, et~al.
+\newblock Task group 284: Mri simulation in radiotherapy.
+\newblock {\em Medical Physics}, 47(12):e850--e877, 2020.
+
+\bibitem{Queiroz2015}
+Marcelo~A. Queiroz, Gaspar Delso, Scott Wollenweber, Timothy Deller,
+  Konstantinos Zeimpekis, Martin Huellner, Felipe de~Galiza Barbosa, Gustav von
+  Schulthess, and Patrick Veit-Haibach.
+\newblock Dose optimization in tof-pet/mr compared to tof-pet/ct.
+\newblock {\em PLOS ONE}, 10(7):e0128842, July 2015.
+
+\bibitem{TG132}
+K.~K. Brock.
+\newblock Deformable registration for image-guided radiation therapy. task
+  group 132 report.
+\newblock {\em Medical Physics}, 44(5):e43--e66, 2017.
+
+\bibitem{Dhont2020}
+J.~Dhont, J.~R.~N. Van Der Voort~van Zyp, P.~Lambin, et~al.
+\newblock Image-guided radiotherapy to manage respiratory motion: Lung and
+  liver.
+\newblock {\em Clinical Oncology}, 32(12):792--804, 2020.
+
+\end{thebibliography}

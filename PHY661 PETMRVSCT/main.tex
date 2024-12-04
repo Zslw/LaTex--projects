@@ -1,0 +1,400 @@
+\documentclass[11pt]{article} % Adding 'twocolumn' for two-column layout
+\usepackage[margin=0.75in]{geometry} % Setting custom margins
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{placeins} 
+
+\usepackage{multicol}
+\usepackage{float}
+
+\usepackage[numbers]{natbib} % Enabling numeric citations with natbib
+
+%\usepackage{pdflscape} %for bigger tables and figures allows to input a landscape page
+
+\usepackage{array} %to fit the text on tables without justify
+\usepackage{url}
+
+\title{Comparative Efficacy of PET/CT and PET/MR in Precision Radiotherapy for Liver Cancer: Advances in Dosimetry and Tumor Delineation}
+\author{Daniel Juarez}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{2}
+
+% ============================
+% Section: Introduction
+% ============================
+\section{Introduction}
+
+\subsection{The Role of Imaging in Radiation Therapy}
+
+During all stages on radiotherapy getting the sense of where health professionals  work on and how is the target tissue conformed is of most vital importance, this information is provided by different imaging devices and techniques molded to each different case. During planning, images help visualize target lesions and clarify which pathway and devices are best to use. This information serves as a guide to decide patient and device position. During treatment, it assesses treatment outcomes and potential complications \cite{decazes2021}. Finally, during surveillance or control, it gives the comparison point to check accuracy and success while pointing to the right direction to follow.
+
+The preferred imaging modality for all types of cancer diagnosis is Computed Tomography (CT), this is due to it high-resolution anatomical detail and the information provided to map tissue electron density \cite{yan2024, decazes2021}. However, like every imaging modality, CT has its disadvantages that indicate the need for complementary imaging techniques, especially for precise tumor targeting in complex cases like liver cancer \cite{yan2024}.
+
+\subsection{Hybrid Imaging for Enhanced Accuracy}
+For these reason, there is no single imaging modality that is entirely sufficient for an absolute precise role in radiation therapy due to intrinsic trade-offs \cite{decazes2021}.Setting CT aside, another good alternative is MRI, although valuable for soft tissue delineation, it lacks electron density information, making it less suitable as a standalone in radiotherapy \cite{decazes2021}. Then there is even more alternatives like Positron Emission Tomography (PET), it provides a new lens since it contributes with unique metabolic information that complements anatomical imaging and aids in tumor delineation \cite{decazes2021}.
+
+Because all of the above, exploring new techniques, technologies and pathways of using existing devices are studied carefully. In particular hybrid techniques are of most interest, for example PET/CT and PET/MR, aim to overcome these limitations by combining the strengths of each modality. 
+
+Table \ref{tab:modality_comparison} provides a comparative overview of the relevant used imaging modalities in radiotherapy, it includes technical complexity and workflow integration that maybe be over sighted.
+
+\end{multicols}
+%merge Decazes and Yan
+%Decazes TABLE 1 | Comparison of PET/MRI and other conventional image-based modalities in radiotherapy
+%Yans TABLE 1 | Summary of advantages and disadvantages of CT, MRI, and PET separately and combined in PET/CT/MRI
+%Yans TABLE 3 | Comparison of different imaging methods (star ranking)
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|>{\raggedright\arraybackslash}p{3.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|}
+\hline
+\textbf{Modality} & \textbf{Diagnostic Information} & \textbf{Soft Tissue Resolution} & \textbf{Radiation Dose} & \textbf{Technical Complexity} & \textbf{Workflow Integration} \\ \hline
+CT & Anatomy and tissue electron density & Moderate (1 mm spatial resolution) & Ionizing radiation (higher dose) & Widely available; simple infrastructure requirements & Integrates easily into standard radiotherapy workflows; rapid acquisition \\ \hline
+MRI & Anatomy and function & Excellent (soft tissue contrast) & None (non-ionizing) & Requires trained personnel; specialized infrastructure & Long scan times; challenges with integration into dose planning workflows \\ \hline
+PET & Metabolic and functional imaging & Poor (blurred edges, partial volume effects) & Ionizing radiation (tracer-based) & Limited isotope availability; moderate complexity   & Requires co-registration with CT or MRI; \\ \hline
+PET/CT & Combines anatomical and functional imaging; provides BTV and GTV delineation & Moderate & Higher due to combined CT dose & Standardized; relatively simple calibration & Commonly used in clinical settings \\ \hline
+PET/MRI & Combines superior soft tissue contrast with metabolic imaging; pseudo-CT for dose calculation & Excellent & Reduced radiation compared to PET/CT & High complexity; limited infrastructure and operator expertise & Workflow integration less standardized compared to PET/CT \\ \hline
+\end{tabular}
+\caption{Comparison of imaging modalities (CT, MRI, PET, PET/CT, and PET/MRI) for radiotherapy applications. Adapted from Decazes et al. \cite{decazes2021}, Yan et al. \cite{yan2024}, and Knešaurek et al. \cite{knesaurek2018}.}
+\label{tab:modality_comparison}
+\end{table}
+
+\begin{multicols}{2}
+
+\subsection{PET/CT vs. PET/MR in Liver Cancer Radiotherapy}
+Liver cancer is particularly difficult to diagnose and its treatment requires highly precise imaging. It needs accurate tumor delineation and because of its size and location spare healthy liver tissue, and organs at risk (OAR). This means radiologists need accuracy, especially when administering targeted therapies \cite{beaton2019, floridi2022}.
+
+This paper objective is to compare the respective roles of PET/CT and PET/MR in liver cancer radiotherapy. The focus will be on their contributions to dosimetry, tumor delineation, and overall treatment accuracy. While PET/CT is widely accepted in clinical practice, PET/MR is considered with enough potential for liver cancer management, because it provides enhanced soft tissue contrast and adds functional imaging capabilities \cite{decazes2021, yan2024}.
+
+% ============================
+% Section: Background
+% ============================
+\section{Background}
+% General background information about liver cancer and imaging.
+%liver cancer types
+
+\subsection{Liver Cancer Overview}
+Around the world there is a common concern of cancer incidences, in particular liver cancer ranks the sixth most common diagnosed cancer and the third leading cause of cancer-related deaths. In 2020, approximately 905,700 new cases and 830,200 deaths were reported globally \cite{journal_of_hepatology2022}. 
+
+The liver is the largest solid organ located in the upper right quadrant of the abdominal cavity, beneath the diaphragm. It has a complex structure,  it has two main lobes (right and left), is functionally divided into eight segments, and has a dual blood supply from the hepatic artery and portal vein. \cite{ozmen2020}.
+
+The global burden varies significantly by region, for example, East Asia and sub-Saharan Africa have the largest incidence rate while in the United States liver cancer rates are comparatively lower. Global predictions estimate that this rates will increase by 55\% between 2020 and 2040, potentially leading to 1.4 million new cases and 1.3 million deaths annually by 2040 \cite{journal_of_hepatology2022}.
+
+The American Cancer society projected approximately 41,630 new cases and 29,840 deaths in the United States \cite{cancer_stats2024}. As the year concludes we may expect to see the actual increase in new cases, however there is a historical increasing trend, the United States have seen, between 1975 and 2017, an increase of 228\% incidence and 137\% rise in mortality. Probably driven by a combination of rising risk factors, aging populations, and improved detection. However, despite advancements in imaging and treatment, late diagnoses and limited therapeutic options have contributed to persistently high mortality rates.
+
+Moreover, projections made in 2020 suggest that liver cancer could become the third leading cause of cancer-related deaths in the US by 2030, surpassing breast, prostate, and colorectal cancers \cite{aacr_2030}. This is particularly interesting, since this has already happen globally, the slower growth of cases an mortality in the U.S. suggests that public health efforts are having a meaningful impact, continued advancements in imaging, personalized therapy, and public health interventions are needed to sustain and further improve outcomes.
+
+\subsection{Why is Liver Cancer Hard to Diagnose?}
+Diagnosing cancer is a challenge due to its nature, in particular liver cancer as it presents asymptomatic in early stages, for example hepatocellular carcinoma (HCC) often develops in patients with chronic liver disease or cirrhosis, which can mask early signs of cancer and further complicate detection \cite{quaglia2018}.
+
+In the other hand there is limitations of standard screening tools, following the HCC example, usually tested with ultrasound and often combined with alpha-fetoprotein (AFP). However, ultrasound alone has limited sensitivity, particularly in patients with obesity or cirrhosis.\cite{floridi2022} Studies have shown that ultrasound can miss more than half of early-stage tumors, while the addition of AFP testing still fails to detect over one-third of early HCC cases \cite{mcmahon2023}.
+
+\subsubsection{Challenges and Advances in Imaging for Liver Cancer}
+
+In recent years we saw advancements in imaging techniques by combining standard techniques such as CT, MRI, and cone-beam CT (CBCT) to enhance tumor visualization.\cite{floridi2022}.
+
+Imaging the liver is quite difficult due to its location beneath the rib cage, the impact of respiratory motion, and patient-specific factors or comorbilities. The liver’s heterogeneity and its internal complexity further complicate image interpretation. \cite{ferraioli2018}.
+
+Imaging is useful during all stages of treatment, it helps by accurately delineate tumor boundaries, evaluate vascular involvement, and assess proximity to adjacent structures, especially given the liver's complex anatomy and frequent comorbidities such as cirrhosis \cite{floridi2022}
+
+The most widely used imaging modality to asses liver cancer is ultrasound (US) due to its accessibility, real-time imaging capability, ability to assess blood flow via Doppler techniques, and because of its non-ionizing nature. But, it is limited by sensitivity while detecting small lesions, and it is operator dependent \cite{mcmahon2023,ferraioli2018}.
+
+As mentioned above in an intent to overcome this limitations there are hybrid imaging techniques, for example US fused with cone-beam CT (CBCT) or MRI, have significantly enhanced tumor visualization and treatment precision. They together provide better spatial resolution and enhance the vascular anatomy, or increased soft tissue contrast.\cite{floridi2022}.
+
+There is potential to be discovered form hybrid imaging modalities in cancer treatment, that is why now we see increased interest in exploring PET/CT and PET/MR as advanced tools in precision radiotherapy.
+
+Despite significant advancements in imaging technology, there is still improvement to be made. CT, MRI, US are indispensable but have intrinsic limitations when doing tumor delineation, dosimetry, and planing treatment with precision.
+
+CT, offers great spatial resolution but is limited by poor soft tissue contrast and delimitation, irradiating imaging modality and artifacts caused by metal implants or dental structures \cite{decazes2021}. MRI provides amazing soft tissue contrast and functional imaging capabilities, yet it lacks the electron density information critical for accurate dose calculations in radiotherapy. Additionally, the extended acquisition times of MRI can introduce motion artifacts, further complicating tumor visualization \cite{floridi2022}.
+
+PET, which provides metabolic and functional data, is often combined with CT or MRI to enhance tumor characterization. However, PET alone suffers from low spatial resolution and partial volume effects, leading to blurred tumor edges and suboptimal delineation of small lesions \cite{yan2024}. These limitations highlight the need for hybrid imaging techniques that leverage the complementary strengths of multiple modalities.
+
+Hybrid approaches such as US/CBCT and CT/MRI fused with US have shown promise in addressing these challenges. For example, CBCT can enhance vascular anatomy visualization in patients with cirrhotic livers, aiding in tumor detection and feeding vessel identification during transarterial treatments \cite{floridi2022}. However, the application of these techniques in radiotherapy remains limited due to technical constraints such as the need for precise attenuation correction and standardized protocols for image registration. Hybrid imaging modalities such as PET/CT and PET/MR are emerging tools for overcoming these barriers, offering improved tumor delineation, dosimetry accuracy, and treatment planning for liver cancer.
+
+
+% ============================
+% Section: PET/CT and PET/MR in Liver Cancer Therapy
+% ============================
+\section{PET/CT and PET/MR in Liver Cancer Therapy}
+
+A particularly interesting imaging technique that is on the rise is PET/MR, it offers some advantages in the delineation of liver tumors where anatomical clarity is crucial. It is worth exploring target definition and motion control on MR's increased contrast when treating a highly dynamic organ like the liver. As well as some of its drawbacks like longer collection periods and more complicated attenuation correction. A natural comparison point is PET/CT which has positioned itself as the gold standard for radiation planning. In order to provide a comprehensive view of its therapeutic potential, this section examines the complementary function of PET/MR in radiotherapy, stressing its advantages, disadvantages, and comparable applications with PET/CT.
+
+\subsection{PET/CT}
+Positron Emission Tomography/Computed Tomography (PET/CT) is utilized for precision in radiotherapy, it has great capabilities combining functional and anatomical information into a single session. It is really useful for tumor delineation, dosimetry, and treatment monitoring.
+
+This technique is considered upon its ability to detect non-FDG uptake lesions, contrasting with PET and helping avoid misdiagnosis in complex cases such as liver tumors \cite{yan2024, decazes2021}.
+
+
+\subsubsection{Dosimetry}
+PET/CT is generally used for dosimetry calcuations, an example of this will be found on liver cancer treatments such as Yttrium-90 (\(^{90}\text{Y}\)) in the following section. Accurate dosimetry is dependent on quantitative imaging metrics such as standardized uptake values (SUVs). One of the advantages as explained in AAPMs TG174 and other papers is attenuation correction and faster acquisition times.\cite{knesaurek2018,TG174}. 
+
+This kind of system comes already mounted in a single device and aligns PET and CT datasets in the same frame of reference via software from the manufacturers.\cite{TG174} This will reduce registration errors, ensuring precise tumor localization and dose delivery. 
+
+Even with this seamless integration of the devices, respiratory motion and artifacts, particularly in liver cancer cases, can affect the accuracy of dose distribution. In TG174 we can find some techniques to mitigate this errors as well as quality assurance (QA) protocols.
+
+In a case study, Knesaurek et al. \cite{knesaurek2018} reported differences in liver volume estimation between PET/CT and PET/MR, with a significant impact on dosimetry calculations. This means that by choosing the correct imaging system for planing can make a huge difference. 
+
+\subsection{PET/MR}
+On the flip side, a relatively new imaging modality has been catching some interest, and could provide complementary benefits to PET/CT in radiotherapy. PET/Magnetic Resonance Imaging (PET/MR), while not as established as PET/CT can still provide soft-tissue contrast and functional imaging capabilities that are quite attractive for specific liver cancer cases. 
+
+\subsubsection{Soft Tissue Contrast}
+Having better soft tissue contrast in the abdominal area is massive, it aids the planning process by accurately delineating liver tumors from healthy tissue. Instead of rely on CT attenuation correction, MR benefits the patient with reduced radiation dose and better delineation of anatomical structures \cite{knesaurek2018}. This is really valuable for cases with small or poorly defined tumors.
+
+Additionally, PET/MR’s ability to image respiratory liver motion during PET acquisition provides more reliable data for motion management compared to PET/CT \cite{knesaurek2018}. High-resolution MR images can also assist in partial volume corrections for PET images, further enhancing the precision of tumor targeting.
+
+\subsubsection{Functional Imaging}
+PET by itself comes with functional data from the activity distribution, but MR will enhance this capabilities if combined with techniques like DWI (Diffusion-Weighted Imaging) and dynamic contrast-enhanced (DCE) imaging, for additional parameters on tumor metabolism and treatment response. 
+
+MR is already a solid tool for advance plannig as explained in TG284\cite{TG284}. Despite these advantages, the longer acquisition times, lower SUV values compared to PET/CT and lack of specific guidelines for PET/MR integration by AAPM make this technique rise questions. However, its use may be justified in cases where soft-tissue contrast is critical for treatment success.
+
+PET/MR contribute in a unique way to the planing and staging part, the following sections are to explore how this is implemented on radiation therapy and what is the overall effect on target delineation and dosimetry.
+
+
+\subsection{PET/MR usage on Radiation Therapy}
+
+
+\subsubsection{Positioning}
+In order to properly use PET/MR in the clinical setting, challenges regarding patient positioning need to be addressed due to PET/MR's unique design and functional requirements compared to PET/CT. The following discussion is primarily informed by Yan et al. \cite{yan2024}.
+
+\paragraph{Specific Equipment and Material}
+Regarding equipment, a regular curved diagnostic MR table is unsuitable for PET. Instead, the use of flat treatment tables allows consistent patient positioning across imaging and treatment sessions while minimizing photon attenuation. Photon attenuation is further addressed in the materials used. Conventional carbon fiber tables, while minimally attenuating photons, can create surface currents that degrade MR image quality. Hybrid materials, such as plastic-foam sandwiches, have been developed to reduce photon attenuation and eliminate artifacts. Additionally, thin plastic shells and lightweight coil technologies are being explored to optimize attenuation correction (AC) without compromising image quality.
+
+\paragraph{Effect on Image Quality}
+The integration of these devices and materials influences the signal-to-noise ratio (SNR) and overall image quality. Phantom studies have shown negligible effects on SNR between flat and curved tables. However, positioning devices increase the distance between the patient and MR coils, reducing SNR by approximately 25\%. This reduction does not significantly impact target delineation accuracy. Techniques such as increasing the signal average, lowering acceleration factors, or modifying echo times can compensate for SNR reductions, though these adjustments may increase acquisition time.
+
+\paragraph{Attenuation Correction}
+Due to the lack of CT in these devices, attenuation correction is a major challenge. For example, rigid hardware such as coil holders and flat tables are usually accounted for using CT-based 3D AC maps or isotope-based attenuation maps; this is no longer the case for PET/MR. There is a need to introduce coil fixation devices that mitigate errors caused by the variable positioning of flexible RF coils during scanning to improve reliability of AC maps. Moreover, there is a bone segmentation limitation. MR-based AC often excludes bone due to the low intensity of bone signals in MR images. Atlas-based methods, which use pre-existing templates of CT anatomy to generate a pseudo-CT for attenuation correction, can incorporate bone structures but may introduce registration errors in regions with varying stiffness, such as the abdomen.
+
+Overall, consistent positioning is critical to ensure reliable imaging and proper AC. Studies using phantoms have demonstrated minimal deviations in accuracy during multiple repositioning with RF coil holders. Additionally, PET/MR simulator tables allow single registration for fixed tabletop setups, ensuring repeatability in radiation therapy workflows.
+
+\subsubsection{Planning}
+
+\paragraph{Target delineation}
+Tumor delineation in radiotherapy involves the definition of at least 3 different volumes, gross tumor volume (GTV), clinical target volume (CTV), and planning target volume (PTV). PET/MR offers unique advantages over conventional imaging modalities, particularly in refining GTV boundaries by integrating both morphological and biological data.
+
+
+MRI alone is commonly used to outline the GTV based on tumor morphology, while PET provides additional biological insights that mitigate the risk of marginal misses. Studies cited in Yan et al. demonstrate Zhang et al.’s observation that PET imaging contributed to an approximate 10\% increase in tumor volume detection not captured by MRI alone.\cite{yan2024} This finding better explains tumor sizes measured under a microscope, it is also supported by comparisons of Dice Similarity Coefficient (DSC), a metric used to assess the overlap between imaging-based tumor delineations and the ground truth, he explains.
+
+This difference on the outline of the GTV is shown in figure \ref{fig:gtv_delineation_cropped}, while it focuses on nasopharyngeal cancer, it provides valuable insights into the comparative performance of PET/MRI and PET/CT for tumor delineation. Soft-tissue contrast of PET/MRI is especially relevant for complex tumor regions, such as the liver.
+
+%Yans Fig. 3 | Nasopharyngeal GTV delineations across modalities
+
+%	•	Highly relevant to tumor delineation discussions but less so for liver cancer.
+%	•	Acknowledge that it focuses on nasopharyngeal cancer while emphasizing generalizable findings.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\columnwidth]{assets/GTV_Delineation_PETCT_vs_PETMRI.png} 
+\caption{Gross tumor volume (GTV) delineation across PET/CT and PET/MRI modalities for a 69-year-old female with nasopharynx cancer. (a) The blue line represents GTV-PET/CT. (b) The pink line represents GTV-PET/MRI. Adapted from Yan et al. \cite{yan2024}.}
+\label{fig:gtv_delineation_cropped}
+\end{figure}
+
+The addition of PET provides some advantages as well, PET’s ability to capture tumor biology introduces the concept of Biological Target Volume (BTV), which integrates metabolic and functional characteristics of tumors. Using BTV data, radiotherapy can deliver higher doses to treatment-resistant regions while sparing sensitive areas.
+
+Furthermore, PET/MRI yielded the highest tumor volume for colorectal liver metastases. These findings align with Leibfarth et al.‘s conclusion that PET/MRI’s co-segmentation capabilities produce stable and consistent imaging results \cite{yan2024}.
+
+Of course there is limitations, starting from manual tumor delineation, though widely used, it introduces significant variability. To address this, adaptive thresholding based on individual standardized uptake values (SUVmax) and automated delineation methods are being explored. For example, PET/MRI’s co-segmentation methods have been shown to match observer performance in target delineation while providing more consistent results across repeated evaluations \cite{yan2024}. And regarding its comparison to PET/CT, PET/MR has reduced SUVmax values that may lead to conservative tumor boundaries.
+
+
+\paragraph{Dose Calculation and Optimization}
+Once the target volume is delineated, the next step of planing is dose calculations, but for PET/MR there are technical considerations compared to PET/CT.
+
+The main challenge presented on PET/MR is that it lacks the capability to directly acquire tissue electron density values. As of right now workflows include co-register PET/MR with CT images to generate dose prescription maps. Studies found that pseudo-CT techniques generated from MR images have high accuracy, and reported negligible mean absolute errors of 0.17 ± 0.12 Gy in dosimetry analysis \cite{yan2024}.
+
+On the other hand PET/MR has a significant advantage, it has the potential to reduce radiation exposure. Time of flight (TOF)-PET/MR systems require only 35\% of the activity concentration needed for TOF-PET/CT while maintaining image quality. This translates to a theoretical dose reduction of up to 65\%, with clinical observations suggesting realistic reductions of over 50\% \cite{Queiroz2015}.The factors that contribute to this reduction include:
+
+\begin{itemize}
+    \item Advanced detector geometry and technology in PET/MR systems.
+    \item Enhanced sensitivity and efficiency of MR-based acquisitions.
+\end{itemize}
+
+However, the presence of MR coils within the PET field of view can limit dose reduction capabilities in some clinical settings.
+
+\subsection{Workflow pre-mid-post treatment}
+%Yans Fig. 1 | Comparison of PET/MRI for radiotherapy procedures with conventional radiotherapy procedures
+Figure \ref{fig:petmri_vs_conventional} shows the simplified workflow made possible by PET/MRI, compared to conventional radiotherapy procedures. According to Yan et al. \cite{yan2024}, PET/MRI greatly improves efficiency, eliminates the need for multiple devices, and minimizes mistakes from co-registration processes by integrating imaging and positioning steps into a single operation.
+
+
+\subsubsection{Pre-Treatment Workflow}
+
+According to Decazes et al., adopting PET/MRI into radiation procedures needs careful planning and adjustments, that include using synthetic CT (pseudo-CT) for volume delineation and attenuation correction. By immobilizing the patient, PET/MR allows for alignment between imaging modalities without the need for further registration procedures. In order to provide precise dosimetry planning without the need for several imaging devices, artificial intelligence methods, such GANs, further optimize attenuation mapping and shorten the pre-treatment routine \cite{decazes2021}.
+
+%Decazes FIGURE 1 | Diagram of the process for performing the PET/CT/MRI trimodality in the radiotherapy treatment position DROPPED FOR NOW
+
+\subsubsection{Mid-Treatment Workflow}
+
+In accordance with Yan et al., [18F]-FDG PET/MRI mid-treatment assessments offer essential details on tumor response using metrics that include $\Delta \text{SUVmax}$ and $\Delta \text{Dmin}$. Their function is to provide predictions for treatment sensitivity and risk of recurrence. Significant changes in water transport and glucose metabolism were noted throughout treatment, allowing for adaptive therapy modification to prevent toxicity or accelerated tumor development \cite{yan2024}.
+
+\end{multicols}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{assets/PETMRI_vs_Conventional_Workflow.png}
+\caption{Comparison of PET/MRI workflows for radiotherapy procedures with conventional radiotherapy procedures. Adapted from Yan et al. \cite{yan2024}.}
+\label{fig:petmri_vs_conventional}
+\end{figure}
+
+
+\begin{multicols}{2}
+
+% ============================
+% Section: Case Application - 90Y Microsphere Therapy
+% ============================
+\section{Case Application: 90Y Microsphere Therapy}
+
+To illustrate the usefulness and problems of PET/MR a case application is presented. The comparison on PET/CT and PET/MRI for post-therapy quantitative imaging of Yttrium-90 (90Y) distribution given by Knesaurek et al. \cite{knesaurek2018} is followed.
+
+Yttrium-90 (90Y) microsphere therapy, also known as Selective Internal Radiation Therapy (SIRT), is an emerging treatment for unresectable hepatic tumors. This therapy delivers targeted radiation with microspheres loaded with 90Y with the objective of spare healthy tissues and concentrate the dose within tumors.
+
+Although both techniques offer information on tumor dosimetry, their unique benefits and drawbacks must be carefully considered before being used in clinical settings. This section explores imaging parameters, dosimetry results, and tumor delineation findings, with a focus on their implications for radiotherapy planning and outcomes.
+
+In Knesaurek et al.’s prospective study, 32 patients underwent sequential imaging on a PET/CT system and a PET/MR system immediately following 90Y-SIRT. The PET/CT acquisition used a Siemens Biograph mCT system with time-of-flight (TOF) capabilities and low-dose CT scans were employed for attenuation correction. PET/MR imaging was performed using a Siemens Biograph mMR system, which uses avalanche photodiodes (APDs) instead of photomultiplier tubes but lacks TOF capabilities. Attenuation correction for PET/MR relied on four-tissue segmentation derived from Dixon sequences, to compensate for the lack of CT-based corrections. Imaging parameters included matrix size, voxel sizes and acquisition times. %and a bunch more, do we need the table 1 from knesaurek here? Not really too technical
+
+Both modalities implemented advanced reconstruction algorithms: Poisson-ordered subset expectation maximization (OP-OSEM3D) with TOF and point spread function (PSF) for PET/CT, and OP-OSEM3D with PSF for PET/MR. Validation was conducted through a phantom study using a 90Y-filled Jaszczak sphere, that ensured cross-calibration and consistency in dosimetry across the systems.
+
+%Knešaureks Fig. 1 | Phantom study comparing PET/CT and PET/MRI for 90Y calibration
+% visually support system calibration.
+
+Figure \ref{fig:phantom_petct_petmri} demonstrates the results of that phantom study, it compares PET/CT and PET/MRI systems for $^{90}\text{Y}$ calibration. Results indicate that both systems are closely calibrated for \(^{90}\text{Y}\) with less than 1\% difference.
+
+\begin{figure*}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{assets/PETCT_vs_PETMRI_Phantom.png} % Replace with the correct file path
+\caption{Phantom study comparing PET/CT and PET/MRI for \(^{90}\text{Y}\) calibration. The top row displays PET images, the middle row shows MRI and CT images respectively, and the bottom row presents fused PET/MRI and PET/CT images.  Adapted from Knešaurek et al. \cite{knesaurek2018}.}
+\label{fig:phantom_petct_petmri}
+\end{figure*}
+
+This methodology provides a foundation for analyzing tumor delineation, motion management, soft-tissue contrast, and dosimetric accuracy between PET/CT and PET/MR. The following sections discuss these aspects.
+
+\subsubsection{Target delineation}
+
+\paragraph{Image Registration and Fusion.} 
+
+PET/CT simultaneous acquisition ensure spatial consistency across datasets \cite{TG132}. This simplifies radiotherapy planing, particularly in workflows that require direct integration into treatment planning systems. PET/MR relies on deformable image registration to align PET data with MR images, as the datasets are acquired using different mechanisms and frames of reference. The challenge here are the errors produced by differences on the anatomy contrast and the distortions from MRI technique.
+
+Knesaurek et al. \cite{knesaurek2018}, exemplifies this with the need to implement and use a vast collection of MRI sequences for delineation and creation of tumor ROIs. 
+
+\paragraph{Motion Management}
+
+There are different approaches to address motion artifacts during the acquisition of the images, for liver cancer is significant because of its location near the diaphragm. PET/CT relies on gated acquisition or time-weighted averaging methods to account for motion blur, but these methods are limited in capturing the full range of liver motion \cite{Dhont2020}. 
+
+PET/MR offers an advantage as it can see motion during PET with MR motion correction sequences aiding in reconstruction and reducing artifacts\cite{knesaurek2018}. Dhont et al. \cite{Dhont2020} noted that motion-resolved PET/MR provides better tumor localization and volume estimation for motion-prone tumors, potentially improving dose escalation accuracy.
+
+Applying motion correction techniques, such as those available in PET/MRI systems, could mitigate these effects and improve reliability in T/N ratio calculations \cite{knesaurek2018}. This is particularly important in cases where respiratory motion introduces artifacts, as shown in Figure \ref{fig:respiratory_motion_artifacts}, which demonstrates $^{90}\text{Y}$ spillover into the lungs during PET/CT imaging due to diaphragm motion.
+
+%Knešaureks Fig. 4 | Respiratory motion artifacts and spillover with 90Y
+%	Relevant if discussing motion artifacts
+
+\begin{figure*}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{assets/Respiratory_Motion_Artifacts.png} 
+\caption{Respiratory motion artifacts and spillover with \(^{90}\text{Y}\) imaging using PET/CT. The top row displays uncorrected PET images in axial (left), sagittal (middle), and coronal (right) views. The middle row shows the corresponding CT anatomical references, and the bottom row presents fused PET/CT images, where spillover into the lungs due to respiratory motion is evident. Adapted from Knešaurek et al. \cite{knesaurek2018}.}
+\label{fig:respiratory_motion_artifacts}
+\end{figure*}
+
+
+
+\paragraph{Soft-Tissue Contrast}
+
+The most significant advantage of PET/MR lies in soft-tissue contrast, with proper contrast comes better differentiation of liver tumors from healthy tissue and surrounding structures:
+
+PET/MR is particularly effective for delineation small liver tumors ($<$2 cm), where partial volume effects in PET/CT can compromise visualization. \cite{knesaurek2018} Also it is demonstrated that ROIs derived from MR images allow more precise tumor targeting in challenging cases, such as when tumors are indistinct in CT. 
+	
+
+\paragraph{Acquisition Time and Workflow}
+
+The total acquisition time for PET/CT is largely determined by the PET component, as CT acquisition takes only seconds. This efficiency makes PET/CT the preferred choice for high-throughput settings\cite{knesaurek2018}.
+While in PET/MR, acquisition time is dictated by the MR component, which can significantly increase scan duration due to the need for multiple MR sequences. While this trade-off is justified for cases requiring detailed anatomical or functional imaging, it limits PET/MR’s utility in busy clinical workflows \cite{knesaurek2018}.
+
+
+\subsubsection{Dosimetry}
+At the end a solid argument to be made in favor of an imaging technique for treatment planning revolves around dosimetry. Dosimetry impacts treatment efficacy and seeks to minimize damage to healthy tissue. The main differences between PET/CT and PET/MR reside on their technical characteristics leading to distinct applications and limitations.
+
+\paragraph{Attenuation Correction and Quantitative Accuracy.}
+
+The fact that PET/CT are a single system is a huge advantage as CT provides attenuation correction. More reliable SUV values and dose calculations will result from the high-density resolution of CT all this while having a reproducible attenuation correction across a wide range of tissues
+
+The MR attenuation correction is less accurate, the lack of direct bone density mapping may lead to underestimation of attenuation in osseous structures on the surrounding areas. Moreover, MR AC requires segmentation of tissues into predefined classes (e.g., air, soft tissue, fat, bone). Liver cancer imaging often deals with heterogeneous structures (e.g., cirrhotic livers, metastases). Errors in segmentation directly impact ROI creation and subsequent dosimetry calculations. 
+
+
+Following the work of Knesaurek, \cite{knesaurek2018} PET/CT typically provides slightly higher SUVmean and SUVmax values compared to PET/MR, which may lead to discrepancies in tumor delineation and dosimetry calculations. The mean liver dose for $^{90}\text{Y}$ therapy was 51.6 Gy with PET/CT and 46.5 Gy with PET/MR, with differences attributed to variations in attenuation correction and liver volume estimation.
+
+%figure 4 is way down may shift once following sections are done
+Figure \ref{fig:patient_liver_dose} shows the liver dosimetry differences between PET/CT and PET/MRI in a patient study. It is important to notice the variations in attenuation correction and liver volume estimation. The mean liver dose obtained from PET/CT was 38.81 Gy, while PET/MRI measured 31.64 Gy, with differences attributed to variations in attenuation correction and liver volume estimation.
+
+%Knešaureks Fig. 2 | Patient study with highest mean liver dose difference
+%highlight liver dosimetry differences.
+\begin{figure*}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{assets/Liver_Dosimetry_Differences.png} 
+\caption{Patient study showing the highest mean liver dose difference between PET/CT and PET/MRI. The top row displays PET images, the middle row shows MRI and CT images respectively, and the bottom row presents fused PET/MRI and PET/CT images. Adapted from Knešaurek et al. \cite{knesaurek2018}.}
+\label{fig:patient_liver_dose}
+\end{figure*}
+
+\paragraph{Partial Volume Effects}
+
+Both PET/CT and PET/MR suffer from the imaging limitation of Partial volume effects (PVE). It occurs due to signal averaging across tissue borders inside a voxel. Then, tasks like tumor segmentation become more difficult as a result of the blurring edges and decreased precision in defining volumes of interest. 
+
+PET/CT has a broad field of view and good tumor-to-node contrast, but its poorer spatial resolution and vulnerability to PVE make it difficult to quantify since they can cloud tumor borders. Fortunately PET/MRI can be utilized to correct PVE in PET pictures because of MRI's higher soft-tissue contrast and great spatial resolution. 
+
+Knesaurek et al. \cite{knesaurek2018} reported that partial volume effects (PVEs) significantly impact quantification and dosimetry calculations, particularly for small tumors. Both modalities analyzed a tumor volume of approximately 7.0 $\text{cm}^3$ and mentions no use of contrast media. Intra hepatic dosimetry calculations of T/N ratios, requires using of contrast in anatomical modalities, as well as,
+PV corrections for lesions smaller than 2.5 $\text{cm}$. And respiratory motion contributes the challenge of accurate T/N ratio estimation for undersized lesions, also noticible in figure \ref{fig:respiratory_motion_artifacts}.
+
+\paragraph{Tumor-to-Normal Tissue Ratios (T/N Ratios)}
+
+Thanks to soft-tissue contrast, which aids in more precise tumor delineation, PET/MR will have a higher T/N ratio. In organs like the liver this should be a requirement in order to spare and distinguish tumors from healthy liver tissue or adjacent structures.
+
+
+On the other hand, PET/CT has the benefit of more precise attenuation correction, allowing for more accurate dose estimations and standardized uptake value (SUV) calculations. However, its accuracy in detecting tiny tumor boundaries gets limited by its poorer soft-tissue contrast as compared to PET/MR, especially when no contrast medium is present. This displays the way PET/MR can be preferable when dealing with complicated anatomy, such as the liver, by offering better distinction.
+
+
+Knesaurek et al. \cite{knesaurek2018} managed to calculate T/N ratios for the PET/CT scan by leveraging MRI-derived tumor ROIs merged with CT images through deformable transformation, a process that aligns images from different modalities to a common coordinate system, in MIM software. The study reported T/N ratios of 24.90 for PET/CT and 30.00 for PET/MRI. 
+
+Additionally, the absence of contrast agents in both CT and MRI images likely reduced the accuracy of tumor delineation and intra-hepatic dosimetry. The findings highlight the potential of PET/MRI to achieve superior T/N ratios (delivering higher relative doses to tumor regions), but also emphasize the importance of integrating advanced techniques like PVE corrections, contrast agents, and motion management into dosimetric workflows for small liver tumors.
+
+
+
+%\FloatBarrier % Prevents floats from going past this point
+% ============================
+% Section: Discussion
+% ============================
+\section{Discussion}
+
+\subsection{Improved Targeting Accuracy}
+Better tumor delineation can be archived with the use of hybrid imaging modalities. They provide unique features like the integration of anatomical and biological data that allows for improvements. As this techniques improve to provide precision more effective treatment planing can be archived, this is particularly the case for regions of the body with complex tumor boundaries or motion-prone regions like the liver.
+
+
+\subsection{Implications for Liver Cancer Management}
+By considering the potential of new and linked technologies on liver cancer management will transform therapeutic approaches, soft tissue contrast and functional imaging of PET/MR is really promising. cases with small, poorly defined and unresectable tumors will be benefited from these advantages and developments. As PET/MR becomes more widely adopted, its role in adaptive radiotherapy workflows and personalized treatment regimens could improve survival rates and quality of life for liver cancer patients.
+
+% ============================
+% Section: Limitations and Future Directions
+% ============================
+\section{Limitations and Future Directions}
+
+\subsection{Challenges of PET/MR Integration}
+
+Despite its advantages, PET/MR has logistical and technical difficulties, the most obvious ones is the extended acquisition times and higher costs. Second to that, consider the limited availability in clinical settings and integration with current techniques. Furthermore, the lack of standardized attenuation correction methods and sensitivity to motion artifacts is a huge deterrent. Addressing these issues will require advancements in imaging technology, standarized protocols and better workflow integration.
+
+\subsection{Need for AAPM Guidelines}
+To fully realize the potential of PET/MR in radiotherapy, comprehensive guidelines from professional organizations like AAPM are necessary. These guidelines like they do for PET/CT should address dosimetry protocols, motion management techniques, and the development of pseudo-CT methods for attenuation correction or alternatives. Further research is needed to establish the clinical efficacy of PET/MR in routine practice and optimize its role in radiotherapy workflows.
+
+% ============================
+% Section: Conclusion
+% ============================
+\section{Conclusion}
+
+This paper compares the advantages and limitations of PET/CT and PET/MR in liver cancer radiotherapy, it has a focus on their impact on tumor delineation, dosimetry, and treatment planning. PET/CT remains the gold standard for many clinical applications and PET/MR demonstrates significant potential in improving targeting accuracy and providing superior soft-tissue contrast. Future research and the development of standardized protocols will set the way in overcoming current limitations and ensuring these technologies achieve their full clinical potential in precision radiotherapy.
+
+\end{multicols}
+
+
+\bibliographystyle{unsrt} % Numbered references in order of appearance
+\bibliography{references}
+
+\end{document}
