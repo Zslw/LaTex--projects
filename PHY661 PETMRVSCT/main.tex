@@ -40,7 +40,7 @@ For these reason, no single imaging modality is entirely sufficient for an absol
 
 Exploring new techniques, technologies and pathways of using existing devices are carefully studied. Hybrid techniques are of most interest such as PET/CT and PET/MR. These modalities aim to overcome limitations by combining the strengths of each modality.
 
-This paper shows PET/CT and PET/MR in liver cancer radiotherapy, focusing on their applications in tumor delineation and dosimetric planning, and patient monitoring in a comparative way. An evaluation of their technical capabilities, clinical integration, and implications for adaptive radiotherapy workflows will be inlcuded. The aim is to explore how these hybrid modalities can enhance precision in liver cancer management. 
+The objective of this paper is to compare PET/CT and PET/MR in liver cancer radiotherapy, focusing on their applications in tumor delineation and dosimetric planning, and patient monitoring. An evaluation of their technical capabilities, clinical integration, and implications for adaptive radiotherapy workflows will be inlcuded. The aim is to explore how these hybrid modalities can enhance precision in liver cancer management. 
 
 Table \ref{tab:modality_comparison} provides a comparative overview of the relevant used imaging modalities in radiotherapy, it includes technical complexity and workflow integration that may be overlooked. Each modality has specific roles, because of it no single technique is entirely sufficient for precise tumor targeting. Following the table an explanation of each modality and why hybrid approaches are needed is explained.
 
@@ -75,14 +75,9 @@ Following that, PET/CT solves these limitations by combining the anatomical clar
 
 Finally, PET/MRI merges superior soft tissue delineation with metabolic imaging. This modality reduces radiation exposure compared to PET/CT but faces significant challenges in technical complexity, cost, and workflow integration.
 
-Imaging modalieties are complementary in nature because there are trade offs and risks on each of them. While CT and MRI is great in anatomical and soft tissue imaging, respectively, and PET provides metabolic insights, their integration through hybrid systems like PET/CT and PET/MRI is essential for achieving optimal precision in radiotherapy. By comparing these modalities on table \ref{tab:modality_comparison} I aim to convey the importance of  advancement in hybird techniques to overcome the limitations of individual modalities and  confidentely approach any complex clincal scenarios.
+Imaging modalieties are complementary in nature because there are trade offs and risks on each of them. While CT and MRI is great in anatomical and soft tissue imaging, respectively, and PET provides metabolic insights, their integration through hybrid systems like PET/CT and PET/MRI is essential for achieving optimal precision in radiotherapy.\cite{decazes2021, yan2024}. By comparing these modalities on table \ref{tab:modality_comparison} I aim to convey the importance of advancement in hybird techniques to overcome the limitations of individual modalities and confidentely approach any complex clincal scenarios with either IMRT or VMAT as treatment.
 
 \begin{multicols}{2}
-
-%\subsection{PET/CT vs. PET/MR in Liver Cancer Radiotherapy}
-Liver cancer is particularly difficult to diagnose and its treatment requires highly precise imaging. It needs accurate tumor delineation and because of its size and location spare healthy liver tissue, and organs at risk (OAR). This means radiologists need accuracy, especially when administering targeted therapies \cite{beaton2019, floridi2022}.
-
-This paper objective is to compare the respective roles of PET/CT and PET/MR in liver cancer radiotherapy. The focus will be on their contributions to dosimetry, tumor delineation, and overall treatment accuracy. While PET/CT is widely accepted in clinical practice, PET/MR is considered with enough potential for liver cancer management, because it provides enhanced soft tissue contrast and adds functional imaging capabilities \cite{decazes2021, yan2024}.
 
 % ============================
 % Section: Background
@@ -91,10 +86,12 @@ This paper objective is to compare the respective roles of PET/CT and PET/MR in 
 % General background information about liver cancer and imaging.
 %liver cancer types
 
-\subsection{Liver Cancer Overview}
-Around the world there is a common concern of cancer incidences, in particular liver cancer ranks the sixth most common diagnosed cancer and the third leading cause of cancer-related deaths. In 2020, approximately 905,700 new cases and 830,200 deaths were reported globally \cite{journal_of_hepatology2022}. 
+%\subsection{Liver Cancer Overview}
+%\subsection{PET/CT vs. PET/MR in Liver Cancer Radiotherapy}
+Liver cancer is particularly difficult to diagnose and its treatment requires highly precise imaging. It needs accurate tumor delineation and because of its size and location spare healthy liver tissue, and organs at risk (OAR). This means radiologists need accuracy, especially when administering targeted therapies \cite{beaton2019, floridi2022}.
 
-The liver is the largest solid organ located in the upper right quadrant of the abdominal cavity, beneath the diaphragm. It has a complex structure,  it has two main lobes (right and left), is functionally divided into eight segments, and has a dual blood supply from the hepatic artery and portal vein. \cite{ozmen2020}.
+Around the world there is a common concern of cancer incidences. Liver cancer, in particular, ranks as the sixth most common diagnosed cancer and the third leading cause of cancer-related deaths. In 2020, approximately 905,700 new cases and 830,200 deaths were reported globally \cite{journal_of_hepatology2022}. 
+
 
 The global burden varies significantly by region, for example, East Asia and sub-Saharan Africa have the largest incidence rate while in the United States liver cancer rates are comparatively lower. Global predictions estimate that this rates will increase by 55\% between 2020 and 2040, potentially leading to 1.4 million new cases and 1.3 million deaths annually by 2040 \cite{journal_of_hepatology2022}.
 
@@ -102,32 +99,36 @@ The American Cancer society projected approximately 41,630 new cases and 29,840 
 
 Moreover, projections made in 2020 suggest that liver cancer could become the third leading cause of cancer-related deaths in the US by 2030, surpassing breast, prostate, and colorectal cancers \cite{aacr_2030}. This is particularly interesting, since this has already happen globally, the slower growth of cases an mortality in the U.S. suggests that public health efforts are having a meaningful impact, continued advancements in imaging, personalized therapy, and public health interventions are needed to sustain and further improve outcomes.
 
-\subsection{Why is Liver Cancer Hard to Diagnose?}
+%\subsection{Why is Liver Cancer Hard to Diagnose?}
+The liver is the largest solid organ located in the upper right quadrant of the abdominal cavity, beneath the diaphragm. It has a complex structure,  it has two main lobes (right and left), is functionally divided into eight segments, and has a dual blood supply from the hepatic artery and portal vein. \cite{ozmen2020}. %develop further
+%figure to help localizing anatomy
+
 Diagnosing cancer is a challenge due to its nature, in particular liver cancer as it presents asymptomatic in early stages, for example hepatocellular carcinoma (HCC) often develops in patients with chronic liver disease or cirrhosis, which can mask early signs of cancer and further complicate detection \cite{quaglia2018}.
 
-In the other hand there is limitations of standard screening tools, following the HCC example, usually tested with ultrasound and often combined with alpha-fetoprotein (AFP). However, ultrasound alone has limited sensitivity, particularly in patients with obesity or cirrhosis.\cite{floridi2022} Studies have shown that ultrasound can miss more than half of early-stage tumors, while the addition of AFP testing still fails to detect over one-third of early HCC cases \cite{mcmahon2023}.
+In the other hand there is limitations of standard screening tools, following the HCC example, usually tested with ultrasound and often combined with alpha-fetoprotein (AFP). %explain this
+However, ultrasound alone has limited sensitivity, particularly in patients with obesity or cirrhosis.\cite{floridi2022} Studies have shown that ultrasound can miss more than half of early-stage tumors, while the addition of AFP testing still fails to detect over one-third of early HCC cases \cite{mcmahon2023}.
 
-\subsubsection{Challenges and Advances in Imaging for Liver Cancer}
+%\subsubsection{Challenges and Advances in Imaging for Liver Cancer}
 
-In recent years we saw advancements in imaging techniques by combining standard techniques such as CT, MRI, and cone-beam CT (CBCT) to enhance tumor visualization.\cite{floridi2022}.
+In recent years we have seen advancements in imaging techniques by combining standard techniques such as CT, MRI, and cone-beam CT (CBCT) to enhance tumor visualization.\cite{floridi2022}.
 
 Imaging the liver is quite difficult due to its location beneath the rib cage, the impact of respiratory motion, and patient-specific factors or comorbilities. The liver’s heterogeneity and its internal complexity further complicate image interpretation. \cite{ferraioli2018}.
 
-Imaging is useful during all stages of treatment, it helps by accurately delineate tumor boundaries, evaluate vascular involvement, and assess proximity to adjacent structures, especially given the liver's complex anatomy and frequent comorbidities such as cirrhosis \cite{floridi2022}
+Imaging is useful during all stages of treatment. Its role includes accurately delineating tumor boundaries, evaluating vascular involvement, and assessing proximity to adjacent structures, especially given the liver's complex anatomy and frequent comorbidities such as cirrhosis \cite{floridi2022}
 
-The most widely used imaging modality to asses liver cancer is ultrasound (US) due to its accessibility, real-time imaging capability, ability to assess blood flow via Doppler techniques, and because of its non-ionizing nature. But, it is limited by sensitivity while detecting small lesions, and it is operator dependent \cite{mcmahon2023,ferraioli2018}.
+The most widely used imaging modality to asses liver cancer is ultrasound (US) due to its accessibility, real-time imaging capability, ability to assess blood flow via Doppler techniques, and because of its non-ionizing nature. But, it is limited by sensitivity while detecting small lesions, and it is operator dependent \cite{mcmahon2023,ferraioli2018}. %small lesions such as ...  and why?
 
-As mentioned above in an intent to overcome this limitations there are hybrid imaging techniques, for example US fused with cone-beam CT (CBCT) or MRI, have significantly enhanced tumor visualization and treatment precision. They together provide better spatial resolution and enhance the vascular anatomy, or increased soft tissue contrast.\cite{floridi2022}.
+To overcome this limitations there are hybrid imaging techniques, for example US fused with cone-beam CT (CBCT) or MRI, have significantly enhanced tumor visualization and treatment precision. They together provide better spatial resolution and enhance the vascular anatomy, or increased soft tissue contrast.\cite{floridi2022}. %why do this
 
 There is potential to be discovered form hybrid imaging modalities in cancer treatment, that is why now we see increased interest in exploring PET/CT and PET/MR as advanced tools in precision radiotherapy.
 
 Despite significant advancements in imaging technology, there is still improvement to be made. CT, MRI, US are indispensable but have intrinsic limitations when doing tumor delineation, dosimetry, and planing treatment with precision.
 
-CT, offers great spatial resolution but is limited by poor soft tissue contrast and delimitation, irradiating imaging modality and artifacts caused by metal implants or dental structures \cite{decazes2021}. MRI provides amazing soft tissue contrast and functional imaging capabilities, yet it lacks the electron density information critical for accurate dose calculations in radiotherapy. Additionally, the extended acquisition times of MRI can introduce motion artifacts, further complicating tumor visualization \cite{floridi2022}.
+CT, offers great spatial resolution but is limited by poor soft tissue contrast and delimitation, irradiating imaging modality and artifacts caused by metal implants or dental structures \cite{decazes2021}. MRI provides better soft tissue contrast and functional imaging capabilities, yet it lacks the electron density information critical for accurate dose calculations in radiotherapy. Additionally, the extended acquisition times of MRI can introduce motion artifacts, further complicating tumor visualization \cite{floridi2022}.
 
 PET, which provides metabolic and functional data, is often combined with CT or MRI to enhance tumor characterization. However, PET alone suffers from low spatial resolution and partial volume effects, leading to blurred tumor edges and suboptimal delineation of small lesions \cite{yan2024}. These limitations highlight the need for hybrid imaging techniques that leverage the complementary strengths of multiple modalities.
 
-Hybrid approaches such as US/CBCT and CT/MRI fused with US have shown promise in addressing these challenges. For example, CBCT can enhance vascular anatomy visualization in patients with cirrhotic livers, aiding in tumor detection and feeding vessel identification during transarterial treatments \cite{floridi2022}. However, the application of these techniques in radiotherapy remains limited due to technical constraints such as the need for precise attenuation correction and standardized protocols for image registration. Hybrid imaging modalities such as PET/CT and PET/MR are emerging tools for overcoming these barriers, offering improved tumor delineation, dosimetry accuracy, and treatment planning for liver cancer.
+Hybrid approaches such as US/CBCT and CT/MRI fused with US have shown promise in addressing these challenges. For example, CBCT can enhance vascular anatomy visualization in patients with cirrhotic livers, aiding in tumor detection and feeding vessel identification during transarterial treatments \cite{floridi2022}. However, the application of these techniques in radiotherapy remains limited due to technical constraints such as the need for precise attenuation correction and standardized protocols for image registration. Hybrid imaging modalities such as PET/CT and PET/MR are emerging tools for overcoming these barriers, offering improved tumor delineation, dosimetry accuracy, and treatment planning for liver cancer. %source?
 
 
 % ============================
