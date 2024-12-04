@@ -8,7 +8,7 @@
 \usepackage{color}        % Color support
 \usepackage[utf8]{inputenc} % UTF-8 encoding
 \usepackage{enumitem}     % Custom list formatting
-\usepackage[paperwidth=48in,paperheight=36in,margin=1in]{geometry} % Custom size
+\usepackage[paperwidth=48in,paperheight=36in,left=0.7in,right=0.7in,top=1in,bottom=1in]{geometry}
 \usepackage{tikz}         % For positioning elements
 
 \usepackage{cite}         % For citation management
@@ -89,14 +89,15 @@
 % Add vertical dividers between columns
 \begin{tikzpicture}[remember picture, overlay]
     % Divider 1
-    \draw[DarkBlue, thick] (15.2in, 0) -- (15.2in, -34in); % Adjusted to align within the text
+    \draw[DarkBlue, thick] (15.3in, 0) -- (15.3in, -34in); % Adjusted to align within the text
     % Divider 2
-    \draw[DarkBlue, thick] (30.5in, 0) -- (30.5in, -34in); % Divider for the second column
+    \draw[DarkBlue, thick] (30.9in, 0) -- (30.9in, -34in); % Divider for the second column
 \end{tikzpicture}
 
 
 \vspace{1.8in} % Add appropriate spacing to move the content down
 
+\setlength{\columnsep}{1.5cm} % Adjust column separation
 % Begin Multicolumn Layout
 \begin{multicols}{3}
 
