@@ -38,11 +38,6 @@ Katherine~A. McGlynn, Jessica~L. Petrick, and Hashem~B. El-Serag.
   2040.
 \newblock {\em Journal of Hepatology}, 77(6):1598--1606, 2022.
 
-\bibitem{ozmen2020}
-E.~Ozmen and I.~Adaletli.
-\newblock Pediatric liver ultrasound: A pictorial essay.
-\newblock {\em Diagnostics (Basel)}, 10(9):659, 2020.
-
 \bibitem{cancer_stats2024}
 American~Cancer Society.
 \newblock Cancer facts \& figures 2024, 2024.
@@ -54,6 +49,11 @@ Lola Rahib, Bryan~D. Smith, Rachel Aizenberg, and et~al.
 \newblock Projecting cancer incidence and deaths to 2030: The unexpected burden
   of thyroid, liver, and pancreas cancers in the united states.
 \newblock {\em Cancer Research}, 74(11):2913--2921, 2014.
+
+\bibitem{ozmen2020}
+E.~Ozmen and I.~Adaletli.
+\newblock Pediatric liver ultrasound: A pictorial essay.
+\newblock {\em Diagnostics (Basel)}, 10(9):659, 2020.
 
 \bibitem{quaglia2018}
 Alessandro Quaglia.

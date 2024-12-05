@@ -15,6 +15,8 @@
 \usepackage{float}
 \usepackage{array}
 \usepackage{natbib}
+\usepackage{adjustbox}
+
 
 
 % Custom Colors (Adjust based on poster needs)
@@ -104,23 +106,65 @@
 % Introduction Section
 \posterSection{Introduction}
 %What’s the problem?
-There is a concern on whether a patient with retained post-surgical epicardial leads can safely be scanned in an MRI device because the interaction of the magnetic field, RF and gradients with these leads are still not well defined. They may rise problems such as RF-induced heating, translational forces, and torques and induced currents. In previous graduate student thesis and research, these risks and issues were highlighted.  \cite{haddix2022, aboyewa2021}. The thesis pointed out that over 50\% of patients with cardiac implantable electronic devices (CIEDs) will require MRI in their lifetime \cite{aboyewa2021}. Moreover, there is a lack of consensus across clinical guidelines that leaves physicians with the task to assess risks on a case-by-case basis.
 
-\boldtext{Objective:} To synthesize findings on MRI safety with epicardial leads, focusing on RF heating, magnetic forces, and torques, while identifying research gaps and proposing strategies for safer imaging.
+%\vspace{-1em}
+%There is a concern on whether a patient with retained post-surgical epicardial leads can safely be scanned in an MRI device because the interaction of the magnetic field, RF and gradients with these leads are still not well defined. They may rise problems such as RF-induced heating, translational forces, and torques and induced currents. In previous graduate student thesis and research, these risks and issues were highlighted.  \cite{haddix2022, aboyewa2021}. The thesis pointed out that over 50\% of patients with cardiac implantable electronic devices (CIEDs) will require MRI in their lifetime \cite{aboyewa2021}. Moreover, there is a lack of consensus across clinical guidelines that leaves physicians with the task to assess risks on a case-by-case basis.
 
-\vspace{1cm}
+%\boldtext{Objective:} To synthesize findings on MRI safety with epicardial leads, focusing on RF heating, magnetic forces, and torques, while identifying research gaps and proposing strategies for safer imaging.
 
-% Risks Section
+\begin{multicols}{2}
+	\begin{minipage}[t]{0.17\textwidth}
+		\normalsize
+		Patients with post-surgical epicardial leads face risks during MRI scans due to interactions with magnetic fields, RF, and gradients, causing heating, forces, torques, and currents.
+		
+		In previous graduate student thesis and research, these risks and issues were highlighted. The thesis pointed out that over 50\% of patients with cardiac devices will require MRI \cite{haddix2022, aboyewa2021}, but guidelines lack consensus, leaving risk assessment to physicians.
+		
+		\textbf{Objective:} Summarize MRI safety concerns for epicardial leads, focusing on RF heating, forces, torques, and strategies for safer imaging.
+	\end{minipage}%
+	\hfill
+	\hspace*{-0.25\linewidth} % Adjust this value to move the image slightly to the left
+	\begin{minipage}[t]{0.23\textwidth}
+		\centering
+		\includegraphics[width=0.5\linewidth]{Position-of-temporary-pacing-wires-RA-right-atrium-RV-right-ventricular-outflow.jpg} % Replace with the correct filename.
+		
+		\vspace{0.5em} % Adjust spacing between image and caption
+		\parbox[t]{0.6\textwidth}{\centering
+		\textbf{Figure 1.} Epicardial pacing leads on the heart's surface, used post-surgery for arrhythmia management.}
+	\end{minipage}
+\end{multicols}
+
+
+%\vspace{-1em}
+
+% Risks Section% Risks Section
 \posterSection{Risks of MRI with Epicardial Leads}
-%Why does it matter?
-\begin{itemize}
-    \item \textbf{RF-Induced Heating:} Leads can act as antennas, they absorb RF energy and cause localized tissue heating, particularly at the lead tips \cite{aboyewa2021}.
-    \item \textbf{Translational Forces:} The strong magnetic field can induce translational forces, pulling ferromagnetic materials toward the scanner's isocenter. These forces depend on lead material and length. \cite{haddix2022}.
-    \item \textbf{Torque:} Leads experience twisting forces that align them with the magnetic field, this can cause discomfort or tissue damage if the lead length is significant \cite{haddix2022}.
-    \item \textbf{Electrical Stimulation:} RF fields can induce currents in leads and stimulate cardiac tissue. This remains an underexplored area requiring further research \cite{aboyewa2021}.
-    \item \textbf{Device Malfunction:} MRI fields may interfere with pacemaker settings, causing unintended pacing or disabling the device altogether \cite{aboyewa2021}.
-\end{itemize}
 
+\vspace{-1em} % Reduce space after section title
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		% Image
+		\node[anchor=north west] at (-12, 0) {\includegraphics[width=0.36 \linewidth, angle =0]{MRIRisks.PNG}};
+		
+        % Itemized Overlay
+\node[anchor=north west, align=left, text width=8.5cm] at (4, -1) { % Adjust position and width
+	\textbf{Key Risks:}
+	\begin{enumerate}[align=left, leftmargin=0cm]
+		\item RF-Induced Heating
+		\item Translational Forces
+		\item Torque
+		\item Electrical Stimulation
+		\item Device Malfunction
+	\end{enumerate}
+		};
+	\end{tikzpicture}
+	\caption{Risk visualization for MRI in patients with CIEDs and leads.}
+	\label{fig:MRIRisks}
+\end{figure}
+
+
+\vspace{-0.2em} % Reduce space after section title
 % Backgorund Section
 \posterSection{Background}
 %How was it studied?
@@ -167,7 +211,7 @@ To answer whether safety concerns signify the outlined risk tissue-equivalent ph
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\linewidth]{FigTab.pdf} % Adjust width as needed
+    \includegraphics[width=0.5\linewidth]{FigTab.pdf} % Adjust width as needed
     \caption{Temperature rise as a function of lead length under MRI. Adapted from Aboyewa, 2021.}
     \label{fig:lead_temp_rise}
 \end{figure}
@@ -179,11 +223,22 @@ Aboyewa further explored the effects of implant configuration on RF-induced heat
 The straight configuration showed the highest temperature rise due to the antenna effect. Rotating the lead by 45$^\circ$ toward the right-side wall (TRS) or center (TC), as shown in Figure \ref{fig:implant_orientation}(b), reduced heating by more than half. An 8-fold reduction in heating was observed when the lead was bent into an arc, as shown in Figure \ref{fig:implant_orientation}(c). Although temperature rise increases with lead length \cite{aboyewa2021}, lead orientation and shape must also be considered to predict behavior in the MRI environment.  
 \end{quote}
 
-\input{implant_illustrations.tex}
+
+
+% Use adjustbox to shift
+\begin{center}
+	\adjustbox{valign=t, raise=0cm, margin={-0.5cm, 0cm, -0.5cm, 0cm}}{ % Reduced top and bottom margins
+		\input{implant_illustrations.tex}
+	}
+\end{center}
+
+\vspace{-3em} % Reduce vertical spacing before the next figure
+
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{Figure_4_9_Implant_Configuration_Adjusted_Y.pdf}
-    \caption{Effect of implant orientation on maximum temperature rise during MRI. (a) 12.7 cm Ti-rod, (b) 19 cm Bipolar Lead, (c) 19 cm Bipolar Lead. Adapted from Aboyewa, 2021.}
+    \includegraphics[width=0.9\linewidth]{Figure_4_9_Implant_Configuration_Adjusted_Y_Small.pdf}
+    \caption{Effect of implant orientation on maximum temperature rise during MRI. Adapted from Aboyewa, 2021.}
     \label{fig:implant_orientation}
 \end{figure}
 
