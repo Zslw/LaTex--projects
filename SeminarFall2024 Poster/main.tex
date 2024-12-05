@@ -115,7 +115,7 @@
 \begin{multicols}{2}
 	\begin{minipage}[t]{0.17\textwidth}
 		\normalsize
-		Patients with post-surgical epicardial leads face risks during MRI scans due to interactions with magnetic fields, RF, and gradients, causing heating, forces, torques, and currents.
+		Patients with post-surgical epicardial leads (Figure \ref{fig:epicardial_leads}) face risks during MRI scans due to interactions with magnetic fields, RF, and gradients, causing heating, forces, torques, and currents.
 		
 		In previous graduate student thesis and research, these risks and issues were highlighted. The thesis pointed out that over 50\% of patients with cardiac devices will require MRI \cite{haddix2022, aboyewa2021}, but guidelines lack consensus, leaving risk assessment to physicians.
 		
@@ -128,10 +128,15 @@
 		\includegraphics[width=0.5\linewidth]{Position-of-temporary-pacing-wires-RA-right-atrium-RV-right-ventricular-outflow.jpg} % Replace with the correct filename.
 		
 		\vspace{0.5em} % Adjust spacing between image and caption
+		\refstepcounter{figure} % Increment figure counter
+		
 		\parbox[t]{0.6\textwidth}{\centering
-		\textbf{Figure 1.} Epicardial pacing leads on the heart's surface, used post-surgery for arrhythmia management.\cite{Russell2012}}
+		Figure 1: Epicardial pacing leads on the heart's surface, used post-surgery for arrhythmia management.\cite{Russell2012}}
+		 \label{fig:epicardial_leads} % Add a label for referencing
+		
 	\end{minipage}
 \end{multicols}
+
 
 
 %\vspace{-1em}
@@ -145,7 +150,7 @@
 	\centering
 	\begin{tikzpicture}
 		% Image
-		\node[anchor=north west] at (-12, 0) {\includegraphics[width=0.36 \linewidth, angle =0]{MRIRisks.PNG}};
+		\node[anchor=north west] at (-12, 0) {\includegraphics[width=0.36 \linewidth, angle =-90]{MRIRisks.PNG}};
 		
         % Itemized Overlay
 \node[anchor=north west, align=left, text width=8.5cm] at (4, -1) { % Adjust position and width
