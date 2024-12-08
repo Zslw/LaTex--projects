@@ -14,6 +14,8 @@
 
 \usepackage{array} %to fit the text on tables without justify
 \usepackage{url}
+\usepackage[toc,page]{appendix} % For appendix support
+
 
 \title{Comparative Efficacy of PET/CT and PET/MR in Precision Radiotherapy for Liver Cancer: Advances in Dosimetry and Tumor Delineation}
 \author{Daniel Juarez}
@@ -43,8 +45,6 @@
 \begin{multicols}{2}
 
 %\FloatBarrier % Prevents floats from going past this point
-\section{Case Application: 90Y Microsphere Therapy}
-\input{sections/90y_microsphere_therapy.tex}
 
 \section{Discussion}
 \input{sections/discussion.tex}
@@ -56,6 +56,17 @@
 \input{sections/conclusion.tex}
 
 \end{multicols}
+
+% ============================
+% Appendix
+% ============================
+
+\begin{appendices}
+	
+	\section{Supplementary Case Application: 90Y Microsphere Therapy}
+	\input{sections/90y_microsphere_therapy.tex}
+	
+\end{appendices}
 
 
 \bibliographystyle{unsrt} % Numbered references in order of appearance

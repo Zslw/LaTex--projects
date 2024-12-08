@@ -40,7 +40,8 @@ Katherine~A. McGlynn, Jessica~L. Petrick, and Hashem~B. El-Serag.
 
 \bibitem{cancer_stats2024}
 American~Cancer Society.
-\newblock Cancer facts \& figures 2024, 2024.
+\newblock Cancer facts \& figures 2024.
+\newblock Accessed: November 20, 2024.
 \newblock Available at
   \url{https://www.cancer.org/cancer/liver-cancer/about/key-statistics.html}.
 
@@ -383,18 +384,6 @@ Justine~M. Cunningham, Karen~Chin Snyder, Joshua~P. Kim, Salim~M. Siddiqui,
   mri-linac.
 \newblock {\em Frontiers in Physics}, 10:882564, 2022.
 
-\bibitem{TG132}
-K.~K. Brock.
-\newblock Deformable registration for image-guided radiation therapy. task
-  group 132 report.
-\newblock {\em Medical Physics}, 44(5):e43--e66, 2017.
-
-\bibitem{Dhont2020}
-J.~Dhont, J.~R.~N. Van Der Voort~van Zyp, P.~Lambin, et~al.
-\newblock Image-guided radiotherapy to manage respiratory motion: Lung and
-  liver.
-\newblock {\em Clinical Oncology}, 32(12):792--804, 2020.
-
 \bibitem{pichler2008}
 Bernd~J. Pichler, Hans~F. Wehrl, Achim Kolb, and Martin~S. Judenhofer.
 \newblock Positron emission tomography/magnetic resonance imaging: the next
@@ -413,5 +402,17 @@ Niek H.~J. Prakken, Florent~L. Besson, Ronald J.~H. Borra, Florian Büther,
   (earl).
 \newblock {\em European Journal of Nuclear Medicine and Molecular Imaging},
   50(10):2927–2934, 2023.
+
+\bibitem{TG132}
+K.~K. Brock.
+\newblock Deformable registration for image-guided radiation therapy. task
+  group 132 report.
+\newblock {\em Medical Physics}, 44(5):e43--e66, 2017.
+
+\bibitem{Dhont2020}
+J.~Dhont, J.~R.~N. Van Der Voort~van Zyp, P.~Lambin, et~al.
+\newblock Image-guided radiotherapy to manage respiratory motion: Lung and
+  liver.
+\newblock {\em Clinical Oncology}, 32(12):792--804, 2020.
 
 \end{thebibliography}
