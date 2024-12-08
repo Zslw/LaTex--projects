@@ -1,0 +1,58 @@
+% ============================
+% Section: Introduction
+% ============================
+
+%\subsection{The Role of Imaging in Radiation Therapy}
+
+During all stages of radiotherapy, getting the sense of where health professionals focus their work and the methods used to shape or conform the target tissue is of most vital importance. This information is provided by different imaging devices and techniques molded to each different case. During planning, images help visualize target lesions and clarify which pathway and devices are best to use. This information serves as a guide to determine patient and device position. During treatment, it provides insight into treatment outcomes and potential complications \cite{decazes2021}. Finally, during surveillance or control, it gives the comparison point to check accuracy and success while pointing to the right direction to follow.
+
+The preferred imaging modality for all types of cancer diagnosis is Computed Tomography (CT), this is due to it high-resolution anatomical detail and the information provided to map tissue electron density \cite{decazes2021,yan2024}. However, like every imaging modality, CT has its limitations, emphazising the need for complementary imaging techniques, especially for precise tumor targeting in complex cases like liver cancer \cite{yan2024}.
+
+%\subsection{Hybrid Imaging for Enhanced Accuracy}
+For these reason, no single imaging modality is entirely sufficient for an absolute precise role in radiation therapy due to intrinsic trade-offs \cite{decazes2021}.Setting CT aside, another good alternative is Magnetic Resonance Imaging (MRI), although valuable for soft tissue delineation, it lacks electron density information, making them less suitable as a standalone modalities in radiotherapy \cite{decazes2021}. Another alternative is Positron Emission Tomography (PET), which provides a new lens since it contributes with unique metabolic information that complements anatomical imaging and aids in tumor delineation \cite{decazes2021}.
+
+Exploring new techniques, technologies and pathways of using existing devices are carefully studied. Hybrid techniques are of most interest such as PET/CT and PET/MR. These modalities aim to overcome limitations by combining the strengths of each modality.
+
+The objective of this paper is to compare PET/CT and PET/MR in liver cancer radiotherapy, focusing on their applications in tumor delineation and dosimetric planning, and patient monitoring. An evaluation of their technical capabilities, clinical integration, and implications for adaptive radiotherapy workflows will be inlcuded. The aim is to explore how these hybrid modalities can enhance precision in liver cancer management. 
+
+Table \ref{tab:modality_comparison} provides a comparative overview of the relevant used imaging modalities in radiotherapy, it includes technical complexity and workflow integration that may be overlooked. Each modality has specific roles, because of it no single technique is entirely sufficient for precise tumor targeting. Following the table an explanation of each modality and why hybrid approaches are needed is explained.
+
+\end{multicols}
+%merge Decazes and Yan
+%Decazes TABLE 1 | Comparison of PET/MRI and other conventional image-based modalities in radiotherapy
+%Yans TABLE 1 | Summary of advantages and disadvantages of CT, MRI, and PET separately and combined in PET/CT/MRI
+%Yans TABLE 3 | Comparison of different imaging methods (star ranking)
+
+\begin{landscape}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.5} % Adjust the multiplier (e.g., 1.5 for 50% more spacing)
+	\setlength{\tabcolsep}{6pt} % Optional: Adjust column padding if needed
+	\begin{tabular}{|l|>{\raggedright\arraybackslash}p{3.5cm}|>{\raggedright\arraybackslash}p{2.3cm}|>{\raggedright\arraybackslash}p{5.5cm}|>{\raggedright\arraybackslash}p{4.5cm}|>{\raggedright\arraybackslash}p{4.5cm}|}
+		\hline
+		\textbf{Modality} & \textbf{Diagnostic Information} & \textbf{Soft Tissue Resolution} & \textbf{Radiation Dose} & \textbf{Technical Complexity} & \textbf{Workflow Integration} \\ \hline
+		CT & Anatomy and tissue electron density & Moderate (1 mm spatial resolution) & Ionizing radiation (higher dose) & Widely available; simple infrastructure requirements & Integrates easily into standard radiotherapy workflows; rapid acquisition \\ \hline
+		MRI & Anatomy and function & Excellent (soft tissue contrast) & None (non-ionizing) & Requires trained personnel; specialized infrastructure & Long scan times; challenges with integration into dose planning workflows \\ \hline
+		PET & Metabolic and functional imaging & Poor (blurred edges, partial volume effects) & Ionizing radiation (tracer-based) & Limited isotope availability; moderate complexity   & Requires co-registration with CT or MRI; \\ \hline
+		PET/CT & Combines anatomical and functional imaging; provides BTV and GTV delineation & Moderate & Higher due to combined CT dose & Standardized; relatively simple calibration & Commonly used in clinical settings \\ \hline
+		PET/MRI & Combines superior soft tissue contrast with metabolic imaging; pseudo-CT for dose calculation & Excellent & Reduced radiation compared to PET/CT & High complexity; limited infrastructure and operator expertise & Workflow integration less standardized compared to PET/CT \\ \hline
+	\end{tabular}
+	\caption{Comparison of imaging modalities (CT, MRI, PET, PET/CT, and PET/MRI) for radiotherapy applications. Adapted from Decazes et al. \cite{decazes2021}, Yan et al. \cite{yan2024}, and Knešaurek et al. \cite{knesaurek2018}.}
+	\label{tab:modality_comparison}
+\end{table}
+\end{landscape}
+
+\begin{multicols}{2}
+
+First, CT is the standard modality used in radiotherapy due to its high anatomical resolution and integration into treatment workflows. However, it relies on ionizing radiation and it has moderate soft tissue resolution that limits its standalone use in complex cases, such as tumors adjacent to sensitive soft tissues. 
+
+Next, MRI provides a solution to CT soft tissue resolution and adds functional imaging without ionizing radiation, making it ideal for delineating tumors in challenging areas.  Nevertheless, its known for long scan times and the difficulty to integrate electron density information of the tissue on the treatment plan. 
+
+Then, PET offers a unique insight on tumor activity, that is functional and metabolic imaging. Still, its limitations are quite considerable, mainly poor spatial resolution which makes this modality rely on co-registration with anatomical modalities like CT or MRI. 
+
+Following that, PET/CT solves these limitations by combining the anatomical clarity of CT with the functional insights of PET. Yet, the combined radiation dose remains a concern. 
+
+Finally, PET/MRI merges superior soft tissue delineation with metabolic imaging. This modality reduces radiation exposure compared to PET/CT but faces significant challenges in technical complexity, cost, and workflow integration.
+
+Imaging modalieties are complementary in nature because there are trade offs and risks on each of them. While CT and MRI is great in anatomical and soft tissue imaging, respectively, and PET provides metabolic insights, their integration through hybrid systems like PET/CT and PET/MRI is essential for achieving optimal precision in radiotherapy.\cite{decazes2021, yan2024}. Table \ref{tab:modality_comparison} convey the importance of advancement in hybird techniques to overcome the limitations of individual modalities and confidentely approach any complex clincal scenarios with either IMRT or VMAT as treatment.
+
