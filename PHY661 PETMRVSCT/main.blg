@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "springer2023"
-You've used 38 entries,
+You've used 67 entries,
             1791 wiz_defined-function locations,
-            667 strings with 10776 characters,
-and the built_in function-call counts, 9428 in all, are:
-= -- 780
-> -- 537
-< -- 0
-+ -- 193
-- -- 155
-* -- 801
-:= -- 1578
-add.period$ -- 116
-call.type$ -- 38
-change.case$ -- 38
+            847 strings with 17059 characters,
+and the built_in function-call counts, 17142 in all, are:
+= -- 1394
+> -- 1010
+< -- 1
++ -- 361
+- -- 294
+* -- 1471
+:= -- 2866
+add.period$ -- 203
+call.type$ -- 67
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 333
-empty$ -- 865
-format.name$ -- 155
-if$ -- 2011
+cite$ -- 67
+duplicate$ -- 605
+empty$ -- 1552
+format.name$ -- 294
+if$ -- 3660
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 36
-newline$ -- 195
-num.names$ -- 38
-pop$ -- 48
+int.to.str$ -- 67
+missing$ -- 66
+newline$ -- 340
+num.names$ -- 67
+pop$ -- 83
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 118
+skip$ -- 229
 stack$ -- 0
-substring$ -- 730
-swap$ -- 38
-text.length$ -- 0
+substring$ -- 1341
+swap$ -- 78
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 86
-width$ -- 40
-write$ -- 422
-(There was 1 warning)
+while$ -- 148
+width$ -- 69
+write$ -- 741
