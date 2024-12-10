@@ -4,9 +4,9 @@
 % ============================
 
 
-A particularly interesting imaging technique that is on the rise is PET/MR, it offers some advantages in the delineation of liver tumors where anatomical clarity is crucial. It is worth exploring target definition and motion control on MR's increased contrast when treating a highly dynamic organ like the liver. As well as some of its drawbacks like longer collection periods and more complicated attenuation correction. A natural comparison point is PET/CT which has positioned itself as the gold standard for radiation planning due to its reliable attenuation correction, rapid acquisition times, and accurate dose calculations. PET/MR, however, has demonstrated higher sensitivity and specificity for detecting liver metastases, finding additional metastatic lesions missed by PET/CT, and significantly reducing radiation exposure. \cite{frontiers2021, springer2014}
+A particularly interesting imaging technique that is on the rise is PET/MR, it offers some advantages in the delineation of liver tumors where anatomical clarity is crucial. It is worth exploring target definition and motion control on MR's increased contrast when treating a highly dynamic organ like the liver. As well as some of its drawbacks like longer collection periods and more complicated attenuation correction. A natural comparison point is PET/CT which has positioned itself as the gold standard for radiation planning due to its reliable attenuation correction, rapid acquisition times, and accurate dose calculations. PET/MR, however, has demonstrated higher sensitivity and specificity for detecting liver metastases, finding additional metastatic lesions missed by PET/CT, and significantly reducing radiation exposure. \cite{frontiers2021}%, springer2014}
 
-An additional benefit of PET/MR is its ability to significantly reduce radiation exposure, however limitations in attenuation correction can impact its performance, and can result in underestimation of absorbed doses during planning. \cite{ajr2012, pmc2017}.
+An additional benefit of PET/MR is its ability to significantly reduce radiation exposure, however limitations in attenuation correction can impact its performance, and can result in underestimation of absorbed doses during planning. \cite{ajr2012}%, pmc2017}.
 These issues can complicate radiotherapy workflows, potentially leading to suboptimal treatment plans that either underdose tumors or overdose surrounding healthy tissues \cite{pmc2023}.
 
 In order to provide a comprehensive view of its therapeutic potential, this section examines the complementary function of PET/MR in radiotherapy, stressing its advantages, disadvantages, and comparable applications with PET/CT.
@@ -14,7 +14,7 @@ In order to provide a comprehensive view of its therapeutic potential, this sect
 \subsection{PET/CT}
 Positron Emission Tomography/Computed Tomography (PET/CT) is utilized for precision in radiotherapy, it has great capabilities combining functional and anatomical information into a single session. It is really useful for tumor delineation, dosimetry, and treatment monitoring.
 
-In order to reduce misalignment from repositioning and guarantee excellent spatial and functional precision during radiation processes, integrated PET/CT systems are built with a shared gantry frame with both imaging modalities. The initial designs of these systems combined a spiral CT scanner with a rotating PET scanner \cite{beyer2000, bennett2009}. An example of the configuration is shown in figure \ref{fig:PETCTtable}
+In order to reduce misalignment from repositioning and guarantee excellent spatial and functional precision during radiation processes, integrated PET/CT systems are built with a shared gantry frame with both imaging modalities. The initial designs of these systems combined a spiral CT scanner with a rotating PET scanner \cite{beyer2000}%, bennett2009}. An example of the configuration is shown in figure \ref{fig:PETCTtable}
 
 \begin{figure}[H]
 	\centering
@@ -23,7 +23,7 @@ In order to reduce misalignment from repositioning and guarantee excellent spati
 	\label{fig:PETCTtable} 
 \end{figure}
 
-The device can be operatared separately or together within a single framework. In combined mode, CT images are employed for attenuation correction of PET data. When PET is used alone, it usually requieres for separate transmission scans used to provide anatomical reference and attenuation correction for images. Having them together improves imaging quaily while reducing examination time from additional scans \cite{townsend2004, zaidi2005}.
+The device can be operatared separately or together within a single framework. In combined mode, CT images are employed for attenuation correction of PET data. When PET is used alone, it usually requieres for separate transmission scans used to provide anatomical reference and attenuation correction for images. Having them together improves imaging quaily while reducing examination time from additional scans \cite{townsend2004}%, zaidi2005}.
 
 Clinical studies have demonstrated that even with shorter acquisition times, such as 1.5 minutes per bed position, image quality remains clinically acceptable with high rates of lesion visualization. PET/CT is a viable option for radiation workflows that are time-sensitive due to its efficiency and quality balance \cite{hasegawa2012}.
 
@@ -36,7 +36,8 @@ Deformable Image Registration (DIR) methods such as, GPU-accelerated DIR, accoun
 Additionally, this technique is considered upon its ability to detect non-FDG uptake lesions, contrasting with PET and helping avoid misdiagnosis in complex cases such as liver tumors \cite{yan2024, decazes2021}. This is done with segmentation algorithms that establish SUV thresholds to delineate lesions, integrating these volumes into treatment plans. Then, combining PET/CT with multiphasic CT can further characterize non-FDG lesions by leveraging dynamic contrast patterns visible in CT \cite{TG174}.
 
 %\subsubsection{Dosimetry}
-PET/CT is generally used for dosimetry calcuations, an example of this will be found on liver cancer treatments such as Yttrium-90 (\(^{90}\text{Y}\)) in the following section. Accurate dosimetry is dependent on quantitative imaging metrics such as standardized uptake values (SUVs). One of the advantages as explained in AAPMs TG174 and other papers is attenuation correction and faster acquisition times.\cite{knesaurek2018,TG174}. 
+%PET/CT is generally used for dosimetry calcuations, an example of this will be found on liver cancer treatments such as Yttrium-90 (\(^{90}\text{Y}\)) in the appendix \ref{sec:case1}. 
+Accurate dosimetry is dependent on quantitative imaging metrics such as standardized uptake values (SUVs). One of the advantages as explained in AAPMs TG174 and other papers is attenuation correction and faster acquisition times.\cite{knesaurek2018,TG174}. 
 
 This system comes pre-integrated and aligns PET and CT datasets in the same frame of reference via software from the manufacturers and allows to acquire images in a single session ensuring precise alignment between functional and anatomical data.This reduces registration errors, ensuring precise tumor localization and dose delivery. 
 
@@ -52,7 +53,8 @@ Aside from this montly uniformity, quantification, and alignment tests between P
 
 Moreover, PET/CT tends to show lower SUV values compared to PET/MR, which may lead to underestimation of lesion uptake \cite{Prado-Wohlwend2023}. This underestimate can result in missed lesions, underestimation of disease severity, and incorrect staging of tumors. These limitations are particularly significant for liver imaging, where PET/MR has demonstrated increased diagnostic accuracy, with a 14.6\% improvement compared to PET/CT\cite{Prado-Wohlwend2023}.
 
-In a case study, Knesaurek et al. \cite{knesaurek2018} reported differences in liver volume estimation between PET/CT and PET/MR, with a significant impact on dosimetry calculations. The discussion on this finding can be found on section \ref{sec:case}. This means that by choosing the correct imaging system for planing can make a huge difference. 
+In a case study, Knesaurek et al. \cite{knesaurek2018} reported differences in liver volume estimation between PET/CT and PET/MR, with a significant impact on dosimetry calculations. %The discussion on this finding can be found on section \ref{sec:case}.
+ This means that by choosing the correct imaging system for planing can make a huge difference. 
 
 
 \subsection{PET/MR}
@@ -60,7 +62,6 @@ On the flip side, a relatively new imaging modality has been catching some inter
 
 This integration allows the recording of functional and anatomical information concurrently. The three prime strategies for combining PET/MR imaging include the following that are sequential, insert an integrated systems. In the systems that are sequential, there arrangement whereby a patient is allowed to be scanned first in pet scanner and subsequently in an MR-type scanner; this is easily enabled by having a prepared mechanical bed for moving the patient. This modality combination is easy but does not allow  simultaneous imaging. Misalignment and space are certainly an issue. In insert systems, a PET detector ring is inserted into the bore of an existing MR scanner. This approach allows simultaneous acquisition, superior spatial, and temporal alignment; however, several technical problems, such as magnetic field interference and limited bore size, make it suitable for rather specific applications, like neurological studies \cite{ziegler2013}.
 
-Integrated PET/MR systems are defined as the direct integration of the PET detectors inside the MR scanner. Most common embodiments place the PET detector ring behind the radiofrequency coil of the MR scanner using a split superconducting magnet or field-cycled MR in order to be able to house the PET components. PET detectors in PET/MR systems are prepared by using materials that will not perturb the magnetic field and degrade the quality of MR images. Situating the detectors at the rear of the radiofrequency coil increases temperatures and may cause their oscillations. This is important because the gain of both APDs and SiPMs-commonly used in the construction of PET systems-depend on temperature \cite{ziegler2013,Muzic2014}. Schematics on each of these implamentations of the system are shown in figure \ref{fig:pet_mri_configurations}
 
 \begin{figure}[H]
 	\centering
@@ -91,6 +92,8 @@ Integrated PET/MR systems are defined as the direct integration of the PET detec
 	\label{fig:pet_mri_configurations}
 \end{figure}
 
+Integrated PET/MR systems are defined as the direct integration of the PET detectors inside the MR scanner. Most common embodiments place the PET detector ring behind the radiofrequency coil of the MR scanner using a split superconducting magnet or field-cycled MR in order to be able to house the PET components. PET detectors in PET/MR systems are prepared by using materials that will not perturb the magnetic field and degrade the quality of MR images. Situating the detectors at the rear of the radiofrequency coil increases temperatures and may cause their oscillations. This is important because the gain of both APDs and SiPMs-commonly used in the construction of PET systems-depend on temperature \cite{ziegler2013}%,Muzic2014}. Schematics on each of these implamentations of the system are shown in figure \ref{fig:pet_mri_configurations}.
+
 
 %\subsubsection{Soft Tissue Contrast}
 Having better soft tissue contrast in the abdominal area aids the planning process by accurately delineating liver tumors from healthy tissue. Instead of relying on CT attenuation correction, MR benefits the patient with reduced radiation dose and better delineation of anatomical structures \cite{knesaurek2018}. This is really valuable for cases with small or poorly defined tumors.
@@ -100,10 +103,12 @@ Additionally, PET/MR’s ability to image respiratory liver motion during PET ac
 %\subsubsection{Functional Imaging}
 PET by itself comes with functional data from the activity distribution, but MR will enhance this capabilities if combined with techniques like DWI (Diffusion-Weighted Imaging) and dynamic contrast-enhanced (DCE) imaging, for additional parameters on tumor metabolism and treatment response. 
 
-\textbf{Diffusion-Weighted Imaging (DWI):} This technique assesses the movement of water molecules within tissues by measuring the Apparent Diffusion Coefficient (ADC). Tumors often exhibit lower ADC values due to high cellularity and restricted diffusion caused by cell membranes. Treatment-related changes in ADC values can reflect alterations in cellularity, serving as an early marker of therapeutic response \cite{pmc2010, ajr2006}.
+\textbf{Diffusion-Weighted Imaging (DWI):} This technique assesses the movement of water molecules within tissues by measuring the Apparent Diffusion Coefficient (ADC). Tumors often exhibit lower ADC values due to high cellularity and restricted diffusion caused by cell membranes. Treatment-related changes in ADC values can reflect alterations in cellularity, serving as an early marker of therapeutic response \cite{pmc2010}%, ajr2006}.
+
 \textbf{Dynamic Contrast-Enhanced (DCE) MRI:} DCE MRI tracks the distribution of contrast agents over time, providing valuable insights into blood flow and vascular integrity. Changes in perfusion patterns frequently correlate with treatment response, as increased perfusion often indicates effective therapy \cite{academic2021}.
-Effective treatments typically lead to increased ADC values, reflecting reduced cellularity as tumor cells die. These changes can be observed within days to weeks after chemotherapy or radiotherapy. However, early treatment may cause transient decreases in ADC due to cellular swelling or vascular changes, necessitating careful interpretation \cite{pmc2010, pmc2009}.
-Combining DCE MRI with PET data creates a multiparametric approach, integrating metabolic activity from PET with blood flow characteristics from DCE MRI. This synergy enhances the understanding of tumor behavior and supports personalized therapeutic strategies \cite{frontiers2020, springer2024}.
+
+Effective treatments typically lead to increased ADC values, reflecting reduced cellularity as tumor cells die. These changes can be observed within days to weeks after chemotherapy or radiotherapy. However, early treatment may cause transient decreases in ADC due to cellular swelling or vascular changes, necessitating careful interpretation \cite{pmc2010}%, pmc2009}.
+Combining DCE MRI with PET data creates a multiparametric approach, integrating metabolic activity from PET with blood flow characteristics from DCE MRI. This synergy enhances the understanding of tumor behavior and supports personalized therapeutic strategies \cite{springer2024}%,frontiers2020}.
 
 MR is already a solid tool for advance planning as explained in TG284\cite{TG284}. Despite these advantages, the longer acquisition times and lack of specific guidelines for PET/MR integration by AAPM make this technique rise questions. However, its use may be justified in cases where soft-tissue contrast is critical for treatment success. 
 
@@ -123,7 +128,7 @@ Figure \ref{fig:petmri_vs_conventional} shows the simplified workflow made possi
 \includegraphics[width=1\textwidth]{assets/PETMRI_vs_Conventional_Workflow.png}
 \caption{Comparison of PET/MRI workflows for radiotherapy procedures with conventional radiotherapy procedures. Adapted from Yan et al. \cite{yan2024}.}
 \label{fig:petmri_vs_conventional}
-\end{figure}%explain CBCT & MRI-Linac at treatment part
+\end{figure}
 
 
 \begin{multicols}{2}
@@ -136,8 +141,7 @@ By immobilizing the patient, PET/MR allows for alignment between imaging modalit
 \subsection{Positioning, Planning, and Pretreatment Workflow}
 
 \paragraph{Specific Equipment and Material}
-In order to properly use PET/MR in the clinical setting, challenges regarding patient positioning need to be addressed due to PET/MR's  %not yet described
-unique design and functional requirements compared to PET/CT. The following discussion is primarily informed by Yan et al. \cite{yan2024}.%heavy reliance on one source
+In order to properly use PET/MR in the clinical setting, challenges regarding patient positioning need to be addressed due to PET/MR's  unique design and functional requirements compared to PET/CT. The following discussion is primarily informed by Yan et al. \cite{yan2024}.
 Regarding equipment, a regular curved diagnostic MR couch is unsuitable for PET. Instead, the use of flat treatment couch allows consistent patient positioning across imaging and treatment sessions while minimizing photon attenuation. Photon attenuation is further addressed in the materials used. Conventional carbon fiber tables, while minimally attenuating photons, can create surface currents that degrade MR image quality. Hybrid materials, such as plastic-foam sandwiches, have been developed to reduce photon attenuation and eliminate artifacts. Additionally, thin plastic shells and lightweight coil technologies are being explored to optimize attenuation correction (AC) without compromising image quality. \cite{yan2024, ziegler2013}
 
 \paragraph{Effect on Image Quality}
@@ -181,7 +185,7 @@ Once the target volume is delineated, the next step of planing is dose calculati
 
 The main challenge presented on PET/MR is that it lacks the capability to directly acquire tissue electron density values. As of right now workflows include co-register PET/MR with CT images to generate dose prescription maps. Studies found that pseudo-CT techniques generated from MR images have high accuracy, and reported negligible mean absolute errors of 0.17 ± 0.12 Gy in dosimetry analysis \cite{yan2024}.
 
-However, PET/MR offers significant advantages for SBRT planning, particularly in reducing radiation exposure. Time-of-Flight (TOF) PET/MR systems require only 35\% of the activity concentration needed for TOF-PET/CT while maintaining comparable image quality, translating to a theoretical dose reduction of up to 65\%, with clinical observations suggesting realistic reductions exceeding 50\% \cite{Queiroz2015,Polan2023}. 
+However, PET/MR offers significant advantages for SBRT planning, particularly in reducing radiation exposure. Time-of-Flight (TOF) PET/MR systems require only 35\% of the activity concentration needed for TOF-PET/CT while maintaining comparable image quality, translating to a theoretical dose reduction of up to 65\%, with clinical observations suggesting realistic reductions exceeding 50\% \cite{Polan2023}%,Queiroz2015}. 
 
 \subsubsection{Mid-Treatment Workflow}
 
@@ -189,9 +193,9 @@ In accordance with Yan et al., [18F]-FDG PET/MRI mid-treatment assessments offer
 
 A way to take advantage from this preparation, incorporating PET-based absorbed dose map into mid-treatment workflows for SBRT or SIRT is possible. Polan et al. (2023) studied how sequentially integrating $^{90}\text{Y}$-PET-based dose distribution clinicians were able to refine treatment plans, enhancing the precision of dose delivery and adapting to dynamic tumor changes during therapy \cite{Polan2023}. 
 
-Addditionally, studies have shown that  advanced techniques, such as Intensity-Modulated Radiation Therapy (IMRT) and Volumetric Modulated Arc Therapy (VMAT), particularly benefit from advanced imaging techniques by leverage real-time anatomical and functional imaging to adjust dose distributions dynamically \cite{Hunte2022,Tsang2016}.
+Addditionally, studies have shown that  advanced techniques, such as Intensity-Modulated Radiation Therapy (IMRT) and Volumetric Modulated Arc Therapy (VMAT), particularly benefit from advanced imaging techniques by leverage real-time anatomical and functional imaging to adjust dose distributions dynamically \cite{Hunte2022}%,Tsang2016}.
 
 Referencing back to Figure \ref{fig:petmri_vs_conventional}, after using PET/MR and synthetic CT to performe treatment planing and dosimetric calculations, Cone-Beam Computed Tomography (CBCT) and MRI-guided Linear Accelerators (MRI-LINAC) are suggested for mid treatment assesment. CBCT provides high-resolution imaging of anatomical structures, enabling precise verification of patient positioning and tumor morphology before and during treatment. By capturing volumetric data, CBCT facilitates precise target localization and minimizes setup uncertainties, a key requirement for the high precision demanded in SBRT \cite{Srinivasan2014}.
 
-MRI-LINAC, on the other hand, combines the superior soft-tissue contrast of MRI with real-time radiation delivery. This integration allows clinicians to continuously monitor tumors and surrounding tissues with unparalleled clarity, enabling dynamic adjustments during treatment. They also are methodologies for adaptative therapy workflows. For SBRT, sub-millimeter precision is critical,  and MRI-LINAC ensures that the radiation dose is confined to the target while sparing adjacent organs at risk. The ability to visualize and adapt to changes in tumor size, shape, and position during therapy enhances the precision and safety of treatments. Furthermore, MRI-LINAC supports adaptive planning workflows, as demonstrated by Lei et al. (2020) and Cunningham et al. (2022), where the incorporation of synthetic MRI and cine MRI imaging techniques have significantly improved tumor tracking and dose conformity in SBRT \cite{Lei2020,Cunningham2022}.
+MRI-LINAC, on the other hand, combines the superior soft-tissue contrast of MRI with real-time radiation delivery. This integration allows clinicians to continuously monitor tumors and surrounding tissues with unparalleled clarity, enabling dynamic adjustments during treatment. They also are methodologies for adaptative therapy workflows. For SBRT, sub-millimeter precision is critical,  and MRI-LINAC ensures that the radiation dose is confined to the target while sparing adjacent organs at risk. The ability to visualize and adapt to changes in tumor size, shape, and position during therapy enhances the precision and safety of treatments. Furthermore, MRI-LINAC supports adaptive planning workflows, as demonstrated by Lei et al. (2020) and Cunningham et al. (2022), where the incorporation of synthetic MRI and cine MRI imaging techniques have significantly improved tumor tracking and dose conformity in SBRT \cite{Lei2020}%,Cunningham2022}.
 \end{multicols}

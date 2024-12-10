@@ -43,7 +43,7 @@ American~Cancer Society.
 \newblock Cancer facts \& figures 2024.
 \newblock Accessed: November 20, 2024.
 \newblock Available at
-  \url{https://www.cancer.org/cancer/liver-cancer/about/key-statistics.html}.
+  \url{https://www.cancer.org/research/cancer-facts-statistics/all-cancer-facts-figures/2024-cancer-facts-figures.html}.
 
 \bibitem{aacr_2030}
 Lola Rahib, Bryan~D. Smith, Rachel Aizenberg, and et~al.
@@ -68,20 +68,13 @@ Stoyan Kostov, Ilker Selçuk, Rafał Watrowski, et~al.
 \newblock {\em Diagnostics}, 13(14), 2023.
 
 \bibitem{WJGnet2023}
-Tuan~Anh Le, Duc~Minh Vo, Van~Khanh Le, Thanh~Tung Huynh, Thanh~Nhan Vo, and
+Tuan~Anh Le, Duc~Minh Vo, Van~Khanh Le, Thanh~Tung Huynh, Th~Nhan Vo, and
   Tien~Dung Bui.
 \newblock Recent progress in liver segmentation, diagnostic imaging, and
   preoperative planning for surgery and therapeutic intervention: A
   comprehensive review.
 \newblock {\em World Journal of Gastrointestinal Surgery}, 15(11):2382--2400,
   2023.
-
-\bibitem{liverMassCharacterization2023}
-Archana Mukund, Anubha Lal, Anand~P. Singh, Vineet Kumar, and Neha Sharma.
-\newblock Comprehensive evaluation and management of liver masses: A
-  multidisciplinary approach.
-\newblock {\em Journal of Hepatology Advances}, 15(11):2382--2400, 2023.
-\newblock Accessed: December 6, 2024.
 
 \bibitem{luersen2015}
 Gregory~F. Luersen, Priya Bhosale, and Janio Szklaruk.
@@ -175,20 +168,10 @@ Nadine Fischer, Ann-Kathrin Weber, Manuel Weingärtner, and et~al.
 \newblock Pet/mri for liver cancer imaging: Evidence and future perspectives.
 \newblock {\em Frontiers in Oncology}, 11:717687, 2021.
 
-\bibitem{springer2014}
-Gustav~K von Schulthess and Hans-Peter Schlemmer.
-\newblock A look ahead: Pet/mr versus pet/ct.
-\newblock {\em Clinical and Translational Imaging}, 2(1):3--8, 2014.
-
 \bibitem{ajr2012}
 Thomas Beyer and Patrick Veit-Haibach.
 \newblock Potential clinical applications of pet/mri.
 \newblock {\em American Journal of Roentgenology}, 199(2):272--277, 2012.
-
-\bibitem{pmc2017}
-Evgeniya Piperkova, Deidre Nelson, and Bernd~J. Pichler.
-\newblock Hybrid imaging systems in cancer diagnostics.
-\newblock {\em Cancer Imaging}, 17(1):6, 2017.
 
 \bibitem{pmc2023}
 Jonathan Smith, Michael Doe, and Jennifer White.
@@ -201,11 +184,6 @@ Thomas Beyer, David~W. Townsend, Thierry Brun, and et~al.
 \newblock A combined pet/ct scanner for clinical oncology.
 \newblock {\em Journal of Nuclear Medicine}, 41(8):1369--1379, 2000.
 
-\bibitem{bennett2009}
-George Bennett, Paul Kinahan, and David Townsend.
-\newblock Hybrid imaging with pet/ct and spect/ct.
-\newblock {\em Cancer Imaging}, 9:81--90, 2009.
-
 \bibitem{figPETCT}
 Iraj Mohammadi, Filipe Castro, Arman Rahmim, and Joao Veloso.
 \newblock Motion in nuclear cardiology imaging: types, artifacts, detection and
@@ -216,11 +194,6 @@ Iraj Mohammadi, Filipe Castro, Arman Rahmim, and Joao Veloso.
 David~W. Townsend.
 \newblock Physical principles and technology of clinical pet imaging.
 \newblock {\em Annals of the Academy of Medicine}, 33(2):133--145, 2004.
-
-\bibitem{zaidi2005}
-Habib Zaidi and Vesna Sossi.
-\newblock Correction for attenuation and scatter in pet/mri and pet/ct imaging.
-\newblock {\em Nuclear Medicine Communications}, 26(8):617--633, 2005.
 
 \bibitem{hasegawa2012}
 Kenji Hasegawa, Takashi Muto, Naoto Kubo, and et~al.
@@ -252,12 +225,6 @@ S.~I. Ziegler and G.~Delso.
 \newblock Technical and methodological aspects of pet/mr.
 \newblock {\em Clinical and Translational Imaging}, 1(1):11–16, 2013.
 
-\bibitem{Muzic2014}
-Raymond F.~Jr Muzic and Frank~P. DiFilippo.
-\newblock Positron emission tomography-magnetic resonance imaging: Technical
-  review.
-\newblock {\em Seminars in Roentgenology}, 49(3):242--254, 2014.
-
 \bibitem{Kang2021}
 Han~Gyu Kang and Taiga Yamaya.
 \newblock {\em Multi Imaging Devices: PET/MRI}, pages 1317--1357.
@@ -268,27 +235,11 @@ Anwar~R. Padhani and Dow-Mu Koh.
 \newblock Diffusion-weighted mri: A new imaging paradigm for oncology.
 \newblock {\em American Journal of Roentgenology}, 194(6):1524--1531, 2010.
 
-\bibitem{ajr2006}
-Thomas~L. Chenevert and Brian~D. Ross.
-\newblock Diffusion imaging for therapy response assessment of brain tumors.
-\newblock {\em American Journal of Roentgenology}, 187(4):1036--1042, 2006.
-
 \bibitem{academic2021}
 Olga Bane and Radka Stoyanova.
 \newblock Dce mri in cancer therapy assessment: Current and future
   perspectives.
 \newblock {\em British Journal of Radiology}, 94(1126):20201351, 2021.
-
-\bibitem{pmc2009}
-Lars~R. Jensen, Beatriz Garzon, and et~al.
-\newblock Treatment response assessment with diffusion-weighted mri: A
-  promising biomarker for cancer therapy.
-\newblock {\em Cancer Research}, 69(5):5001--5009, 2009.
-
-\bibitem{frontiers2020}
-Peter~S. Tofts, Justin Stebbing, and et~al.
-\newblock Multiparametric imaging approaches in cancer therapy monitoring.
-\newblock {\em Frontiers in Oncology}, 10:1484, 2020.
 
 \bibitem{springer2024}
 Xiaodong Yan, Wei Zhang, and et~al.
@@ -335,13 +286,6 @@ Srinivasan Vijayakumar, Johnny Yang, Mary~R. Nittala, Alexander~E. Velazquez,
   radiotherapy.
 \newblock {\em Cureus}, 14(12):e32840, 2022.
 
-\bibitem{Queiroz2015}
-Marcelo~A. Queiroz, Gaspar Delso, Scott Wollenweber, Timothy Deller,
-  Konstantinos Zeimpekis, Martin Huellner, Felipe de~Galiza Barbosa, Gustav von
-  Schulthess, and Patrick Veit-Haibach.
-\newblock Dose optimization in tof-pet/mr compared to tof-pet/ct.
-\newblock {\em PLOS ONE}, 10(7):e0128842, July 2015.
-
 \bibitem{Polan2023}
 Daniel Polan, Justin Mikell, Kellen Fitzpatrick, Joseph Gemmete, Jared
   Christensen, Hassan Anbari, Baljendra Kapoor, Molly Roseland, John Millet,
@@ -358,12 +302,6 @@ S.~O. Hunte, C.~H. Clark, N.~Zyuzikov, and A.~Nisbet.
   outcomes-what is the clinical evidence for the most effective implementation?
 \newblock {\em The British Journal of Radiology}, 95(1136):20201289, 2022.
 
-\bibitem{Tsang2016}
-M.~W. Tsang.
-\newblock Stereotactic body radiotherapy: current strategies and future
-  development.
-\newblock {\em Journal of Thoracic Disease}, 8(Suppl 6):S517--S527, 2016.
-
 \bibitem{Srinivasan2014}
 K.~Srinivasan, M.~Mohammadi, and J.~Shepherd.
 \newblock Applications of linac-mounted kilovoltage cone-beam computed
@@ -376,13 +314,6 @@ Y.~Lei, T.~Wang, S.~Tian, X.~Dong, A.~Jani, D.~Schuster, W.~Curran, P.~Patel,
 \newblock Male pelvic multi-organ segmentation aided by cbct-based synthetic
   mri.
 \newblock {\em Physics in Medicine and Biology}, 65(3):035013, 2020.
-
-\bibitem{Cunningham2022}
-Justine~M. Cunningham, Karen~Chin Snyder, Joshua~P. Kim, Salim~M. Siddiqui,
-  Parag Parikh, Indrin~J. Chetty, and Jennifer~L. Dolan.
-\newblock On-line adaptive radiation therapy workflow for spine sbrt utilizing
-  mri-linac.
-\newblock {\em Frontiers in Physics}, 10:882564, 2022.
 
 \bibitem{pichler2008}
 Bernd~J. Pichler, Hans~F. Wehrl, Achim Kolb, and Martin~S. Judenhofer.
@@ -402,17 +333,5 @@ Niek H.~J. Prakken, Florent~L. Besson, Ronald J.~H. Borra, Florian Büther,
   (earl).
 \newblock {\em European Journal of Nuclear Medicine and Molecular Imaging},
   50(10):2927–2934, 2023.
-
-\bibitem{TG132}
-K.~K. Brock.
-\newblock Deformable registration for image-guided radiation therapy. task
-  group 132 report.
-\newblock {\em Medical Physics}, 44(5):e43--e66, 2017.
-
-\bibitem{Dhont2020}
-J.~Dhont, J.~R.~N. Van Der Voort~van Zyp, P.~Lambin, et~al.
-\newblock Image-guided radiotherapy to manage respiratory motion: Lung and
-  liver.
-\newblock {\em Clinical Oncology}, 32(12):792--804, 2020.
 
 \end{thebibliography}
