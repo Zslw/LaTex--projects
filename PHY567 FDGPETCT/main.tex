@@ -1,0 +1,237 @@
+\documentclass[11pt]{article} % Adding 'twocolumn' for two-column layout
+\usepackage[margin=0.75in]{geometry} % Setting custom margins
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[numbers]{natbib} % Enabling numeric citations with natbib
+\usepackage{float}
+
+\title{[18F]FDG-PET/CT in Pancreatic Cancer: Challenges and Advances}
+\author{Daniel Juarez}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Pancreatic cancer is a type of cancer that starts to spread out form the pancreas, the pancreas is situated behind the stomach and is in charge of secretion of digestion enzymes and blood sugar regulation. What makes pancreatic cancer really serious is its \textit{poor prognosis} this means that compared to other cancers this one is harder to treat successfully, harder to detect or prevent from growing.
+
+This type of cancer is one of the most challenging in the field of oncology, it has a notably high mortality rate and low survival rates. In the US, pancreatic cancer is currently the 10th most commonly diagnosed cancer, with an estimated 66,440 new cases anticipated in 2024, accounting for 3.3\% of all new cancer cases \cite{SEER2024}. The incidence rate is about 13.5 per 100,000 men and women, with annual increases of about 1\% since the early 2000s. And sadly, it is responsible for 8.5\% of all cancer-related deaths, with an estimated 51,750 deaths expected in 2024 \cite{SEER2024}.
+
+This similar scenario is observed across the world, for example in Mexico it ranks 12th in incidence, and 7th in mortality \cite{GlobocanMexico}.In China incidence ranks 8th. Overall, Pancreatic cancer is the fifth most common cause of cancer-related deaths in South Korea, and the fourth leading cause of cancer-related deaths in the US and Europe. \cite{NCCNGuidelines}
+ 
+ Moreover, pancreatic ductal adenocarcinoma (PDAC), one of the most lethal human cancers that conforms 85\% of pancreatic cancers, is estimated to be the second leading cause of cancer-related deaths by 2030. \cite{Li2022}\cite{Cancers2023}.
+
+ This is a general concern for health professionals and it reflects the limited or "slow" advances in diagnosis and treatment for this malignancy.
+
+\subsection{Challenges in Early Detection}
+
+Due to all the above statistics it is crucial for us to quickly identify and treat this type of cancer. This can be quite challenging as it has an aggressive nature and asymptomatic progression. Usually this malignancy doesn't manifests and this leads to diagnoses in more advanced stages and by then surgery is rarely viable \cite{Pubmed30721664}.
+
+Here is a comprehensive list of reasons why it's early detection is challenging:
+\begin{itemize}
+    \item \textbf{Absence of Early Symptoms}: Initial stages of pancreatic cancer often go unnoticed as symptoms are minimal and non-specific.
+    \item \textbf{Deep Location of the Pancreas}: As stated before, the anatomical position of the pancreas deep within the abdomen complicates physical examination.
+    \item \textbf{Lack of Standardized Screening}: Unlike other malignancies, pancreatic cancer lacks a standardized and reliable screening protocol for the general population, reducing the likelihood of early intervention.
+    \item \textbf{Rapid Disease Progression}: Pancreatic cancer usually grows aggressively and has potential for early metastasis.
+    \item \textbf{Limitations in Imaging Techniques}: Existing imaging modalities often fail to detect smaller lesions or early-stage pancreatic cancer \cite{Pubmed30721664}.It is worth pointing out that even surveillance with available techniques is sometimes not recommended if the patient has not developed any symptoms.
+\end{itemize}
+
+
+Given these diagnostic limitations, there is an increasing demand for imaging solutions that are capable of early detect and accurately stage the progression in order to improve patient outcomes. Recent literature emphasizes the need for screening programs for asymptomatic, high-risk individuals with non-invasive precursor lesions, rather than those in advanced stages \cite{Cancers2023}.
+
+\subsection{The Role of Imaging in Pancreatic Cancer Management}
+
+Now, how can we detect this malignancy given all this challenges? Medical imaging is particularly useful in this case, it is able to provide information for treatment planning and assessing resectability. Current guidelines, including those by the National Comprehensive Cancer Network (NCCN) and the European Society for Medical Oncology (ESMO), point out that computed tomography (CT) is the primary imaging modality for assessing pancreatic cancer \cite{NCCNGuidelines}. However, emerging modalities such as endoscopic ultrasound (EUS) and magnetic resonance imaging (MRI) are quickly being more common as supplementary techniques for early-stage evaluation. There is data that compares these modalities in terms of strength, weaknesses and performance that suggests that a hybrid approach like PET/CT will allow for the detection of increased glucose metabolism, offering insights beyond structural abnormalities.
+
+\subsection{FDG PET/CT}
+
+A promising modality for cancer diagnosis and staging is Positron emission tomography/computed tomography (PET/CT). While PET scans are able to capture cellular metabolic changes, CT provides anatomical mapping, this hybrid approach of techniques enables a complete assessment of the progress. Recent studies explore the main advantages and procedures involved using PET/CT with 18-fluorodeoxyglucose ([18F]FDG) as tracer to asses pancreatic cancer. They think the unique advantage of [18F]FDG-PET/CT lies in its sensitivity to the metabolic activity of cancer cells, and will provide insights into both tumor presence and its potential aggression \cite{Pu2021}.
+
+Because of the asymptomatic and aggressive nature of PDAC, giving a clear diagnostic is challenging even now with imaging modalities. The advancements in this modalities like [18F]FDG-PET/CT, are very promising improving early detection rates and treatment outcomes. This paper will explore the current applications of [18F]FDG-PET/CT in pancreatic cancer diagnosis and staging, with a focus on overcoming diagnostic limitations and enhancing the accuracy of early detection.
+
+%Section 2: Why PDAC is hard to image (biology-driven challenges).
+    
+\section{The Nature of Pancreatic Cancer}
+
+Pancreatic ductal adenocarcinoma (PDAC) is a highly aggressive malignancy and is characterized by rapid progression. It has distinct biological and structural features, the relevant ones for imaging it are two, altered glucose metabolism (metabolic reprogramming) and a dense fibrotic tumor microenvironment. These characteristics create significant challenges for traditional imaging modalities, thus medical physicists and physicians require advanced techniques like PET/CT for accurate diagnosis.
+
+\subsection{Metabolic Reprogramming in PDAC}
+
+PDAC tumors have metabolic alterations, explained with the Warburg effect. The Warbug effect occurs when cells change to a sugar-based energy pathway, over oxygen-based ATP production, even in oxygen-rich conditions. ATP, the molecule cells use for energy, is normally generated through oxygen-driven processes, but glycolysis allows tumor cells to grow rapidly. This shift is driven by genetic mutations associated with cancer, such as KRAS, which increase the production of glucose transport proteins (GLUT1) and processing enzymes (hexokinase-2), this allows for cell proliferation and growth. \cite{Pubmed30721664, Pu2021}.
+
+
+PET/CT is able to scan for this accumulated hyperglycolytic tumor cells, and it does it with the radiotracer [18F]FDG, a glucose analog, meaning it can detect PDAC lesions, with sensitivity rates of 89–91\% and specificity rates of 70–72\% in clinical applications \cite{Pu2021}.
+
+
+\subsection{Tumor Microenvironment and Imaging Challenges}
+
+Thick fibrous tissue (desmoplastic stroma) surrounds cells in organs, is made up of fibroblast cells and extracellular proteins like collagen. In normal tissues, it provides structure and helps supply nutrients to healthy cells. However, in cancer the stroma becomes abnormally dense and fibrotic. This is called desmoplasia and helps the tumor grow and evade immune attacks, for imaging purposes, this thick tissue also makes it harder for CT and MRI to clearly identify the tumor's boundaries \cite{NCCNGuidelines}.
+
+
+Additionally, hypoxic regions within the tumor alter glucose metabolism, causing variability in [18F]FDG uptake. This will be discussed in depth later in this document. Making imaging more complicated, inflammatory conditions, such as pancreatitis can produce lesions with overlapping metabolic signatures on PET/CT. As noted by Pu, Y. \cite{Pu2021}, "both autoimmune pancreatitis and pancreatic cancer appear as metabolic abnormalities and increased FDG accumulation".
+
+
+\subsection{Advanced Imaging Needs}
+
+The challenges presented above highlight the need of development on advanced imaging modalities to ensure accurate diagnosis and staging of these types of cancer. PET/CT combines the sensitivity of metabolic imaging with the spatial resolution of CT, and has emerged as a strong candidate for precise tumor localization and characterization.
+
+Recent studies agree on this and are doing research on the topic. Stating that "The combination of PET and CT can determine the metabolic capacity and anatomical position of pancreatic tumor cells in the body and can accurately diagnose the patient's condition and tumor location" \cite{Pu2021}. Other research shows interest in different modalities, such as PET/MR and the use of other radiotracers for targeting hypoxic or stromal regions. But they all agree that development is needed. This development hold promise for enhancement in diagnostic specificity and sensitivity, although they require validation in clinical settings \cite{Cancers2023}. For comparative analysis on PET/MR and PET/CT in therapeutic applications, see also \cite{myownotherpaper}.
+
+\subsection{The Importance of Early Detection}
+
+Patient outcomes depend entirely on the capacity to early detect pancreatic ductal adenocarcinoma (PDAC). Despite advancements in therapeutic strategies, over 80\% of PDAC patients have locally advanced or metastatic disease at the time of diagnosis, at this stage the curative options are limited. Early-stage detection allows for timely surgical resection, the only potentially curative treatment that improves survival rates \cite{Cancers2023}. 
+
+Because fo the asymptomatic progression and aggressive nature of PDAC its early detection is extraordinarily difficult. Current technology and traditional imaging techniques, like CT and MRI, offer insights when assessing this disease but are limited by heir ability to identify small lesions or distinguish benign from malignant tumors early on. This cases are well illustrated in resource-limited settings, if PET/CT is scarce this challenge becomes even more daunting. For instance, in Mexico PET scanners are centralized in major cities and early detection relies heavily on less sensitive modalities like CT or X-ray, which are often insufficient for timely diagnosis.
+
+The reality of this worldwide problem is showcased in many real-world cases, a personal example is that of my grandmother, whose diagnosis of PDAC came only after her passing, despite months of observation and testing.
+
+Better imaging modalities, such as [18F]FDG-PET/CT, can address some of these issues. The combination of functional and anatomical imaging improves sensitivity and specificity for early lesions, thus enables metabolic changes to be detected before morphological alterations appear \cite{Pu2021}. However, access to these technologies remains uneven globally. As of 2021, Mexico had only 26 PET scanners for its entire population, concentrated in a few hospitals in major cities \cite{statista1}. There is a need for international collaboration to expand access to advanced imaging technologies, both through equipment and expertise.
+
+
+Another proposed solution to these problems is the addition of surveillance for high-risk groups, with population-specific screening programs targeted to individuals with familial predisposition, cystic lesions, or diabetes mellitus in order to identify precursor lesions or early-stage PDAC \cite{Cancers2023}.
+
+Furthermore, these programs are limited in settings where resources are lacking. Following my personal story, that of my grandmother, who was a high-risk patient with diabetes and a delayed diagnosis, exemplifies the need for accessible and standardized surveillance protocols. The value of those programs not only relies on saving lives but on valuable insights into familial risk factors, which is an area of interest for researchers and patients alike.
+
+When PDAC is diagnosed at a localized stage, surgical resection is more likely to be feasible. Advanced imaging techniques like [18F]FDG-PET/CT offer the potential to identify tumors earlier. Expanding access to these technologies and implementing population-specific screening programs puts the world in the right direction to address this global health challenge and improve outcomes for future patients.
+
+%Section 3: How PET/CT overcomes those challenges (physics and technical focus).
+\section{Overview of Imaging and [18F]FDG Tracer}
+
+\subsection{Technical Principles of PET/CT}
+
+Positron Emission Tomography (PET) is a functional imaging modality that uses positron-emitting radionuclides to map metabolic activity in tissues. As standalone imaging modality it lacks of anatomic structure localization, for that it is integrated with Computed Tomography (CT). CT contribution is huge, it provides attenuation correction, electron density, and anatomical localization. This way, PET/CT provides both functional and structural data in a single imaging session and with it a valuable approach in planing and diagnosing. With the use of PET annihilation gamma rays and CT high resolution it is possible to find accurately the localization of metabolic abnormalities \cite{TG174}. By taking the best of both modalities it is ensured that all metabolic information is properly contextualized on the anatomy reducing errors on registration state compared to standalone systems \cite{TG126}.
+
+
+The now well established Time-of-flight (TOF) technology allows to get precise timing of gamma-ray detection to improve spatial resolution and reduce noise. As it solves the problem of measure the exact site of anihilation it enchances ignal-to-noise ratio (SNR), particularly for larger patients. \cite{Seifert2022} PET technology has advanced a lot in recent years with detection enhancement, such as the adoption of Silicon Photomultiplier Arrays (SiPM) replacing older photomultiplier tubes (PMTs) augment resolution and sensitivity \cite{SunderlandSeminar}. And with it the regulations and quality assessments ensure that metrics like Standardized Uptake Value (SUV) are reliable.\cite{TG174}.
+
+Additionally, there is another important factor related to PET scanners, as PET imaging requires administration of radiopharmaceuticals. This administration must be performed with accuracy as any error in this step, can lead to uneven tracer distribution. The next section will explore more about the particular radiotracer [18F]FDG. Sunderland et al. demonstrated that injection infiltration occurs in less than 0.4\% of cases. Moreover, computational modeling suggests that even when infiltration occurs, its impact on dosimetry and image quality is negligible  \cite{Sunderland2023}. 
+
+
+\subsection{Mechanism of [18F]FDG Uptake}
+
+
+Fluorine-18 Fluorodeoxyglucose or [18F]FDG is a glucose analog labeled with the positron-emitting isotope fluorine-18. After intravenous injection, FDG is transported into cells by glucose transporters like GLUT1 and  the enzyme hexokinase adds a phosphor group (phosphorylase) to it. Since this is now a different molecule from glucose cells cannot longer proceed in the glycolysis process, and the molecule gets trapped in cells with high glucose metabolism, such as tumor cells \cite{TG174, Zheng2018}.
+
+This characteristic of the cancer cell is what allows for PET to visualize regions of hyperglycolysis. For example, as shown in Figure \ref{fig:PuFig1}, PET images A) show regions of increased metabolic activity in the pancreatic head, in B) CT images provide anatomical context. The fused PET/CT image C) integrates these modalities, and allows for precise localization of pancreatic tumors.
+Then oncogenic mutations like KRAS drive this process by upregulating GLUT1 and hexokinase-2, further amplifying glucose uptake \cite{Deng2021}. But this is not the only reason FDG accumlation can increase, this behaivior is also present in inflammation and benign conditions, such as autoimmune pancreatitis \cite{Zheng2018}. Different radiotracers may shine some light into the problems faced right now and and with them new advancements in tracer specificity and imaging protocols emerge.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/tcr-10-07-3560-f1.jpg}
+    \caption{18F-FDG PET/CT imaging integrating metabolic and anatomical data: (A) PET image, (B) non-enhanced CT image, (C) fused PET and CT images, demonstrating pancreatic head cancer detection \cite{Pu2021}.}
+    \label{fig:PuFig1}
+\end{figure}
+
+\subsection{Applications in Staging and Diagnosis}
+
+With the complementary strengths of PET and CT scanners assessing tumor margins and guiding surgical interventions is possible. In the case for staging and diagnosing PDAC, PET/CT chieves sensitivity rates of 89–91\% and specificity rates of 70–72\% in detecting PDAC lesions \cite{TG174}.
+
+Key applications include:
+\begin{itemize}
+    \item \textbf{Tumor Localization and Metastases Detection}: PET/CT excels in identifying primary tumors and distant metastases by FDG concentrated regions lighting up. Zhang et al. demonstrated its utility in detecting rare metastatic sites, such as cutaneous and muscle involvement\cite{Zhang2023}.
+    \item \textbf{Lymph Node Evaluation}: In cancer, lymph nodes often act as early sites for metastasis. PET/CT is a great tool to assess lymph node involvement. When FDG concentrates it shows increased glucose metabolism due to cancer activity. This is unique information from PET since lymph nodes may appear normal in size on CT but are metabolically active. Accurate identification of these cancerous nodes improves staging precision, which is critical for planning surgeries, such as lymphadenectomy (removal of affected nodes), and for deciding if curative treatments are feasible \cite{TG174}.
+    \item \textbf{Differentiating Lesions}: Since FDG uptake is non-specific, combining metabolic imaging with clinical markers (e.g., IgG4 levels) can help distinguish autoimmune pancreatitis from PDAC \cite{Zheng2018}.
+\end{itemize}
+
+Another one of the emerging technologies is the Total Body PET/CT systems. This systems seek to enable whole-body imaging in a single scan, hopefully with enhanced resolution and reduced scanning time \cite{SunderlandSeminar}. This is a valuable innovation for detecting micrometastases and monitoring therapeutic responses.
+
+\section{Applications of [18F]FDG-PET/CT}
+
+PET/CT can be of great help during the different parts of treatment, form diagnosis, staging, to management of pancreatic cancer. In order to exemplify its applications three clinical cases are introduced:
+
+\begin{itemize}
+    \item \textbf{Case 1 - Zheng et al.:} 
+    A 67-year-old male  with suspected pancreatic cancer presented, in 2018, a metabolic active lesion on a PET/CT. This lesion is located in the head of pancreas and had hinted overlap of metabolic signatures typical of both malignancy and autoimmune pancreatitis\cite{Zheng2018}.
+    \item \textbf{Case 2 - Zhang et al.:} 
+    In 2023 case, a 64-year-old male with confirmed pancreatic adenocarcinoma and treated with radical resection 6 years ago presented rare metastatic sites and was reevaluated\cite{Zhang2023}.
+    \item \textbf{Case 3 - Deng et al.:} 
+    Study in 2021 that compared FDG with 68Ga-FAPI in a 58-year-old female with pancreatic cancer and liver metastases. DG-PET/CT identified hypermetabolic liver lesions, but 68Ga-FAPI demonstrated superior sensitivity in delineating hypodense metastases\cite{Deng2021}.
+\end{itemize}
+
+These cases together exemplify applications in the diagnosis and staging of pancreatic cancer of this imaging modality.
+
+\subsection{Tumor Localization and Metabolic Assessment}
+
+\textbf{Metabolic Imaging in Practice:} As stated before the value of FDG-PET resides on the its ability to visualize regions of increased glucose metabolism, even in lesions not that well defined morphologically. A case application is the results of Deng et al. where FDG-PET/CT effectively detects hypermetabolic pancreatic tumors. But, new tracers like 68Ga-FAPI outperform FDG in identifying micrometastases, particularly in hypodense liver lesions \cite{Deng2021}.
+
+Figure~\ref{fig:DengMerged} illustrates the comparative uptake of 68Ga-FAPI and 18F-FDG in pancreatic cancer with liver metastases, the maximum density projection (MIP) image (A) shows increased FDG uptake in a pancreatic mass and mild uptake in the 10th rib, suggesting bone metastasis. Axial PET/CT images (B) highlight moderate uptake in the pancreatic head, while (C) reveals minimal bone destruction with mild metabolic activity in the 10th rib. Additionally, small hypodense nodules in the liver (D) were identified without significant FDG uptake, raising suspicion for liver metastases.
+
+\textbf{Quantitative Metrics in Action:} The metric of choice is the Standardized Uptake Value (SUV), it measures FDG uptake in a lesion relative to a reference. The lower the SUV the better as it correlates to malignancy. By knowing this parameter it is posiible to identify micrometastatic lesions, particularly in the liver. Deng et al. shows that 68Ga-FAPI has superior sensitivity and this stand as future research to be done on radiotracers.\cite{Deng2021}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{assets/DengMerged.png}
+    \caption{Comparison of FDG-PET/CT metabolic activity. (Right) 18F-FDG PET/CT showing pancreatic mass and liver hypodense lesions with minimal uptake, highlighting its sensitivity in tumor and liver staging \cite{Deng2021}. (Left) Enhanced metabolic activity in pancreatic lesions with high resolution, 68Ga-FAPI tracer’s specificity in hypometabolic areas near liver\cite{Deng2021}.}
+    \label{fig:DengMerged}
+\end{figure}
+
+%---
+
+\subsection{Lymph Node Evaluation and Metastasis Detection}
+
+\textbf{Unique Metastases:} 
+In case 2, PET/CT demostrated its capacity to distiguish between muscle and cutaneous metastases from PDAC—locations rarely detected by conventional imaging. Without PET/CT this would be possible to asses correctly
+
+Figure~\ref{fig:Zhang1}, depicts a MIP image with two regions of elevated glucose metabolism (Upper abdomen and left lateral abdominal wall). An axial image of the anatomy shows near the surgery site that shows elevated metabolic activity, possibly indicating residual or recurrent cancer, or post-surgical inflammatory changes. Then focused on the lateral it shows an hypodense structure seen in the muscle. This is the rare case of a metastatic deposit in the muscle. They highlight that Muscle metastases from pancreatic cancer are exceptionally rare, while cutaneous metastases occur in only 0.5–7.6\% of cases, often at the umbilicus\cite{Zhang2023}.
+
+
+\textbf{Sensitivity and Specificity:} Zhang et al. found that FDG uptake reliably identifies malignancies, it may also highlight non-malignant inflammatory processes, necessitating careful interpretation and, when possible, the inclusion of additional clinical markers or advanced tracers.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{assets/Zhang1.png}
+    \caption{Rare cutaneous and muscle metastases detected using FDG-PET/CT, illustrating its capability for identifying uncommon metastatic sites \cite{Zhang2023}.}
+    \label{fig:Zhang1}
+\end{figure}
+
+%---
+
+\subsection{Treatment Planning and Monitoring}
+
+\textbf{Guiding Therapy with PET/CT:} In order to perform a surgical resectio and radiation therapy the boundaries of the tumor must be carfully delinated. Zheng et al. were able to differentiate autoimmune pancreatitis from PDAC from this images, avoiding unnecessary or ineffective treatments \cite{Zheng2018}.
+
+
+Figure~\ref{fig:Zheng1} showcases how PET/CT identifies metabolic distinctions that inform treatment in challenging cases where inflammatory and malignant lesions overlap. Additionally, post-treatment PET/CT imaging provides insights into metabolic response, that enables clinicians to adjust therapeutic regimens based on observed changes in FDG uptake.
+
+\textbf{Enhancing Planning with Alternative Tracers:} As noted in Deng et al., the integration of new tracers like 68Ga-FAPI offers improved sensitivity in hypoxic tumor regions. \cite{Deng2021}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/Zheng1.png}
+    \caption{FDG-PET/CT imaging showing focal autoimmune pancreatitis mimicking pancreatic cancer. Note the overlapping metabolic activity that challenges differentiation \cite{Zheng2018}.}
+    \label{fig:Zheng1}
+\end{figure}
+
+%---
+
+Section 4 demonstrates the utility that PET/CT provides to diagnosis, staging, and management of pancreatic cancer. This clinical cases are an example of the current technology and limitations that we have in terms of resolution and specificity, and accessibility. Addressing this limitations will lean this technology forward for better and precise treatment, innovations in radiotracer development and hybrid imaging modalities can certainly be the way forward.
+
+\section{Limitations and Future Directions}
+
+\subsection{Current Limitations}
+
+FDG-PET/CT still has several limitations:
+\begin{itemize}
+    \item \textbf{Resolution Challenges:} Detecting micrometastases remains difficult due to limited resolution.
+    \item \textbf{Tracer Limitations:} FDG’s lack of specificity in distinguishing inflammatory from malignant lesions can lead to diagnostic uncertainty.
+    \item \textbf{Accessibility Issues:} High costs and limited availability hinder its adoption in resource-limited settings.
+\end{itemize}
+
+\subsection{Future Advancements}
+
+\textbf{Expanding Tracer Options:} The development of radiotracers, such as 68Ga-FAPI and [18F]FMISO, offers solutions to FDG’s specificity challenges. These tracers target unique tumor characteristics, such as hypoxia and fibroblast activity\cite{Deng2021}.
+
+\textbf{Integrating Hybrid Modalities:} Technologies like PET/MR provide enhanced soft-tissue contrast and reduced radiation exposure, making them promising alternatives for pancreatic cancer imaging. Additionally, Total Body PET/CT systems promise comprehensive whole-body imaging in a single scan, improving detection of micrometastases and overall efficiency.
+
+%---
+
+\section{Conclusion}
+
+FDG-PET/CT has is a great addition to the diagnostic approach for pancreatic cancer by combining anatomical and metabolic imaging. It has the ability to localize tumors, stage disease, and guide therapy making it a solid choice for oncology assessment. However, addressing its limitations through advanced tracers and hybrid modalities is a priority. The ongoing evolution of PET/CT technology, coupled with global efforts to expand accessibility, will undoubtedly enhance its impact on pancreatic cancer outcomes.
+
+\bibliographystyle{unsrt} % Numbered references in order of appearance
+\bibliography{references}
+
+\end{document}

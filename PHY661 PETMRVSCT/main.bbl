@@ -334,4 +334,28 @@ Niek H.~J. Prakken, Florent~L. Besson, Ronald J.~H. Borra, Florian Büther,
 \newblock {\em European Journal of Nuclear Medicine and Molecular Imaging},
   50(10):2927–2934, 2023.
 
+\bibitem{TG132}
+K.~K. Brock.
+\newblock Deformable registration for image-guided radiation therapy. task
+  group 132 report.
+\newblock {\em Medical Physics}, 44(5):e43--e66, 2017.
+
+\bibitem{Dhont2020}
+J.~Dhont, J.~R.~N. Van Der Voort~van Zyp, P.~Lambin, et~al.
+\newblock Image-guided radiotherapy to manage respiratory motion: Lung and
+  liver.
+\newblock {\em Clinical Oncology}, 32(12):792--804, 2020.
+
+\bibitem{Riou2014}
+O.~Riou, B.~Serrano, D.~Azria, et~al.
+\newblock Integrating respiratory-gated pet-based target volume delineation in
+  liver {SBRT} planning, a pilot study.
+\newblock {\em Radiation Oncology}, 9(1):127, 2014.
+
+\bibitem{bordeau2023}
+K.~Bordeau, M.~Michalet, A.~Keskes, et~al.
+\newblock Stereotactic mr-guided radiotherapy for liver metastases: First
+  results of the montpellier prospective registry study.
+\newblock {\em Journal of Clinical Medicine}, 12(3):1183, 2023.
+
 \end{thebibliography}

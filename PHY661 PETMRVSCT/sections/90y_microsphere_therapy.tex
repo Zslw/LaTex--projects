@@ -64,10 +64,10 @@ such as those available in PET/MRI systems, could mitigate these effects and imp
 %Knešaureks Fig. 4 | Respiratory motion artifacts and spillover with 90Y
 %	Relevant if discussing motion artifacts
 
-\begin{figure*}[H]
+\begin{figure*}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{assets/Respiratory_Motion_Artifacts.png} 
-	\caption{Respiratory motion artifacts and spillover with \(^{90}\text{Y}\) imaging using PET/CT. The top row displays uncorrected PET images in axial (left), sagittal (middle), and coronal (right) views. The middle row shows the corresponding CT anatomical references, and the bottom row presents fused PET/CT images, where spillover into the lungs due to respiratory motion is evident. Adapted from Knešaurek et al. \cite{knesaurek2018}.}
+	\includegraphics[width=0.8\textwidth]{assets/Respiratory_Motion_Artifacts.png} 
+	\caption{Respiratory motion artifacts and spillover with \(^{90}\text{Y}\) imaging using PET/CT. The top row displays uncorrected PET images in axial (left), coronal (middle), and sagittal (right) views. The middle row shows the corresponding CT anatomical references, and the bottom row presents fused PET/CT images, where spillover into the lungs due to respiratory motion is evident. Adapted from Knešaurek et al. \cite{knesaurek2018}.}
 	\label{fig:respiratory_motion_artifacts}
 \end{figure*}
 
@@ -106,7 +106,7 @@ Figure \ref{fig:patient_liver_dose} shows the liver dosimetry differences betwee
 
 %Knešaureks Fig. 2 | Patient study with highest mean liver dose difference
 %highlight liver dosimetry differences.
-\begin{figure*}[H]
+\begin{figure*}[ht]
 	\centering
 	\includegraphics[width=0.9\textwidth]{assets/Liver_Dosimetry_Differences.png} 
 	\caption{Patient study showing the highest mean liver dose difference between PET/CT and PET/MRI. The top row displays PET images, the middle row shows MRI and CT images respectively, and the bottom row presents fused PET/MRI and PET/CT images. Adapted from Knešaurek et al. \cite{knesaurek2018}.}
@@ -117,17 +117,18 @@ Figure \ref{fig:patient_liver_dose} shows the liver dosimetry differences betwee
 
 Both PET/CT and PET/MR suffer from the imaging limitation of Partial volume effects (PVE). It occurs due to signal averaging across tissue borders inside a voxel. Then, tasks like tumor segmentation become more difficult as a result of the blurring edges and decreased precision in defining volumes of interest. 
 
-PET/CT has a broad field of view and good tumor-to-node contrast, but its poorer spatial resolution and vulnerability to PVE make it difficult to quantify since they can cloud tumor borders. Fortunately PET/MRI can be utilized to correct PVE in PET pictures because of MRI's higher soft-tissue contrast and great spatial resolution. 
+PET/CT has a broad field of view and good tumor-to-node contrast, but its poorer spatial resolution and vulnerability to PVE make it difficult to quantify since they can cloud tumor borders. Fortunately PET/MRI can be utilized to correct PVE in PET images because of MRI's higher soft-tissue contrast and improved spatial resolution. 
 
-Knesaurek et al. \cite{knesaurek2018} reported that partial volume effects (PVEs) significantly impact quantification and dosimetry calculations, particularly for small tumors. Both modalities analyzed a tumor volume of approximately 7.0 $\text{cm}^3$ and mentions no use of contrast media. Intra hepatic dosimetry calculations of T/N ratios, requires using of contrast in anatomical modalities, as well as,
-PV corrections for lesions smaller than 2.5 $\text{cm}$. And respiratory motion contributes the challenge of accurate T/N ratio estimation for undersized lesions, also noticible in figure \ref{fig:respiratory_motion_artifacts}.
+Knesaurek et al. \cite{knesaurek2018} reported that partial volume effects (PVEs) significantly impact quantification and dosimetry calculations, particularly for small tumors. Both modalities analyzed a tumor volume of approximately 7.0 $\text{cm}^3$ and mentions no use of contrast media. 
+
+Another importart factor to take in account is Tumor to Normal tissue ratio (T/N ratio),this represents the relative radiation exposure between cancerous tumors and adjacent normal tissues. This is particularly relevant for liver as it has other organs nearby. An ideal radiotherapy treatment aims to maximize the radiation dose to tumor cells while minimizing damage to surrounding healthy tissues. A ratio greater than 1 suggests more radiation is reaching the tumor compared to normal tissue, high T/N ratio correlates to more efeective treatment. Intra hepatic dosimetry calculations of T/N ratios, requires using of contrast in anatomical modalities, as well as,PV corrections for lesions smaller than 2.5 $\text{cm}$. And respiratory motion contributes the challenge of accurate T/N ratio estimation for undersized lesions, also noticible in figure \ref{fig:respiratory_motion_artifacts}.
 
 \paragraph{Tumor-to-Normal Tissue Ratios (T/N Ratios)}
 
 Thanks to soft-tissue contrast, which aids in more precise tumor delineation, PET/MR will have a higher T/N ratio. In organs like the liver this should be a requirement in order to spare and distinguish tumors from healthy liver tissue or adjacent structures.
 
 
-On the other hand, PET/CT has the benefit of more precise attenuation correction, allowing for more accurate dose estimations and standardized uptake value (SUV) calculations. However, its accuracy in detecting tiny tumor boundaries gets limited by its poorer soft-tissue contrast as compared to PET/MR, especially when no contrast medium is present. This displays the way PET/MR can be preferable when dealing with complicated anatomy, such as the liver, by offering better distinction.
+On the other hand, PET/CT has the benefit of more precise attenuation correction, allowing for more accurate dose estimations and standardized uptake value (SUV) calculations. However, its accuracy in detecting tiny tumor boundaries is limited by its poorer soft-tissue contrast as compared to PET/MR, especially when no contrast medium is present. This displays the way PET/MR can be preferable when dealing with complicated anatomy, such as the liver, by offering better distinction.
 
 
 Knesaurek et al. \cite{knesaurek2018} managed to calculate T/N ratios for the PET/CT scan by leveraging MRI-derived tumor ROIs merged with CT images through deformable transformation, a process that aligns images from different modalities to a common coordinate system, in MIM software. The study reported T/N ratios of 24.90 for PET/CT and 30.00 for PET/MRI. 
