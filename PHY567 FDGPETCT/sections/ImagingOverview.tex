@@ -6,7 +6,7 @@
 
 Positron Emission Tomography (PET) is a functional imaging modality that uses positron-emitting radionuclides to map metabolic activity in tissues. As standalone imaging modality it lacks of anatomic structure localization, for that it is integrated with Computed Tomography (CT). CT contribution is huge, it provides attenuation correction, electron density, and anatomical localization. This way, PET/CT provides both functional and structural data in a single imaging session and with it a valuable approach in planing and diagnosing. With the use of PET annihilation gamma rays and CT high resolution it is possible to find accurately the localization of metabolic abnormalities \cite{TG174}. By taking the best of both modalities it is ensured that all metabolic information is properly contextualized on the anatomy reducing errors on registration state compared to standalone systems \cite{TG126}.
 
-As indicated to regular patients the protocol runs as follows, a CT scan is performed first for anatomical information and attenuation correction, then the tracer is injected intravenously. Followed by a waiting period of 30-60 minutes for tracer distribution (uptake), finally the PET scan lasts around 20-30 minutes \cite{RadiologyInfoPET}. This paper will explore the main techincal characteristics of this general protocol.
+As indicated to regular patients the protocol runs as follows, a CT scan is performed first for anatomical information and attenuation correction, then the tracer is injected intravenously. Followed by a waiting period of 30-60 minutes for tracer distribution (uptake), finally the PET scan lasts around 20-30 minutes. This paper will explore the main techincal characteristics of this general protocol.
 
 %Why addition CT
 % Resolution required?
@@ -38,7 +38,7 @@ New developments in material science has allowed, advanced cristals, digital det
 
 \begin{multicols}{2}
 	
-On the CT component end, the X-ray tube rotates around the patient and the detector array is opposite to the X-ray tube capturing the transmitted rays. A common rotation speed is 0.3-2.0 seconds and the slices go from 4 to 64 slices or more. This CT scanner is typically combined in the same device hence the name PET/CT, and features a patient port, typically 70 cm in diameter, and the gantry dimensions are pproximately 228 cm x 200 cm x 168 cm \cite{Townsend2008}. Figure \ref{fig:PETCTtable} depics a typical combined device.
+On the CT component end, the X-ray tube rotates around the patient and the detector array is opposite to the X-ray tube capturing the transmitted rays. A common rotation speed is 0.3-2.0 seconds and the slices go from 4 to 64 slices or more. This CT scanner is typically combined in the same device hence the name PET/CT, and features a patient port, typically 70 cm in diameter, and the gantry dimensions are approximately 228 cm x 200 cm x 168 cm \cite{Townsend2008}. Figure \ref{fig:PETCTtable} depics a typical combined device.
 
 \begin{figure}[H]
 	\centering
@@ -56,18 +56,19 @@ With these advancements, the regulations and quality assessments ensure that met
 Additionally, there is another important factor related to PET scanners, as PET imaging requires administration of radiopharmaceuticals. This administration must be performed with accuracy as any error in this step, can lead to uneven tracer distribution. The next section will explore more about the particular radiotracer [18F]FDG. Sunderland et al. demonstrated that injection infiltration occurs in less than 0.4\% of cases. Moreover, computational modeling suggests that even when infiltration occurs, its impact on dosimetry and image quality is negligible  \cite{Sunderland2023}. 
 
 
-\end{multicols}
+
 
 \subsection{Mechanism of [18F]FDG Uptake}
 
 
-Fluorine-18 Fluorodeoxyglucose or [18F]FDG is a glucose analog labeled with the positron-emitting isotope fluorine-18. After intravenous injection, FDG is transported into cells by glucose transporters like GLUT1 and  the enzyme hexokinase adds a phosphate group (phosphorylase) to it. Since this is now a different molecule from glucose cells cannot longer proceed in the glycolysis process, and the molecule gets trapped in cells with high glucose metabolism, such as tumor cells \cite{TG174, Zheng2018}.
+Fluorine-18 Fluorodeoxyglucose or [18F]FDG is a glucose analog labeled with the positron-emitting isotope fluorine-18. After intravenous injection, FDG is transported into cells by glucose transporters like GLUT1 and  the enzyme hexokinase adds a phosphate group (phosphorylase) to it. Since this is now a different molecule from glucose cells cannot longer proceed in the glycolysis process, and the molecule gets trapped in cells with high glucose metabolism, such as tumor cells \cite{TG174,Zheng2018}.
 
-This characteristic of the cancer cell is what allows for PET to visualize regions of hyperglycolysis. For example, as shown in Figure \ref{fig:PuFig1}, PET images A) show regions of increased metabolic activity in the pancreatic head, in B) CT images provide anatomical context. %explain the figure
-The fused PET/CT image C) integrates these modalities, and allows for precise localization of pancreatic tumors.
+This characteristic of the cancer cell is what allows for PET to visualize regions of hyperglycolysis. For example, in Figure \ref{fig:PuFig1} we see a PET image on A) that show regions of increased metabolic activity in the pancreatic head, although it has poor resolution (not disclosed) it exemplifies a typical axial view of the abdominal area where the black dots indicate concentration of FDG uptake in that section. In the middle image B) a CT image provide anatomical context, this is helpful for localization of the hotspots.  The fused PET/CT image C) integrates these modalities, and allows for precise localization of pancreatic tumors.
+
+
 Then oncogenic mutations like KRAS drive this process by upregulating GLUT1 and hexokinase-2, further amplifying glucose uptake \cite{Deng2021}. But this is not the only reason FDG accumlation can increase, this behaivior is also present in inflammation and benign conditions, such as autoimmune pancreatitis \cite{Zheng2018}. Different radiotracers may shine some light into the problems faced right now and and with them new advancements in tracer specificity and imaging protocols emerge.
 
-
+\end{multicols}
 
 \begin{figure}[H]
 	\centering

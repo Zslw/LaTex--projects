@@ -39,15 +39,15 @@ A.~D. Singhi, E.~J. Koay, S.~T. Chari, and A.~Maitra.
 Robert~Christopher Subtirelu, Eric~Michael Teichner, Yvonne Su, Omar Al-Daoud,
   Milan Patel, Shiv Patil, Milo Writer, Thomas Werner, Mona-Elisabeth Revheim,
   Poul~Flemming Høilund-Carlsen, and Abass Alavi.
-\newblock Aging and cerebral glucose metabolism: 18f-fdg-pet/ct reveals
+\newblock Aging and cerebral glucose metabolism: {18F-FDG-PET/CT} reveals
   distinct global and regional metabolic changes in healthy patients.
 \newblock {\em Life}, 13(10), 2023.
 
 \bibitem{Pu2021}
 Y.~Pu, C.~Wang, S.~Zhao, R.~Xie, L.~Zhao, K.~Li, C.~Yang, R.~Zhang, Y.~Tian,
   L.~Tan, J.~Li, S.~Li, L.~Chen, and H.~Sun.
-\newblock The clinical application of [{18F}]-fdg pet/ct in pancreatic cancer:
-  A narrative review.
+\newblock The clinical application of [{18F}]-{FDG PET/CT} in pancreatic
+  cancer: A narrative review.
 \newblock {\em Translational Cancer Research}, 10(7):3560--3575, 2021.
 
 \bibitem{talathi2023}
@@ -115,7 +115,7 @@ N.G. Hammond, R.B. Cameron, and B.~Faubert.
 \bibitem{parikh2020fdg}
 Ujas Parikh, Charles Marcus, Rutuparna Sarangi, Mehdi Taghipour, and Rathan~M.
   Subramaniam.
-\newblock Fdg pet/ct in pancreatic and hepatobiliary carcinomas: Value to
+\newblock {FDG PET/CT} in pancreatic and hepatobiliary carcinomas: Value to
   patient management and patient outcomes.
 \newblock {\em Emory Radiology Resources}, 2020.
 \newblock Accessed: 2024-12-12.
@@ -131,7 +131,7 @@ M.~Benamor, L.~Ollivier, H.~Brisse, G.~Moulin-Romsee, V.~Servois, and
 A.~Arnone, R.~Laudicella, F.~Caobelli, P.~Guglielmo, M.~Spallino, E.~Abenavoli,
   A.~L. Martini, R.~Filice, A.~D. Comis, M.~Cuzzocrea, F.~Linguanti,
   L.~Evangelista, and P.~Alongi.
-\newblock Clinical impact of 18f-fdg pet/ct in the diagnostic workup of
+\newblock Clinical impact of {18F-FDG PET/CT} in the diagnostic workup of
   pancreatic ductal adenocarcinoma: A systematic review.
 \newblock {\em Diagnostics (Basel, Switzerland)}, 10(12):1042, 2020.
 
@@ -156,7 +156,7 @@ Daniel Juarez.
 S.~K. Das, M.~Miften, S.~Zhou, R.~K. ten Haken, I.~El~Naqa, M.~Ajlouni, and
   S.~Ghosh.
 \newblock Task group 174 report: Utilization of [{18F}]-fluorodeoxyglucose
-  positron emission tomography ([{18F}]-fdg pet) in radiation therapy.
+  positron emission tomography ([{18F}]-{FDG PET}) in radiation therapy.
 \newblock {\em Medical Physics}, 46(1):e1--e15, 2019.
 
 \bibitem{TG126}
@@ -165,13 +165,6 @@ B.~P. Lopez, D.~W. Jordan, B.~J. Kemp, P.~E. Kinahan, C.~R. Schmidtlein, and
 \newblock Pet/ct acceptance testing and quality assurance: Executive summary of
   aapm task group 126 report.
 \newblock {\em Medical Physics}, 48(2):e31--e35, 2020.
-
-\bibitem{RadiologyInfoPET}
-{RadiologyInfo.org}.
-\newblock Positron emission tomography (pet).
-\newblock RadiologyInfo.org, n.d.
-\newblock Accessed: December 12, 2024. Available at
-  \url{https://www.radiologyinfo.org/en/info/pet}.
 
 \bibitem{Lee2014}
 Eun~Sun Lee and Jin~Mo Lee.
@@ -254,20 +247,20 @@ J.~J. Sunderland, S.~A. Graves, D.~M. York, C.~A. Mundt, and T.~B. Bartel.
 
 \bibitem{Zheng2018}
 L.~Zheng, H.~Xing, F.~Li, and L.~Huo.
-\newblock Focal autoimmune pancreatitis mimicking pancreatic cancer on fdg
-  pet/ct imaging.
+\newblock Focal autoimmune pancreatitis mimicking pancreatic cancer on {FDG
+  PET/CT} imaging.
 \newblock {\em Clinical Nuclear Medicine}, 43(1):57--59, 2018.
 
 \bibitem{Deng2021}
 M.~Deng, Y.~Chen, and L.~Cai.
-\newblock Comparison of [{68Ga}]-fapi and [{18F}]-fdg pet/ct in the imaging of
-  pancreatic cancer with liver metastases.
+\newblock Comparison of [{68Ga}]-{FAPI} and [{18F}]-{FDG PET/CT} in the imaging
+  of pancreatic cancer with liver metastases.
 \newblock {\em Clinical Nuclear Medicine}, 46(7):589--591, 2021.
 
 \bibitem{Zhang2023}
 Z.~Zhang, S.~Guo, C.~Zuo, and C.~Cheng.
 \newblock A case of pancreatic cancer with rare cutaneous and muscle metastases
-  on [{18F}]-fdg pet/ct imaging.
+  on [{18F}]-{FDG PET/CT} imaging.
 \newblock {\em Clinical Nuclear Medicine}, 48(8):692--693, 2023.
 
 \end{thebibliography}
