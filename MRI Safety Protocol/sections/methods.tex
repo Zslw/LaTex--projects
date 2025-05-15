@@ -1,0 +1,93 @@
+%\section{Materials and Methods}
+
+%\subsection{Purpose and Overview}
+
+The objective of this study was to evaluate MRI-induced translational forces acting on post-surgical epicardial pacing leads using in-lab simulations based on ASTM F2052-15 standards. A secondary goal was to develop and validate apparatuses that could later be used in clinical settings to replicate these measurements under MRI field conditions. Three distinct experimental setups were involved in this study: (1) a spatial field mapping platform to characterize $B_0$ and $\nabla B_0$, (2) a pendulum-based deflection apparatus to assess translational force through angular displacement, and (3) a torque measurement system for rotational force assessments, the latter of which remains under evaluation.
+
+\subsection{Magnetic Field and Gradient Mapping Platform}
+
+Magnetic field strength ($B_0$) and gradient ($\nabla B_0$) measurements were performed using a commercial Hall-effect Gaussmeter (Model GM2, AlphaLab Inc., Salt Lake City, UT).  The GM2 operates on the Hall effect principle, wherein a voltage is generated across a probe when exposed to a perpendicular magnetic field. This voltage is proportional to the local magnetic flux density, enabling precise spot measurements of field magnitude. The Gaussmeter used has an accuracy of 1\% of the DC reading in the 16$^\circ$C to 29$^\circ$C range.
+
+To ensure spatial accuracy and reproducibility, a fixture made from rigid PVC was constructed. The platform comprises a 300 mm square base and a 280 mm diameter vertical circular plate, perforated with a 5x5 grid of probe-access holes spaced at 20 mm intervals. Each access point was numerically indexed to facilitate 2D field mapping in the X-Y plane.
+
+In clinical use, the entire fixture is intended to be shifted axially along the Z-direction of a horizontal bore MRI scanner using controlled couch increments (e.g., 10 cm). This translation allows for volumetric sampling of $B_0$ over several planes. The spatial magnetic field gradient$\nabla B_0$ can then be estimated numerically using finite difference calculations between adjacent measurement points. This method has previously been applied to MRI mapping in the work by Ferreira \cite{ferreira2017}.
+
+\subsection{Translational Force Measurement via Angular Deflection}
+
+\subsubsection{Experimental Setup}
+
+\subsubsection{Laboratory Simulation with Solenoid Coil}
+
+To assess MRI-induced translational forces in a laboratory environment, we developed a pendulum-style apparatus replicating the geometry outlined in ASTM F2052-15~\cite{astm2052}. The vertical post includes a screw clamp mechanism that enables height adjustment; however, a default suspension height of 1 meter was used for consistency across trials.
+
+The experimental frame was constructed entirely from \textbf{PVC} components (Figure~\ref{fig:schematic}), including a vertical post of 1.5 meters and a rigid base for stabilization. The sample—a \textbf{solid ferromagnetic cylinder} (length = 6 mm, diameter = 3 mm, mass = 0.3648 g, density = 8.6 g/cm$^3$)—was suspended by a \textbf{955 mm-long sewing thread}, tied via a simple knot at its top. For clinical applications, a \textbf{0.25 mm nylon monofilament} is recommended for improved reproducibility and safety. Additionally a frame for lead configuration must be added, which design is discussed briefly in the next section. The bottom of the sample was free to swing, forming a pendulum under gravity. A horizontal ruler, fixed along the Z-axis, served as the visual reference to quantify lateral displacements as shown in Figure~\ref{fig:schematic} b .
+
+
+%add the 3d model and actual thing photo
+
+\subsubsection*{Lead Holder Frame Design}
+
+To accommodate epicardial lead positioning while maintaining MRI compatibility, we propose the use of a lightweight, non-magnetic frame fabricated from Polyvinyl Chloride (PVC) and equipped with nylon screws used to secure the epicardial lead at discrete positions. The suggested frame dimensions are 70 mm wide by 100 mm tall, with a thickness of 3 mm. A series of 3 mm diameter holes for screws placed along the vertical centerline at 10 mm intervals should allow reproducible placement of leads at known lengths (6–13 cm). As shown in figure [smth]
+
+The frame needs to be suspended such that the lead axis was aligned approximately parallel to the magnetic field gradient (Z-axis). While the frame's lightweight design aimed to minimize its contribution to the total magnetic force, its mass may not be explicitly subtracted from the translational force calculations.
+
+%add the custom design
+
+\subsubsection*{Magnetic Field Generation}
+
+Magnetic fields were generated using a \textbf{custom-built air-core solenoid}, approximately 15 cm in length and 10 cm in outer diameter. The solenoid was densely wound with \textbf{copper wire ($\sim$1 mm diameter)}, forming an inner core of approximately 5 cm. A \textbf{Pasco Scientific SF-9584 DC power supply} was used to deliver currents in the range of \textbf{0--4 A}, corresponding to magnetic field strengths from \textbf{1 to 18.9 Gauss}. The system operated in a continuous mode; no rest periods were applied between trials due to the time required to stabilize the pendulum after each adjustment. as shown in the experimental setup.
+
+%add the figure from pptx
+
+Magnetic field measurements were performed using an \textbf{AlphaLab Inc. Gaussmeter}. To characterize local field gradients, measurements were taken at three positions: at the pendulum's equilibrium position, 5 mm below, and 5 mm above, yielding values of $B_{-5}$, $B_0$, $B_{+5}$, respectively. Each position was sampled \textbf{nine times per current level}, and gradients were computed using the finite difference method:
+
+\begin{equation}
+	\frac{dB}{dz} \approx \frac{B_{+5} - B_{-5}}{10 mm}
+\end{equation}
+
+\subsection*{Measurement Protocol}
+
+Once the pendulum reached equilibrium under each magnetic condition, the horizontal displacement $x$ was recorded visually using the ruler as a reference. With known suspension length $L$, the \textbf{deflection angle $\alpha$} was calculated as:
+
+\begin{equation}
+	\alpha = \tan^{-1}\left(\frac{x}{L}\right)
+\end{equation}
+
+Following ASTM F2052-15, the ratio of magnetic to gravitational force is:
+
+\begin{equation}
+	\tan \alpha = \frac{F_m}{mg}
+\end{equation}
+
+where $m$ is the mass of the test object and $g$ is gravitational acceleration. The translational force $F_m$ is then:
+
+\begin{equation}
+	F_m = mg \tan \alpha
+\end{equation}
+
+This relation also enabled the \textbf{estimation of volumetric magnetic susceptibility} $\chi$ under the assumption of a linear force model:
+
+\begin{equation}
+	F_m = \frac{\chi V}{\mu_0} B_0 \frac{dB_0}{dz}
+	\quad \Rightarrow \quad
+	\chi = \frac{\mu_0 F_m}{V B_0 \frac{dB_0}{dz}}
+\end{equation}
+
+where $\mu_0$ is the permeability of free space and $V$ is the object volume. Values of $\chi$ were inferred from the slope of $\tan \alpha$ versus $B_0 \frac{dB_0}{dz}$, based on the Newtonian framework.
+
+\subsection*{Data Collection and Analysis}
+
+All measurements were logged in \textbf{Microsoft Excel}, and photos/videos were casually captured via smartphone to document behavior. A minimum of \textbf{three trials} were performed for each current level; however, only the final (most consistent) dataset was retained for analysis. Data were plotted to evaluate $\tan \alpha$ vs. field gradient force. Propagated uncertainties in $\alpha$ and $dB_0/dz$ were computed using standard error propagation formulas. Estimated measurement errors were:
+
+\begin{itemize}
+	\item Gaussmeter resolution: $\pm$0.001 G  
+	\item Ruler displacement: $\pm$1 mm  
+\end{itemize}
+
+A summary schematic of the apparatus is included in \textbf{Figure~\ref{fig:schematic}}, with additional engineering drawings available in \textbf{Appendix A}.
+
+
+\subsection{Torque Measurement Apparatus (In Progress)}
+
+A torque measurement system based on ASTM F2213 is under development. While a prototype was fabricated under the supervision of Dr. Nichols and prior students, detailed calibration, operational workflow, and data acquisition methods are still being finalized. The system is expected to allow both qualitative torque threshold assessments and quantitative torque calculation by assessing rotational displacement under a known static field.
+

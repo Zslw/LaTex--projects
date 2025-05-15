@@ -1,0 +1,71 @@
+% DRAFT MODE: Uncomment this for a more readable single-column draft
+\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
+
+% FINAL JOURNAL FORMAT: Uncomment this and comment the above line for submission format
+% \documentclass[aps,prl,twocolumn,superscriptaddress]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+%\usepackage{hyperref}
+
+% Optional: improve appearance in draft mode
+\usepackage[margin=1in]{geometry}    % Adjusts margins to make draft more readable
+\linespread{1.25}                    % Slightly more generous line spacing for drafts
+
+% Optional: mark the document as a draft
+ \usepackage{draftwatermark}
+ \SetWatermarkText{DRAFT}
+ \SetWatermarkScale{1.5}
+
+\begin{document}
+	
+	\title{Measurement of Magnetically Induced Forces on Lightweight Medical Devices in the MRI Environment}
+	
+	\author{Daniel Juarez Luna}
+	\affiliation{Creighton University}
+	\email{danieljureluna@creighton.edu}
+
+
+
+\begin{abstract}
+Scope: 	This protocol provides a standardized methodology to assess MRI-induced translational forces on retained or temporary epicardial pacing leads using a pendulum setup in both laboratory and MRI environments. It supports preclinical lead evaluation and translation to patient-specific MRI clearance, enabling communication between physicists and radiologists.
+	
+Objective: 
+
+Methods: 
+
+Results: 
+
+Conclusion: 
+\end{abstract}
+
+
+%keywords: ASTM F2052, MRI safety, translational force, lightweight devices, MR Conditional, magnetic resonance.
+
+\maketitle
+\section{Introduction}
+\input{sections/introduction}
+% Add your text here
+
+\section{Methods}
+% Add your text here
+%\input{sections/previous_content}
+\input{sections/methods}
+
+\section{Results}
+% Add your text here
+
+\section{Discussion}
+% Add your text here
+
+
+\input{sections/Eval}
+
+\section{Conclusion}
+% Add your text here
+
+\bibliographystyle{apsrev4-2}
+\bibliography{references}
+
+\end{document}

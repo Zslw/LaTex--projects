@@ -1,0 +1,355 @@
+%----------------------------------------------------------
+% From Stoianovici2023
+%----------------------------------------------------------
+
+
+The magnetic resonance (MR) environment imposes
+stringent constraints and requirements on the use of
+associated medical devices [1]. 
+
+Several internationally recognized standards relate to the safety of using devices in the
+MR environment [2-4]. 
+
+ASTM F2503-13 [2] classifies devices
+as MR Safe, Conditional, and Unsafe. For the MR Safe class,
+testing may be circumvented by the scientific rational that
+devices exclusively made of MR Safe materials (nonmagnetic
+and dielectric) are MR Safe. For other classes, however, devices
+require testing. Tests include the magnetically induced force
+(ASTM F2052 [5]) and torque (ASTM F2213 [6]) that are
+known to be induced by the static magnetic field of MRI on
+other than MR Safe devices. If the maximum magnetically
+induced force and torque are less than the force and torque on
+the device due to gravity respectively, it is assumed that any
+risk imposed by the application of the magnetically induced
+effect is no greater than any risk imposed by normal daily
+activity in the Earth’s gravitational field [5, 6]. 
+
+In specific cases,
+greater magnetically induced effects may be acceptable and
+would not harm patient or personnel. However, the gravity
+reference gives the most conservative acceptance criterion for
+an MR Conditional classification.
+Under the gravity reference, the maximum magnetically
+induced displacement force should be less than the device
+weight (Sec 5.2 [5]), and the maximum magnetically induced
+torque should be less than the product of the longest dimension
+of the medical device and its weight (Sec 5.3 [6]). Tests are to
+be conducted in MR systems with a horizontal bore.
+For the force test the ASTM gives a single method and simple
+apparatus: the test device is suspended by a string at the
+entrance and on the axis of the MR bore. Trivially, the
+magnetically induced deflection angle of the string should be
+less than 45$\deg$.
+
+1] D. Stoianovici, C. Kim, D. Petrisor, C. Jun, S. Lim, M. W. Ball, A. E. Ross,
+K. Macura, and M. E. Allaf, "MR Safe Robot, FDA Clearance, Safety, and
+Feasibility of Prostate Biopsy Clinical Trial," IEEE-ASME Transactions on
+Mechatronics, vol. 22, pp. 115-126, 2017.
+http://urobotics.urology.jhu.edu/pub/2017-stoianovici-tmech.pdf
+[2] ASTM International, "F2503-13," in Standard Practice for Marking
+Medical Devices and Other Items for Safety in the Magnetic Resonance
+Environment: 100 Barr Harbor Drive, PO Box C700, West Conshohocken,
+PA 19428-2959. United States, 2020. https://www.astm.org/f2503-
+13.html
+[3] International Organization for Standardization, "ISO TS 10974 :
+Assessment of the safety of magnetic resonance imaging for patients with
+an active implantable medical device," 2018.
+https://www.iso.org/standard/65055.html
+[4] U.S. Food \& Drug Administration, "MRI Information for Industry.
+Standards Relevant to MRI Safety." https://www.fda.gov/radiation-
+emitting-products/mri-magnetic-resonance-imaging/mri-information-
+industry
+[5] ASTM International, "F2052-21," in Standard Test Method for
+Measurement of Magnetically Induced Displacement Force on Medical
+Devices in the Magnetic Resonance Environment: 100 Barr Harbor Drive,
+PO Box C700, West Conshohocken, PA 19428-2959. United States, 2022.
+https://www.astm.org/f2052-21.html
+[6] ASTM International, "F2213-17," in Standard Test Method for
+Measurement of Magnetically Induced Torque on Medical Devices in the
+Magnetic Resonance Environment: 100 Barr Harbor Drive, PO Box C700,
+West Conshohocken, PA 19428-2959. United States, 2017.
+https://www.astm.org/f2213-17.html
+
+%----------------------------------------------------------
+%From Haddix proposal, our work at creighton (previous to me)
+%----------------------------------------------------------
+More than 4.5 million people worldwide live with cardiac implantable electronic devices (CIEDs) such as pacemakers to
+help normalize heart rhythm but delivering electrical pulses to the heart [7]. 
+
+In addition to permanent pacemakers, epicardial
+pacing leads are often placed on the heart during cardiac surgery to temporarily regulate the pacing of the heart using an
+external pacing device [8]. 
+
+While intended to be temporary, removing these leads can be problematic and for patient safety
+are often cut off at the skin, leaving a relatively short length of wire within the patient [4].
+
+ However, a negative consequence
+is that abandoned, fractured or retained epicardial leads are considered unsafe for MRI, and these patients, for the rest of
+their life, may no longer have the benefits afforded by MRI [9], [10]. 
+
+Devices for use in MRI environments undergo testing
+and are classified as MRI safe, MRI conditional, or MRI unsafe. For an MRI safe designation, the device would likely be
+nonconductive, non-electrical, non-magnetic and otherwise present no known hazards in the MRI environment. MRI
+conditional devices generally fall outside the MRI safe specification but have an established safety record under well-
+defined conditions. Finally, a device is considered MRI unsafe if it poses known hazards to the patient within the MRI
+environment. Reasons for the MRI unsafe classification for temporary, retained epicardial leads include concerns about
+radiofrequency (RF) tissue heating, particularly at the tip of the wire, magnetic interactions with the magnetic field leading
+to a translational force or torque on the wire, and the possibility of the unintentional stimulation of the heart due to electrical
+currents generated in the wire [11]. 
+
+
+While all of these are valid concerns and have been well established for larger permanent
+pacing leads, there is less evidence indicating substantial risk from the smaller temporary pacing leads. As a result, the issue
+has been controversial, with apparently conflicting consensus statements published by various organizations. Most notably,
+in their 2017 statement, the Heart Rhythm Society (HRS) indicated that the presence of nonconditional epicardial leads was
+a contraindication for MRI, though both previous and more recent consensus statements have disagreed indicating negligible
+risk [1]–[3].
+
+
+To begin to address this issue recently we systematically measured RF
+heating induced during MRI of a tissue simulating phantom containing
+post-surgical epicardial pacing leads of various lengths following
+guidelines provided by the ASTM F2182-19 standard document [12].
+
+
+This was done at CUMC Bergan Mercy Hospital using the Siemens 3T
+Magnetom Trio and the work was presented at the 2021 American
+Association of Physicists in Medicine (AAPM) annual meeting and
+formed the basis of a Medical Physics Master’s Thesis [6].
+
+Briefly,
+temporary bipolar and unipolar epicardial leads of various lengths and
+orientations were exposed to clinically-relevant imaging protocols
+(Specific energy absorption rate (SAR) of 2 W/kg) and the maximum
+temperature rise was recorded (Fig 1). While the maximum RF induced
+temperature rise at the tip of the wire was significant for relatively long
+(19 cm) leads, heating was not hazardous for wires less than 13 cm in
+length. Measurements made with different lead orientations relative the
+static magnetic field indicated that orientation was also a significant
+factor, with maximum heating occurring when the implant wire was
+aligned with the static magnetic field (parallel to the patient couch).
+While these results suggest that RF heating will likely not be a problem
+for relatively short leads, the additional potential hazards involving
+translational forces and torques, and electrical stimulation via the retained
+epicardial pacing lead have yet to be evaluated. Here we propose
+experiments that will address the concerns related to translational forces
+and torques, and in the future, we plan to continue the study to
+characterize the potential for electrical stimulation.
+
+
+Clinical MRI systems consist of the main magnet, usually a cylindrical
+superconducting magnet, with field strengths typically of 1.5 or 3.0 T, 30 –
+60 thousand times the Earth’s magnetic field [13]. 
+
+This field is greatest and
+most uniform at the center of the bore of the magnet, the imaging isocenter.
+Outside of the magnet, the magnetic field strength diminishes by a factor of
+1000 within a couple of meters from the magnet’s isocenter (Fig. 2).
+Materials of concern could be either paramagnetic, which can be temporarily
+magnetized, or ferromagnetic (permanent magnets). In either case, the
+material will experience a force pulling in the direction of the spatial field
+gradient and would move toward the imaging isocenter unless restrained.
+The translational force on an object in an MRI scanner depends on the material’s
+magnetic susceptibility ($\chi$, the degree to which an object can be magnetized),
+the static (unchanging in time) magnetic field strength (B0) and rate of increase
+in field strength with distance (i.e. the spatial gradient) of the field strength
+($\nabla B0$) [13]–[15]. 
+
+The maximal translational force is usually written as a
+fraction of the objects weight as shown in Eq. 1, where $\rho$ is the objects
+density and $\mu_0$, the magnetic permeability of free space, is a fundamental
+constant [15].
+
+While a precise force assessment will require in situ field measurements, we
+can roughly estimate the forces at a location where the magnetic field and the
+spatial gradient of the field is nearly maximum. Fig. 3 shows an estimate of
+the magnetic field and field gradient for a 1.5 T system, clearly illustrating
+that while the magnetic field (and torque) will be maximal at the imaging
+isocenter, the field gradient and translational force will be maximal at the
+entrance of the bore [14], [18]. 
+
+
+For a nonmagnetic
+
+stainless-steel wire ($\chi$~103 ppm, $\rho$ ~ 8000 kg/m3), the translational force is
+expected to be ~ 30\% of its weight, a similar titanium wire would experience
+a force of only 5\% of its weight, and a ferromagnetic material like pure nickel
+would experience a force of nearly 20,000 times its weight. To appreciate the
+significance of these values, an object experiencing a translational force equal
+to its weight would accelerate to a speed of about 22 mph in 1 second and
+become a projectile unless counteracted by an equivalent force - in this case
+provided by the tissue that the lead is embedded in. 
+
+According to the ASTM standard for magnetically
+induced displacement forces in MRI, “for a device to be safe in the MR environment, the magnetically induced deflection
+force and torque should be less than forces and torques to which the device may be safely exposed if it were not in a magnetic
+field” [15]. 
+
+Therefore, a device is generally accepted provided the translational and torque forces do not exceed the objects
+weight.
+
+1]J. H. Indik et al., “2017 HRS expert consensus statement on magnetic resonance imaging and radiation exposure
+in patients with cardiovascular implantable electronic devices,” Hear. Rhythm, vol. 14, no. 7, pp. e97–e153, 2017.
+2]P. Jabehdar Maralani et al., “MRI safety and devices: An update and expert consensus,” J. Magn. Reson. Imaging,
+vol. 51, no. 3, 2020.
+3]G. N. Levine et al., “Safety of magnetic resonance imaging in patients with cardiovascular devices: An American
+heart association scientific statement from the committee on diagnostic and interventional cardiac
+catheterization, council on clinical cardiology, and the council o,” Circulation, vol. 116, no. 24, pp. 2878–2891,
+2007.
+4]G. G. Hartnell, L. Spence, L. A. Hughes, M. C. Cohen, R. Saouaf, and B. Buff, “Safety of MR imaging in patients who
+have retained metallic materials after cardiac surgery,” Am. J. Roentgenol., vol. 168, no. 5, 1997.
+6]O. Aboyewa, “Measurement of Radiofrequency Induced Heating in Patients with Retained Post-Surgical
+Epicardial Leads During MRI,” Creighton University, 2021.
+7]M. M. Benjamin and C. A. Sorkness, “Practical and ethical considerations in the management of pacemaker and
+implantable cardiac defibrillator devices in terminally ill patients,” Baylor Univ. Med. Cent. Proc., vol. 30, no. 2,
+pp. 157–160, 2017.
+8]M. C. Reade, “Temporary epicardial pacing after cardiac surgery: a practical review,” Anaesthesia, vol. 62, no. 4.
+pp. 364–373, 2007.
+9]E. Kanal, “Pacemakers in MRI for the neuroradiologist: Revisited,” Am. J. Neuroradiol., vol. 39, no. 5, pp. E54–E55,
+2018.
+10]R. G. Muthalaly, N. Nerlekar, Y. Ge, R. Y. Kwong, and A. Nasis, “MRI in patients with cardiac implantable electronic
+devices,” Radiology, vol. 289, no. 2. Radiological Society of North America Inc., pp. 281–292, 2018.
+11]P. G. Poh, C. Liew, C. Yeo, L. R. Chong, A. Tan, and A. Poh, “Cardiovascular implantable electronic devices: a
+review of the dangers and difficulties in MR scanning and attempts to improve safety,” Insights Imaging, vol. 8,
+no. 4, pp. 405–418, 2017.
+12]ASTM 2182-19, “Standard Test Method for Measurement of Radio Frequency Induced Heating On or Near
+Passive Implants During Magnetic Resonance,” Annu. B. ASTM Stand., vol. i, no. December, pp. 1–12, 2019.
+13]J. M. B. Jerrold T. Bushberg, J. Anthony Seibert, Edwin M. Leidholdt, The Essential Physics of Medical Imaging, 3rd
+ed. Philadelphia, PA: Lippincott Williams and Wilkins, 2011.
+14]L. P. Panych and B. Madore, “The physics of MRI safety,” Journal of Magnetic Resonance Imaging, vol. 47, no. 1.
+2018.
+15]ASTM 2052-15, “Standard Test Method for Measurement of Magnetically Induced Displacement Force on
+Medical Devices in the Magnetic Resonance Environment,” Annu. B. ASTM Stand., vol. 03, 2015.
+16]A. Heinrich, J. Dorschel, M. Mohammad Mashoor, F. Guttler, and U. Teichgraber, “Development of an Apparatus
+for Digital Measurement of Magnetically Induced Torque on Medical Implants to Facilitate the Application of the
+ASTM F2213 Standard,” IEEE Trans. Biomed. Eng., vol. 66, no. 12, 2019.
+17]A. 2213-17, “Standard Test Method for Measurement of Magnetically Induced Torque on Medical Devices in the
+Magnetic Resonance Environment 1,” Annu. B. ASTM Stand., vol. 06, pp. 1–8, 2017.
+18]E. Kanal, “Standardized Approaches to MR Safety Assessment of Patients with Implanted Devices,” Magn. Reson.
+Imaging Clin. N. Am., vol. 28, no. 4, pp. 537–548, 2020.
+
+%----------------------------------------------------------
+%From Brights thesis (student before me)
+%----------------------------------------------------------
+Nearly 3.8 million people in the United State presently live with cardiac implantable
+electronic devices (CIEDs) such as pacemakers and implantable cardioverter - defib-
+rillators (ICD) [1].
+
+Patients with permanent pacemakers (PPMs) may benefit greatly from magnetic res-
+onance imaging (MRI) due to its advantage over other diagnostic modalities. Owing
+to its excellent soft-tissue contrast, ability to image deep within the body, and the
+lack of ionizing radiation [3, 4],
+
+about 50\% to 75\% of patient
+with CIEDs are estimated to require an MRI during their lifetime [6, 7].
+
+three diﬀerent types of magnetic fields including
+the static, gradient and radiofrequency (RF) magnetic fields are required.
+
+There are possibilities for mechanical displace-
+ment of the pulse generator or dislodgement of the lead within the myocardium, re-
+set/reprogramming of device, interference with pacing mode leading to asynchronous
+pacing, changes in electrocardiogram and induced lead heating [2]. (main focus of ours in the mechanical displacements, first tranlational forces then torques)
+
+At present,
+no PPMs or ICDs have been declared MRI safe by the Food and Drug Administration
+(FDA) [7]. Check
+
+
+temporary epicardial leads placed during cardiac surgery or prior to
+permanent implants are usually cut short at the skin, while a tiny portion of the
+lead remains in the patient [12].
+
+Due to safety concerns, CIEDs with presence of
+abandoned, fractured or retained epicardial leads are classified as contraindications
+for MRI examinations [10].
+
+Clinical MRI systems consist of the main magnet, usually a cylindrical superconduct-
+ing magnet, with field strength greater than 1 T [46].
+
+A typical 1.5 T MRI scanner
+commonly used for whole-body studies generates a magnetic field strength approxi-
+mately 30,000 times greater than that of the earth’s magnetic field at its isocenter. B0 field strength rapidly diminishes as the dis-
+tance from the isocenter increases.
+
+At reasonable distances, the fringe field falls oﬀ
+according to a dipole approximation at approximately 1/r3, approaching the strength
+of the earth’s magnetic field ($\sim$0.05 mT) at a large distance [52]. (the 5 Gauss line)
+
+materials can be
+classified as diamagnetic, paramagnetic, and ferromagnetic based on their magnetic
+susceptibility ($\chi$), Most medical devices are made of paramagnetic materials that
+have small and positive magnetic susceptibility($\chi$ > 0) [18].
+when in the
+vicinity of the static
+B0 field, they experience a translational force that attracts them
+towards the center of the scanner or a torque that tends to rotate and cause them to
+align with the field [18].
+
+The action of the translation force (Ftrans) is due to the spatial variation of the
+B0
+field (measured in T/m).
+
+B0 is usually uniform over the bore of the
+magnet which implies that the displacement force is experienced before entry into the
+magnet bore. In safety analysis, the significance of the translational force is usually
+compared with gravitational pull (Fg) on the same object,
+$$
+Ftrans
+=
+Fg
+\chi B0
+(\mu_0g)\rho|\nabla B0|, (2.1)
+$$
+where $µ0 = 4π×10−7H/m$ is the permeability of free space, g = 9.8 m/s2 is the
+acceleration due to gravity, $\rho$is the material density in kg/m3. Assuming a maximum
+spatial gradient of about 10 T/m, according to equation 2.1, an object made of iron
+in the vicinity of the main magnet at maximum saturation, i.e., $\chi$
+B0 $\sim$2.2 T, would
+experience a magnetic force about 250 times its weight and become a projectile [18].
+
+1]Mina M Benjamin and Christine A Sorkness. “Practical and Ethical Consider-
+ations in the Management of Pacemaker and Implantable Cardiac Defibrillator
+Devices in Terminally Ill Patients”. In: Baylor University Medical Center Pro-
+ceedings 30.2 (2017), pp. 157–160. doi: 10.1080/08998280.2017.11929566.
+2]A W Korutz, A Obajuluwa, M S Lester, E N McComb, T A Hijaz, J D Collins,
+S Dandamudi, B P Knight, and A J Nemeth. “Pacemakers in MRI for the Neu-
+roradiologist”. In: American Journal of Neuroradiology 38.12 (2017), pp. 2222–
+2230. doi: 10.3174/ajnr.A5314.
+3]Volkan Acikel and Ergin Atalar. “Modeling of radio-frequency induced currents
+on lead wires during MR imaging using a modified transmission line method”.
+In: Medical Physics 38.12 (2011), pp. 6623–6632. doi: 10.1118/1.3662865.
+4]Gregory H Griﬃn, Kevan J T Anderson, Haydar Celik, and Graham A Wright.
+“Safely assessing radiofrequency heating potential of conductive devices using
+image-based current measurements”. In: Magnetic Resonance in Medicine 73.1
+(2015), pp. 427–441. doi: 10.1002/mrm.25103.
+6]Ron Kalin and Marshall S Stanton. “Current clinical issues for MRI scanning of
+pacemaker and defibrillator patients”. In: Pacing and clinical electrophysiology
+28.4 (2005), pp. 326–328.
+7]Rahul G Muthalaly, Nitesh Nerlekar, Yin Ge, Raymond Y Kwong, and Arthur
+Nasis. “MRI in Patients with Cardiac Implantable Electronic Devices”. In:
+Radiology 289.2 (2018), pp. 281–292. doi: 10.1148/radiol.2018180285.
+10]Julia H Indik, J Rod Gimbel, Haruhiko Abe, Ricardo Alkmim-Teixeira, Ulrika
+Birgersdotter-Green, Geoﬀrey D Clarke, Timm-Michael L Dickfeld, Jerry W
+Froelich, Jonathan Grant, David L Hayes, Hein Heidbuchel, Salim F Idriss,
+Emanuel Kanal, Rachel Lampert, Christian E Machado, John M Mandrola,
+Saman Nazarian, Kristen K Patton, Marc A Rozner, Robert J Russo, Win-
+Kuang Shen, Jerold S Shinbane, Wee Siong Teo, William Uribe, Atul Verma,
+Bruce L Wilkoﬀ, and Pamela K Woodard. “2017 HRS expert consensus state-
+ment on magnetic resonance imaging and radiation exposure in patients with
+cardiovascular implantable electronic devices”. In: Heart Rhythm 14.7 (July
+2017), e97–e153. doi: 10.1016/j.hrthm.2017.04.025.
+12]G G Hartnell, L Spence, L A Hughes, M C Cohen, R Saouaf, and B Buﬀ.
+“Safety of MR imaging in patients who have retained metallic materials after
+cardiac surgery.” In: American Journal of Roentgenology 168.5 (May 1997),
+pp. 1157–1159. doi: 10.2214/ajr.168.5.9129404.
+18]Lawrence P Panych and Bruno Madore. “The physics of MRI safety”. In:
+Journal of Magnetic Resonance Imaging 47.1 (2018), pp. 28–43. doi: 10 .
+1002/jmri.25761.
+46]Jerrold T Bushberg and John M Boone. The essential physics of medical imag-
+ing. Lippincott Williams \& Wilkins, 2011, pp. 438–444, 495–499.
+52]P L Carson, S R Thomas, M Koskinen, M Lassen, W Pavlicek, R R Price, and
+M J Bronskill. “Site Planning for Magnetic Resonance Imaging”. In: NMR in
+Medicine, AAPM Technical Monograph, American Association of Physicists
+in Medicine, Thomas SR, ed., New York, NY (1985), pp. 1902–1907.

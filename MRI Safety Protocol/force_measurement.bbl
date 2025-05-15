@@ -1,0 +1,157 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{12}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Aboyewa}(2021)}]{aboyewa2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Aboyewa}},\ }\emph {\bibinfo {title} {Measurement of Radiofrequency Induced
+  Heating in Patients with Retained Post-Surgical Epicardial Leads During
+  MRI}},\ \href@noop {} {Ph.D. thesis},\ \bibinfo  {school} {Creighton
+  University} (\bibinfo {year} {2021})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Benjamin}\ and\ \citenamefont
+  {Sorkness}(2017)}]{benjamin2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~M.}\ \bibnamefont
+  {Benjamin}}\ and\ \bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont
+  {Sorkness}},\ }\href {https://doi.org/10.1080/08998280.2017.11929566}
+  {\bibfield  {journal} {\bibinfo  {journal} {Baylor University Medical Center
+  Proceedings}\ }\textbf {\bibinfo {volume} {30}},\ \bibinfo {pages} {157}
+  (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reade}(2007)}]{reade2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~C.}\ \bibnamefont
+  {Reade}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Anaesthesia}\ }\textbf {\bibinfo {volume} {62}},\ \bibinfo {pages} {364}
+  (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Poh}\ \emph {et~al.}(2017)\citenamefont {Poh},
+  \citenamefont {Liew}, \citenamefont {Yeo}, \citenamefont {Chong},
+  \citenamefont {Tan},\ and\ \citenamefont {Poh}}]{poh2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~G.}\ \bibnamefont
+  {Poh}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Liew}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Yeo}}, \bibinfo {author}
+  {\bibfnamefont {L.~R.}\ \bibnamefont {Chong}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Tan}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Poh}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Insights into Imaging}\ }\textbf {\bibinfo
+  {volume} {8}},\ \bibinfo {pages} {405} (\bibinfo {year} {2017})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Muthalaly}\ \emph {et~al.}(2018)\citenamefont
+  {Muthalaly}, \citenamefont {Nerlekar}, \citenamefont {Ge}, \citenamefont
+  {Kwong},\ and\ \citenamefont {Nasis}}]{muthalaly2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~G.}\ \bibnamefont
+  {Muthalaly}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Nerlekar}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Ge}}, \bibinfo {author}
+  {\bibfnamefont {R.~Y.}\ \bibnamefont {Kwong}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Nasis}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Radiology}\ }\textbf {\bibinfo {volume}
+  {289}},\ \bibinfo {pages} {281} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Haddix}(2021)}]{haddixProposal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Haddix}},\ }\href@noop {} {\bibinfo {title} {Creighton mri safety proposal
+  (unpublished internal document)}} (\bibinfo {year} {2021}),\ \bibinfo {note}
+  {creighton University}\BibitemShut {NoStop}%
+\bibitem [{ast(2019)}]{astmF2182}%
+  \BibitemOpen
+  \href@noop {} {\bibinfo {title} {Astm f2182-19 standard test method for
+  measurement of radio frequency induced heating on or near passive implants
+  during magnetic resonance}} (\bibinfo {year} {2019}),\ \bibinfo {note} {aSTM
+  International}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bushberg}\ \emph {et~al.}(2011)\citenamefont
+  {Bushberg}, \citenamefont {Seibert}, \citenamefont {Leidholdt},\ and\
+  \citenamefont {Boone}}]{bushberg2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~T.}\ \bibnamefont
+  {Bushberg}}, \bibinfo {author} {\bibfnamefont {J.~A.}\ \bibnamefont
+  {Seibert}}, \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
+  {Leidholdt}},\ and\ \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Boone}},\ }\href@noop {} {\emph {\bibinfo {title} {The Essential Physics of
+  Medical Imaging}}},\ \bibinfo {edition} {3rd}\ ed.\ (\bibinfo  {publisher}
+  {Lippincott Williams \& Wilkins},\ \bibinfo {year} {2011})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Panych}\ and\ \citenamefont
+  {Madore}(2018)}]{panych2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~P.}\ \bibnamefont
+  {Panych}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Madore}},\ }\href {https://doi.org/10.1002/jmri.25761} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Magnetic Resonance Imaging}\ }\textbf
+  {\bibinfo {volume} {47}},\ \bibinfo {pages} {28} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stoianovici}\ \emph {et~al.}(2024)\citenamefont
+  {Stoianovici}, \citenamefont {Sharma},\ and\ \citenamefont
+  {Cleary}}]{stoianovici2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Stoianovici}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Sharma}},\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Cleary}},\ }\href {https://doi.org/10.1109/TBME.2023.3291179} {\bibfield
+  {journal} {\bibinfo  {journal} {IEEE Transactions on Biomedical Engineering}\
+  }\textbf {\bibinfo {volume} {71}},\ \bibinfo {pages} {36} (\bibinfo {year}
+  {2024})}\BibitemShut {NoStop}%
+\bibitem [{ast(2021)}]{astmF2052}%
+  \BibitemOpen
+  \href@noop {} {\bibinfo {title} {Astm f2052-21 standard test method for
+  measurement of magnetically induced displacement force on medical devices in
+  the magnetic resonance environment}} (\bibinfo {year} {2021}),\ \bibinfo
+  {note} {aSTM International}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ferreira}(2017)}]{ferreira2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Ferreira}},\ }\emph {\bibinfo {title} {Predicting Angular Displacement of
+  Medical Devices in a MRI Scanner Bore Using COMSOL Multiphysics}},\
+  \href@noop {} {\bibinfo {type} {Master's thesis}},\ \bibinfo  {school}
+  {Drexel University} (\bibinfo {year} {2017})\BibitemShut {NoStop}%
+\end{thebibliography}%
